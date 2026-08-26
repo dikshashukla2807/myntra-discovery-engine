@@ -1,0 +1,17 @@
+{
+  "collected_at": "2026-08-26T16:31:33Z",
+  "targets": {
+    "google_play": 3000,
+    "app_store": 1000,
+    "reddit": 300,
+    "youtube": 500
+  },
+  "actual": {
+    "google_play": 3000,
+    "app_store": 799,
+    "reddit": 300,
+    "youtube": 0
+  },
+  "total": 4099,
+  "note": "Targets are caps. Missing records were not fabricated."
+}

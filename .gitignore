@@ -1,0 +1,39 @@
+# Secrets
+.env
+.env.local
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+.mypy_cache/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+*.tsbuildinfo
+
+# Regenerated caches only; collected public JSONL and processed insights are committed
+data/processed/ai_cache/
+data/exports/
+*.db
+*.sqlite
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+agent-tools/
+
+# Logs
+*.log
+npm-debug.log*

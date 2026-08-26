@@ -1,0 +1,8 @@
+{
+  "source": "youtube",
+  "target": 10,
+  "collected": 0,
+  "collected_at": "2026-08-26T16:33:08Z",
+  "status": "skipped_no_api_key",
+  "note": "YOUTUBE_API_KEY not set. Use scripts/import_youtube.py or POST /api/ingest/youtube. No synthetic comments were created."
+}

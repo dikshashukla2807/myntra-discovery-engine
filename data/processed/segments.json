@@ -1,0 +1,720 @@
+[
+  {
+    "segment_id": "unclassified",
+    "name": "unclassified",
+    "definition": "Relevant observations without a discovered behavioral segment signal.",
+    "observation_count": 825,
+    "percentage": 51.24,
+    "major_barriers": [
+      "delivery",
+      "quality uncertainty",
+      "return concern",
+      "reviews/trust",
+      "product information"
+    ],
+    "major_uncertainties": [
+      "quality vs price",
+      "return hassle",
+      "review trust",
+      "fabric/feel",
+      "availability"
+    ],
+    "workarounds": [],
+    "external_research": [],
+    "purchase_outcomes": {
+      "purchased": 184,
+      "unknown": 561,
+      "abandoned": 61,
+      "postponed": 11,
+      "still considering": 8
+    },
+    "dominant_opportunity_themes": [
+      "Users cannot tell from listing information how a product will look or feel in re",
+      "Users remain uncertain about how a garment will fit despite having some size inf",
+      "Price and value-for-money concerns appear alongside hesitation, even when users "
+    ],
+    "evidence_ids": [
+      "go-46323c64128d14f7",
+      "go-b1aeade555aa77bd",
+      "go-0236cbb3ae28f772",
+      "go-84866f3a60196d32",
+      "go-de0e6ab4c6cebabf",
+      "go-bb7b3d4cf8202173",
+      "go-21a72c4a513a8153",
+      "go-f04931c3c61776cb",
+      "go-464edd4ca0338f9a",
+      "go-dbf12c87c33f8d67",
+      "go-6d0ce02258b1158e",
+      "go-339dff9b5660896c",
+      "go-97cd12fa9edd3eac",
+      "go-eaae20dd0233a06a",
+      "go-d1a0147a0a0a49d8",
+      "go-ccb8ef615c3824f3",
+      "go-2eb7bc8db4a82691",
+      "go-d4aa01fc42e4df67",
+      "go-aeddf45c7bb02634",
+      "go-11f1028fd8e5f3f2",
+      "go-7dad1618f6054b18",
+      "go-ddb872cf7888872e",
+      "go-8b103dfc7e571c9d",
+      "go-ac941af4af736776",
+      "go-8c226786962fb3f6",
+      "go-852a54fcdf7524d8",
+      "go-7d22f9ed95173f50",
+      "go-5eafc99d2373d690",
+      "go-f74223c4ffea66a3",
+      "go-23909677a72c29bf",
+      "go-a589933e4aee6954",
+      "go-64705218eaede2b7",
+      "go-ca3b20092ec20f55",
+      "go-33ab60ec37233cd8",
+      "go-b638e4b64df12d9b",
+      "go-b6ae3d0d55828afe",
+      "go-f7d9d1fa25b06ffe",
+      "go-c71c8558a78ee2b9",
+      "go-dd06684deff1d1a2",
+      "go-14d113abca0715db"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "fit-conscious-shoppers",
+    "name": "fit-conscious shoppers",
+    "definition": "Language about fit or size as part of the decision.",
+    "observation_count": 312,
+    "percentage": 19.38,
+    "major_barriers": [
+      "fit",
+      "size",
+      "return concern",
+      "delivery",
+      "quality uncertainty"
+    ],
+    "major_uncertainties": [
+      "fit",
+      "size",
+      "return hassle",
+      "quality vs price",
+      "fabric/feel"
+    ],
+    "workarounds": [
+      "asking friends/family",
+      "checking another ecommerce platform",
+      "checking measurements manually",
+      "waiting",
+      "comparing alternatives"
+    ],
+    "external_research": [
+      "friends/family",
+      "other ecommerce",
+      "Instagram",
+      "Reddit",
+      "offline store"
+    ],
+    "purchase_outcomes": {
+      "unknown": 138,
+      "purchased": 131,
+      "abandoned": 8,
+      "still considering": 32,
+      "postponed": 3
+    },
+    "dominant_opportunity_themes": [
+      "Users remain uncertain about how a garment will fit despite having some size inf",
+      "Users cannot tell from listing information how a product will look or feel in re"
+    ],
+    "evidence_ids": [
+      "go-d9f5cb602e3b177f",
+      "go-d342e5a3d35ef147",
+      "go-8d3af6cd03fe3850",
+      "go-3ae9f676cafbcba5",
+      "go-5a3c2f3f490db3b6",
+      "go-95a45f84e98e07f9",
+      "go-23e59f801e9f766c",
+      "go-f681a952cb63f31f",
+      "go-e2239acb3fe74144",
+      "go-382dfd33f3b5cfb1",
+      "go-cc45ca414cc4d826",
+      "go-84b7ca4ff4736cfe",
+      "go-22689db4ad911d00",
+      "go-6e52daa52c1fb6ab",
+      "go-d3b3a5fdfe4ed10a",
+      "go-13db67ccb4c6feba",
+      "go-778894c7028abc9f",
+      "go-521b62d46e0bae8f",
+      "go-a3cd462c90d83508",
+      "go-009ecf50424f2490",
+      "go-9359dfe16479a8d6",
+      "go-ae83bed58f9e0760",
+      "go-5b76babbb71ee41f",
+      "go-771dd70e7ec2b82c",
+      "go-204ba7a26c0257e3",
+      "go-0ee79eb04b307d4e",
+      "go-e59f0dd4700c7409",
+      "go-2505fe9da9c2e530",
+      "go-96628d431d34f80e",
+      "go-1a0c95fc238aa770",
+      "go-4caf8875b47e83e2",
+      "go-052f7c7607514877",
+      "go-8309fc71e4fef383",
+      "go-ec1a19ebb37f2e94",
+      "go-6b80315fdb23c766",
+      "ap-4b6d577ac9b89c3f",
+      "ap-bb9fdd64ec2e3e04",
+      "ap-111ffe3817c936f5",
+      "ap-d920d6011087b8ce",
+      "ap-88be5a4bc1bd6b3c"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "research-heavy-shoppers",
+    "name": "research-heavy shoppers",
+    "definition": "Language about looking things up, photos, measurements, or leaving the app.",
+    "observation_count": 293,
+    "percentage": 18.2,
+    "major_barriers": [
+      "delivery",
+      "return concern",
+      "comparison",
+      "quality uncertainty",
+      "price"
+    ],
+    "major_uncertainties": [
+      "return hassle",
+      "better alternative",
+      "quality vs price",
+      "fit",
+      "size"
+    ],
+    "workarounds": [
+      "checking another ecommerce platform",
+      "asking friends/family",
+      "waiting",
+      "comparing alternatives",
+      "visiting an offline store"
+    ],
+    "external_research": [
+      "other ecommerce",
+      "friends/family",
+      "offline store",
+      "Instagram",
+      "Reddit"
+    ],
+    "purchase_outcomes": {
+      "unknown": 71,
+      "purchased": 102,
+      "still considering": 89,
+      "abandoned": 16,
+      "postponed": 15
+    },
+    "dominant_opportunity_themes": [
+      "Users remain uncertain about how a garment will fit despite having some size inf",
+      "Users cannot tell from listing information how a product will look or feel in re",
+      "Price and value-for-money concerns appear alongside hesitation, even when users "
+    ],
+    "evidence_ids": [
+      "go-3c0793e5084c1c3e",
+      "go-56dc195b8a1f46c8",
+      "go-a1363b97678478bb",
+      "go-fd498d06f3eef09a",
+      "go-d277435ea1f64110",
+      "go-cb728acc1d922b6c",
+      "go-2ed2c14bc59a00a7",
+      "go-8fea26f00e0588e5",
+      "go-4e0b18ae49c78e82",
+      "go-065e11428fef63c3",
+      "go-071c7304f008ec2e",
+      "go-51cae484ca6419a9",
+      "go-43dc405e82ce46c4",
+      "go-127a2415e476301d",
+      "go-e2239acb3fe74144",
+      "go-e5eec3d16c0182e0",
+      "go-6e52daa52c1fb6ab",
+      "go-fb0ed61c65917f2f",
+      "go-0125a458395f241c",
+      "go-b87481f2c79320f7",
+      "go-41326009d74b7fc7",
+      "go-f9bb285f4b1ad480",
+      "go-8c8ae63dbe305764",
+      "go-521b62d46e0bae8f",
+      "go-d972ccc36a13721c",
+      "go-a7f90547fd25d4ad",
+      "go-ac4dbc0ab841f89e",
+      "go-fac914f98d419da8",
+      "go-a9cf32113d55254c",
+      "go-39b92a4ddf650ea1",
+      "go-afe6de5a1484dcc2",
+      "go-885120885d71770e",
+      "go-215117d0c7807032",
+      "go-8954a35edb9f4619",
+      "go-14ac6dedf837167a",
+      "go-0264654036e9ea7c",
+      "go-19021587a4e49e9e",
+      "ap-f12619538d669e1e",
+      "ap-7cdccdf7be037bef",
+      "ap-df43bfc8e89d7ab7"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "price-sensitive-shoppers",
+    "name": "price-sensitive shoppers",
+    "definition": "Language about price, value, discounts, or waiting for sales.",
+    "observation_count": 261,
+    "percentage": 16.21,
+    "major_barriers": [
+      "price",
+      "quality uncertainty",
+      "delivery",
+      "return concern",
+      "material/fabric uncertainty"
+    ],
+    "major_uncertainties": [
+      "quality vs price",
+      "return hassle",
+      "fabric/feel",
+      "size",
+      "better alternative"
+    ],
+    "workarounds": [
+      "checking another ecommerce platform",
+      "asking friends/family",
+      "waiting",
+      "comparing alternatives",
+      "visiting an offline store"
+    ],
+    "external_research": [
+      "other ecommerce",
+      "friends/family",
+      "offline store",
+      "Reddit",
+      "Instagram"
+    ],
+    "purchase_outcomes": {
+      "abandoned": 8,
+      "unknown": 143,
+      "purchased": 84,
+      "still considering": 23,
+      "postponed": 3
+    },
+    "dominant_opportunity_themes": [
+      "Users remain uncertain about how a garment will fit despite having some size inf",
+      "Users cannot tell from listing information how a product will look or feel in re",
+      "Price and value-for-money concerns appear alongside hesitation, even when users "
+    ],
+    "evidence_ids": [
+      "go-9623193bcbe57025",
+      "go-745d89722b6c9be0",
+      "go-97878e04ae832476",
+      "go-0521c56bc2d6d05e",
+      "go-a3be797aec3cc8c3",
+      "go-89e3ccdcdb238790",
+      "go-d9f5cb602e3b177f",
+      "go-a901dbaa471af17e",
+      "go-5353fad740cde0a3",
+      "go-1d593cbbd6504709",
+      "go-5c8ecc12c0684355",
+      "go-73f584bc8abd39a0",
+      "go-b8a5d1e43d1a648f",
+      "go-9d9c70279090ae29",
+      "go-76240e6d0b19549e",
+      "go-ae112afcc6792701",
+      "go-b7f2089edde7b16e",
+      "go-2279ff319a8a097e",
+      "go-9abda7c496094285",
+      "go-4d7dc336848386dd",
+      "go-a57b1e4b3e29eab9",
+      "go-05587f0bc0676d62",
+      "go-73e78a692964032c",
+      "go-4e0b18ae49c78e82",
+      "go-511db5d5655b64de",
+      "go-b4a3a1470c0ced3a",
+      "go-11cbed5c7a19fa37",
+      "go-c87c009f6cf04bf8",
+      "go-e2cf1e7a0698db3a",
+      "go-d8c5ee3b3a90a59b",
+      "go-af56132213173521",
+      "go-cc45ca414cc4d826",
+      "go-d9c8359d6d62c8b5",
+      "go-e5eec3d16c0182e0",
+      "go-c6bd2d18ab3c3c27",
+      "go-2ed0c2c6c9addcec",
+      "go-dc5da72153b206bf",
+      "go-d4bb62c06d3a8854",
+      "go-70b356800a7c2314",
+      "go-c5f483ae81410d19"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "brand-loyal-shoppers",
+    "name": "brand-loyal shoppers",
+    "definition": "Language about brand, authenticity, or originals.",
+    "observation_count": 146,
+    "percentage": 9.07,
+    "major_barriers": [
+      "return concern",
+      "delivery",
+      "quality uncertainty",
+      "price",
+      "size"
+    ],
+    "major_uncertainties": [
+      "return hassle",
+      "quality vs price",
+      "size",
+      "better alternative",
+      "fit"
+    ],
+    "workarounds": [
+      "checking another ecommerce platform",
+      "asking friends/family",
+      "visiting an offline store",
+      "waiting",
+      "Instagram"
+    ],
+    "external_research": [
+      "other ecommerce",
+      "friends/family",
+      "offline store",
+      "Instagram",
+      "Reddit"
+    ],
+    "purchase_outcomes": {
+      "unknown": 59,
+      "purchased": 60,
+      "abandoned": 3,
+      "still considering": 23,
+      "postponed": 1
+    },
+    "dominant_opportunity_themes": [
+      "Users remain uncertain about how a garment will fit despite having some size inf",
+      "Users cannot tell from listing information how a product will look or feel in re",
+      "Price and value-for-money concerns appear alongside hesitation, even when users "
+    ],
+    "evidence_ids": [
+      "go-b1cdc65f56305f18",
+      "go-745d89722b6c9be0",
+      "go-017bb41dfebff1af",
+      "go-5843d2bf0f5a49a4",
+      "go-9d9c70279090ae29",
+      "go-0e0b82935e7ddc57",
+      "go-c694f6274b435add",
+      "go-f342d349dbc6acf9",
+      "go-b168f4920e562547",
+      "go-e8cdd321b20ac465",
+      "go-e2cf1e7a0698db3a",
+      "go-f54eabf83a3545ef",
+      "go-0bdbc9b623c0aa20",
+      "go-31921b829885f7c6",
+      "go-778894c7028abc9f",
+      "go-a3d7064fffc44d91",
+      "go-9dcf773d5e0d0bee",
+      "go-559076bbb2154a95",
+      "go-ac4dbc0ab841f89e",
+      "go-814c99308d61c9e4",
+      "go-4f8aba6d08263529",
+      "go-f7889123d971aff0",
+      "go-e8288c7a1ee41f7a",
+      "go-2f42ebe70518fc3b",
+      "go-c77289081bf03866",
+      "go-948db81c5b2af5fe",
+      "go-ef0d16deb2d9c64f",
+      "go-a881eec8db3f6195",
+      "go-efbec045e1f572ac",
+      "go-0057ea65912bfdd8",
+      "go-4aa6bcffbffa1ee3",
+      "go-e1733258bb6cb0b5",
+      "go-53ef90c1ef43d08f",
+      "ap-d4ff889cc7aa116e",
+      "ap-fb593651b0b5b8cc",
+      "ap-18e56f7424469f45",
+      "ap-8b09996b00f503b5",
+      "ap-df43bfc8e89d7ab7",
+      "ap-5827f882b9dca92b",
+      "ap-60c517684701f423"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "comparison-heavy-shoppers",
+    "name": "comparison-heavy shoppers",
+    "definition": "Language about comparing products or platforms.",
+    "observation_count": 130,
+    "percentage": 8.07,
+    "major_barriers": [
+      "comparison",
+      "quality uncertainty",
+      "delivery",
+      "price",
+      "return concern"
+    ],
+    "major_uncertainties": [
+      "better alternative",
+      "quality vs price",
+      "return hassle",
+      "fit",
+      "fabric/feel"
+    ],
+    "workarounds": [
+      "checking another ecommerce platform",
+      "comparing alternatives",
+      "asking friends/family",
+      "Reddit",
+      "Instagram"
+    ],
+    "external_research": [
+      "other ecommerce",
+      "friends/family",
+      "Reddit",
+      "Instagram",
+      "offline store"
+    ],
+    "purchase_outcomes": {
+      "still considering": 88,
+      "unknown": 11,
+      "purchased": 22,
+      "abandoned": 8,
+      "postponed": 1
+    },
+    "dominant_opportunity_themes": [
+      "Users remain uncertain about how a garment will fit despite having some size inf",
+      "Users cannot tell from listing information how a product will look or feel in re",
+      "Price and value-for-money concerns appear alongside hesitation, even when users "
+    ],
+    "evidence_ids": [
+      "go-79e39482aa6123b1",
+      "go-3c0793e5084c1c3e",
+      "go-a1363b97678478bb",
+      "go-8fea26f00e0588e5",
+      "go-4e0b18ae49c78e82",
+      "go-dc43d799ca802f6c",
+      "go-065e11428fef63c3",
+      "go-51cae484ca6419a9",
+      "go-43dc405e82ce46c4",
+      "go-454ce2128beb2df1",
+      "go-e5eec3d16c0182e0",
+      "go-6e52daa52c1fb6ab",
+      "go-0125a458395f241c",
+      "go-99dc53e01cf1add3",
+      "go-e2d38333bdfcb4dd",
+      "go-c055ae2b6340f45a",
+      "go-9d0854be74186a9c",
+      "go-fe2a7213321bbbc3",
+      "go-e853310be278b29b",
+      "go-39b92a4ddf650ea1",
+      "go-885120885d71770e",
+      "go-48e5805c516c1ad5",
+      "go-0264654036e9ea7c",
+      "go-3bb554e6e8217f11",
+      "go-60e5b65ee3ac1168",
+      "ap-f12619538d669e1e",
+      "ap-7cdccdf7be037bef",
+      "ap-305aabbbe6638a7b",
+      "ap-d4cee2c475bf8ba6",
+      "ap-481886ec01faa4c8",
+      "ap-016d93876d8b4f2a",
+      "ap-e600af2999f609d0",
+      "ap-981bf3231f3c0868",
+      "ap-4072a14e1b5a33b0",
+      "ap-8d0b37434c58a79d",
+      "ap-40ffe05b94478e99",
+      "ap-2aadbda35c0260d3",
+      "ap-33b929fa67e034ac",
+      "ap-5e6c2d7bfe7d3da6",
+      "ap-b7ca3c2628716e29"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "occasion-driven-shoppers",
+    "name": "occasion-driven shoppers",
+    "definition": "Language about events, weddings, office, or timed need.",
+    "observation_count": 58,
+    "percentage": 3.6,
+    "major_barriers": [
+      "occasion",
+      "delivery",
+      "return concern",
+      "fit",
+      "quality uncertainty"
+    ],
+    "major_uncertainties": [
+      "occasion suitability",
+      "return hassle",
+      "fit",
+      "quality vs price",
+      "size"
+    ],
+    "workarounds": [
+      "asking friends/family",
+      "checking another ecommerce platform",
+      "waiting",
+      "visiting an offline store",
+      "adding alternatives to wishlist"
+    ],
+    "external_research": [
+      "friends/family",
+      "other ecommerce",
+      "offline store",
+      "Instagram"
+    ],
+    "purchase_outcomes": {
+      "unknown": 22,
+      "purchased": 28,
+      "still considering": 7,
+      "postponed": 1
+    },
+    "dominant_opportunity_themes": [
+      "Users remain uncertain about how a garment will fit despite having some size inf",
+      "Users cannot tell from listing information how a product will look or feel in re"
+    ],
+    "evidence_ids": [
+      "go-27404417f32efb11",
+      "go-cbc432fd63c35c68",
+      "go-521b62d46e0bae8f",
+      "go-a0a22ca77adf4b83",
+      "go-8f40f28c4c28751b",
+      "ap-37c7244463a8525c",
+      "ap-9cb9a05a4c270ac9",
+      "ap-8e038e5aadd11ccc",
+      "ap-09bc066834810e3a",
+      "ap-d4cee2c475bf8ba6",
+      "ap-e5f79d2506cdb9b8",
+      "ap-481886ec01faa4c8",
+      "ap-de7904b09c4b9aca",
+      "ap-129cffd32c0149eb",
+      "ap-841f06ecab944489",
+      "ap-a65d59b8c136c79b",
+      "ap-827eebac17cc69e3",
+      "ap-b6087450fc57b4aa",
+      "ap-a134983d504527f3",
+      "ap-c00a6c3e9eead03c",
+      "ap-173a2813d5f720f7",
+      "ap-88333b236903d1ac",
+      "ap-a2c182c7c02ee008",
+      "ap-98f175c986a87234",
+      "ap-8a58dc5606120b21",
+      "ap-aa026df4eb59a0d4",
+      "ap-463707589e69624e",
+      "ap-d7d7685f43134d10",
+      "ap-9d40b92d3d4fdb88",
+      "ap-e212280d61e1ba18",
+      "ap-01742c9cda202626",
+      "ap-a030bc2722b44680",
+      "ap-9b553f9048b2436a",
+      "ap-edf422e277a65c97",
+      "ap-48229207bc78e8be",
+      "ap-3fcc61ada8898917",
+      "ap-c3ffb3f06c490866",
+      "ap-659385029b88cc3b",
+      "ap-4311929d1dc31a54",
+      "re-1e03ba1cc0b608fc"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "exploratory-browsers",
+    "name": "exploratory browsers",
+    "definition": "Language about browsing, inspiration, or just looking.",
+    "observation_count": 15,
+    "percentage": 0.93,
+    "major_barriers": [
+      "quality uncertainty",
+      "material/fabric uncertainty",
+      "price",
+      "size",
+      "occasion"
+    ],
+    "major_uncertainties": [
+      "quality vs price",
+      "fabric/feel",
+      "size",
+      "occasion suitability",
+      "fit"
+    ],
+    "workarounds": [
+      "asking friends/family",
+      "checking another ecommerce platform",
+      "comparing alternatives"
+    ],
+    "external_research": [
+      "friends/family",
+      "other ecommerce"
+    ],
+    "purchase_outcomes": {
+      "unknown": 15
+    },
+    "dominant_opportunity_themes": [
+      "Users remain uncertain about how a garment will fit despite having some size inf",
+      "Users cannot tell from listing information how a product will look or feel in re"
+    ],
+    "evidence_ids": [
+      "go-7046a4c954d3c8c1",
+      "go-8c8ae63dbe305764",
+      "go-521b62d46e0bae8f",
+      "go-687197d538138837",
+      "go-82aa5b3e49c7a75e",
+      "go-12e2073b90f43a18",
+      "ap-9cb9a05a4c270ac9",
+      "ap-9836b1d5cc9c21c4",
+      "ap-01c92356c1381a6a",
+      "ap-18e56f7424469f45",
+      "ap-31fd934705a55fda",
+      "ap-17deb6c69555c1cc",
+      "ap-18f90617ba3e3f42",
+      "ap-dd97e1c275a0f3f3",
+      "re-7abb2d362093a163"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "high-wishlist-users",
+    "name": "high-wishlist users",
+    "definition": "Language that explicitly mentions wishlist or saved items.",
+    "observation_count": 8,
+    "percentage": 0.5,
+    "major_barriers": [
+      "price",
+      "size",
+      "return concern",
+      "quality uncertainty",
+      "delivery"
+    ],
+    "major_uncertainties": [
+      "size",
+      "return hassle",
+      "quality vs price",
+      "review trust",
+      "occasion suitability"
+    ],
+    "workarounds": [
+      "adding alternatives to wishlist",
+      "asking friends/family",
+      "waiting"
+    ],
+    "external_research": [
+      "friends/family"
+    ],
+    "purchase_outcomes": {
+      "still considering": 5,
+      "postponed": 1,
+      "unknown": 1,
+      "purchased": 1
+    },
+    "dominant_opportunity_themes": [
+      "Users cannot tell from listing information how a product will look or feel in re"
+    ],
+    "evidence_ids": [
+      "go-a9cf32113d55254c",
+      "ap-ab3fd2d7e5b5bb67",
+      "ap-a65d59b8c136c79b",
+      "ap-308b878ee466ceff",
+      "ap-7e71452897523ebf",
+      "ap-6cb79f22f00369c7",
+      "ap-45034f40022cce4a",
+      "re-86adc5f963e16940"
+    ],
+    "discovered": true
+  }
+]

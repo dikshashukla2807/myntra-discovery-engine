@@ -1,0 +1,26 @@
+{
+  "opportunity_id": "opp-11",
+  "selected_opportunity": "Users remain uncertain about how a garment will fit despite having some size information, and some seek extra measurements, photos, or reviews before buying.",
+  "target_segment": "research-heavy shoppers",
+  "research_objective": "Understand what actually happens between expressing interest (save/wishlist) and buying or not buying, for this opportunity area — without validating a solution.",
+  "interview_questions": [
+    "Tell me about the last fashion product you wanted to buy but didn't.",
+    "Walk me through how that product ended up saved, wishlisted, or sitting in your bag.",
+    "What made you save it in the first place?",
+    "What happened between saving it and deciding whether to buy?",
+    "What information were you still looking for?",
+    "Where did you go to find that information, if anywhere?",
+    "Did you look anywhere outside Myntra? If yes, what were you trying to learn?",
+    "If you compared it with something else, how did you compare?",
+    "What did you eventually do, and what made that the decision?",
+    "Tell me about a time you did buy something you had saved. What was different?",
+    "When you hesitate, what usually makes you wait versus drop it altogether?",
+    "Who, if anyone, do you involve before you buy clothes online?"
+  ],
+  "notes": [
+    "Ask for the last real episode, not hypotheticals.",
+    "Follow the story: trigger → save → wait → research → decide.",
+    "Do not pitch a feature. The engine identifies opportunity areas; interviews validate the problem."
+  ],
+  "claim_type": "HYPOTHESIS"
+}

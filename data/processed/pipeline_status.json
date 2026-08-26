@@ -1,0 +1,140 @@
+{
+  "last_run": "2026-08-26T16:32:04Z",
+  "started_at": "2026-08-26T16:31:54Z",
+  "stages": [
+    {
+      "name": "collection",
+      "status": "ok",
+      "processed": 4099,
+      "successful": 4099,
+      "failed": 0,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:31:54Z"
+    },
+    {
+      "name": "validation",
+      "status": "ok",
+      "processed": 4099,
+      "successful": 4099,
+      "failed": 0,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:31:54Z"
+    },
+    {
+      "name": "cleaning",
+      "status": "ok",
+      "processed": 4099,
+      "successful": 4099,
+      "failed": 0,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:31:55Z"
+    },
+    {
+      "name": "language",
+      "status": "ok",
+      "processed": 4099,
+      "successful": 4099,
+      "failed": 0,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:32:02Z"
+    },
+    {
+      "name": "duplicates",
+      "status": "ok",
+      "processed": 4099,
+      "successful": 2311,
+      "failed": 1788,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:32:02Z"
+    },
+    {
+      "name": "spam",
+      "status": "ok",
+      "processed": 4099,
+      "successful": 2311,
+      "failed": 632,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:32:02Z"
+    },
+    {
+      "name": "relevance",
+      "status": "ok",
+      "processed": 2311,
+      "successful": 1610,
+      "failed": 701,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:32:03Z"
+    },
+    {
+      "name": "extraction",
+      "status": "ok",
+      "processed": 1610,
+      "successful": 1610,
+      "failed": 0,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:32:04Z"
+    },
+    {
+      "name": "embeddings",
+      "status": "ok",
+      "processed": 1610,
+      "successful": 1610,
+      "failed": 0,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:32:04Z"
+    },
+    {
+      "name": "clustering",
+      "status": "ok",
+      "processed": 1610,
+      "successful": 1610,
+      "failed": 0,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:32:04Z"
+    },
+    {
+      "name": "themes",
+      "status": "ok",
+      "processed": 12,
+      "successful": 12,
+      "failed": 0,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:32:04Z"
+    },
+    {
+      "name": "opportunity_scoring",
+      "status": "ok",
+      "processed": 12,
+      "successful": 12,
+      "failed": 0,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-26T16:32:04Z"
+    }
+  ],
+  "dataset_label": "public_source",
+  "weights": {
+    "evidence_strength": 0.12,
+    "frequency": 0.1,
+    "purchase_association": 0.18,
+    "user_severity": 0.1,
+    "segment_concentration": 0.08,
+    "source_diversity": 0.08,
+    "workaround_intensity": 0.12,
+    "potential_user_value": 0.08,
+    "potential_business_relevance": 0.08,
+    "product_solvability": 0.06
+  },
+  "note": "Each stage writes artifacts under data/. Original text is never overwritten."
+}

@@ -1,0 +1,47 @@
+{
+  "source": "reddit",
+  "target": 300,
+  "collected": 300,
+  "collected_at": "2026-08-26T16:30:24Z",
+  "query_categories": [
+    "myntra_wishlist",
+    "myntra_saved",
+    "myntra_didnt_buy",
+    "myntra_purchase_decision",
+    "myntra_shopping_experience",
+    "myntra_sizing",
+    "myntra_fit",
+    "myntra_quality",
+    "myntra_returns",
+    "myntra_reviews",
+    "myntra_comparison",
+    "myntra_product_research",
+    "myntra_worth_buying",
+    "online_fashion_wishlist",
+    "online_fashion_purchase_decision",
+    "online_fashion_uncertainty",
+    "online_fashion_fit",
+    "online_fashion_quality",
+    "online_fashion_comparison",
+    "fashion_shopping_behavior",
+    "fashion_purchase_postponement",
+    "fashion_purchase_abandonment"
+  ],
+  "archive_queries": [
+    "myntra_broad",
+    "myntra_wishlist",
+    "myntra_fit",
+    "myntra_quality",
+    "myntra_return",
+    "online_fashion"
+  ],
+  "subreddits": [
+    "india",
+    "AskIndia",
+    "IndianFashionAddicts",
+    "IndiaSpeaks"
+  ],
+  "path": "/workspace/data/raw/reddit/observations.jsonl",
+  "collection_method": "arctic_shift_public_archive",
+  "note": "Live Reddit search JSON was blocked (403). Public Arctic Shift archive used. Actual count may be below target. No records fabricated."
+}

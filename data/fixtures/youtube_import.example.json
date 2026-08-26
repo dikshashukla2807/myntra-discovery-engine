@@ -1,0 +1,16 @@
+{
+  "comment": "Example YouTube import schema. Replace with real public comments if you have a YouTube Data API export. Do not add synthetic comments to the public-source dataset.",
+  "observations": [
+    {
+      "source": "youtube",
+      "source_id": "REPLACE_WITH_REAL_COMMENT_ID",
+      "source_url": "https://www.youtube.com/watch?v=VIDEO_ID&lc=COMMENT_ID",
+      "date": "2026-01-01T00:00:00Z",
+      "title": "Video title from the public video",
+      "text": "Paste the original public comment text here.",
+      "dataset_label": "public_source",
+      "video_id": "VIDEO_ID",
+      "channel": "channel name"
+    }
+  ]
+}

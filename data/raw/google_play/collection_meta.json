@@ -1,0 +1,9 @@
+{
+  "source": "google_play",
+  "app_id": "com.myntra.android",
+  "target": 3000,
+  "collected": 3000,
+  "collected_at": "2026-08-26T16:15:57Z",
+  "path": "/workspace/data/raw/google_play/reviews.jsonl",
+  "note": "Public user-generated content collected from Google Play. Counts are actual, not padded."
+}
