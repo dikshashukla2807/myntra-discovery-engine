@@ -12,9 +12,12 @@ DATA_DIR = ROOT / "data"
 RAW_DIR = DATA_DIR / "raw"
 CLEAN_DIR = DATA_DIR / "clean"
 PROCESSED_DIR = DATA_DIR / "processed"
+PROCESSED_PUBLIC_DIR = DATA_DIR / "processed"
+PROCESSED_DEMO_DIR = DATA_DIR / "processed_demo"
+ACTIVE_MODE_PATH = DATA_DIR / "active_mode.json"
 EXPORTS_DIR = DATA_DIR / "exports"
 FIXTURES_DIR = DATA_DIR / "fixtures"
-AI_CACHE_DIR = PROCESSED_DIR / "ai_cache"
+AI_CACHE_DIR = DATA_DIR / "processed" / "ai_cache"
 
 MYNTRA_PLAY_APP_ID = "com.myntra.android"
 MYNTRA_APP_STORE_ID = "907394059"
@@ -57,7 +60,7 @@ REDDIT_TARGET = _int("REDDIT_TARGET", 300)
 YOUTUBE_TARGET = _int("YOUTUBE_TARGET", 500)
 SAMPLE_SIZE = _int("SAMPLE_SIZE", 0)
 FORCE_REPROCESS = _bool("FORCE_REPROCESS", False)
-CLUSTER_COUNT = _int("CLUSTER_COUNT", 12)
+CLUSTER_COUNT = _int("CLUSTER_COUNT", 8)
 
 API_HOST = os.getenv("API_HOST", "127.0.0.1")
 API_PORT = _int("API_PORT", 43124)
@@ -77,7 +80,8 @@ def ensure_dirs() -> None:
         RAW_DIR / "reddit",
         RAW_DIR / "youtube",
         CLEAN_DIR,
-        PROCESSED_DIR,
+        PROCESSED_PUBLIC_DIR,
+        PROCESSED_DEMO_DIR,
         EXPORTS_DIR,
         FIXTURES_DIR,
         AI_CACHE_DIR,

@@ -154,14 +154,15 @@ def extract_behavior(text: str) -> dict:
         return False
 
     intent = "unclear"
-    if tag("intent:purchased", PURCHASED):
-        intent = "purchased"
-    elif tag("intent:abandoned", ABANDON):
+    bought = tag("intent:purchased", PURCHASED)
+    postponed = tag("intent:postponed", POSTPONE)
+    abandoned = tag("intent:abandoned", ABANDON)
+    if bought and not postponed and not abandoned:
+        intent = "post-purchase"
+    elif abandoned:
         intent = "abandoned"
-    elif tag("intent:postponed", POSTPONE):
+    elif postponed:
         intent = "postponed"
-    elif tag("intent:return", RETURNS) and tag("intent:post-purchase-signal", PURCHASED):
-        intent = "return/exchange"
     elif tag("intent:return", RETURNS):
         intent = "return/exchange"
     elif tag("intent:purchase_intent", PURCHASE_INTENT):
@@ -176,13 +177,9 @@ def extract_behavior(text: str) -> dict:
         intent = "inspiration"
     elif tag("intent:browsing", BROWSE):
         intent = "browsing"
-    elif tag("intent:post-purchase", PURCHASED):
-        intent = "post-purchase"
 
-    if intent == "purchased" and not tag("post-purchase-extra", RETURNS):
-        # Bought + quality/fit talk is still post-purchase evidence of the journey.
-        if tag("quality", QUALITY) or tag("fit", FIT):
-            intent = "post-purchase"
+    if intent == "post-purchase" and tag("intent:return", RETURNS):
+        intent = "return/exchange"
 
     wishlist = "no evidence"
     if tag("wishlist", WISHLIST_EXPLICIT):

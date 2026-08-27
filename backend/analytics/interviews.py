@@ -46,7 +46,22 @@ def generate_interview_plan(opportunity: dict[str, Any], segment: str | None = N
     return {
         "opportunity_id": opportunity.get("opportunity_id"),
         "selected_opportunity": opportunity.get("title"),
-        "target_segment": segment or (opportunity.get("user_segment") or ["unspecified"])[0],
+        "target_segment": (
+            segment
+            or (
+                (opportunity.get("user_segment") or ["Insufficient evidence."])[0]
+            )
+        ),
+        "what_we_know": opportunity.get("what_we_know")
+        or opportunity.get("description")
+        or "Insufficient evidence.",
+        "what_we_dont_know": opportunity.get("research_gap")
+        or "Whether this pattern actually prevents 30-day wishlist conversion.",
+        "research_hypothesis": (
+            "If this barrier is a true decision blocker for high-intent / high-wishlist users, "
+            "we should hear it unprompted in stories of products they wanted but did not buy. "
+            "This remains a hypothesis until interviews."
+        ),
         "research_objective": (
             "Understand what actually happens between expressing interest (save/wishlist) "
             "and buying or not buying, for this opportunity area — without validating a solution."
@@ -55,7 +70,6 @@ def generate_interview_plan(opportunity: dict[str, Any], segment: str | None = N
         "notes": [
             "Ask for the last real episode, not hypotheticals.",
             "Follow the story: trigger → save → wait → research → decide.",
-            "Do not pitch a feature. The engine identifies opportunity areas; interviews validate the problem.",
+            "Do not pitch a feature. The engine stops at opportunity + evidence + research gap.",
         ],
-        "claim_type": "HYPOTHESIS",
     }

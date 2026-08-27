@@ -180,19 +180,14 @@ NON_PURCHASE_OUTCOMES = {
     "postponed",
     "abandoned",
     "purchased alternative",
-    "still considering",
 }
 
-# Weights for opportunity ranking. Documented in the UI and scoring module.
+# Six comparison scores, each 1–5. Weights must sum to 1.
 OPPORTUNITY_WEIGHTS = {
-    "evidence_strength": 0.12,
-    "frequency": 0.10,
-    "purchase_association": 0.18,
-    "user_severity": 0.10,
-    "segment_concentration": 0.08,
-    "source_diversity": 0.08,
-    "workaround_intensity": 0.12,
-    "potential_user_value": 0.08,
-    "potential_business_relevance": 0.08,
-    "product_solvability": 0.06,
+    "evidence_strength": 0.20,
+    "frequency": 0.15,
+    "purchase_association": 0.25,
+    "user_severity": 0.15,
+    "workaround_intensity": 0.15,
+    "segment_relevance": 0.10,
 }

@@ -14,20 +14,17 @@ It also does **not** answer “what feature should Myntra build?” That decisio
 
 ## What you get
 
-A PM dashboard with:
+A 5-page PM research tool:
 
-1. Overview
-2. Data Explorer
-3. Behavioral Signals
-4. Opportunity Landscape
-5. Segments
-6. Evidence Explorer (opportunity → theme → supporting/counter evidence → original source)
-7. Research Gaps
-8. Interview Planner
-9. Pipeline / Data Health
-10. Discovery Report (HTML/JSON/CSV export)
+1. Overview — funnel, source counts, top opportunities
+2. Evidence Explorer — original comments + extraction + source URL
+3. Opportunity Landscape — ranked table
+4. Opportunity detail — evidence, quantification, counter-evidence, gap
+5. Research handoff — what we know / don’t / interview questions
 
-Every major insight is classified as **FACT / PATTERN / HYPOTHESIS / OPPORTUNITY**. Associations are described as *observed alongside*, not as causes.
+It stops at **opportunity + evidence + research gap**. It does not recommend a feature.
+
+Associations are described as *observed alongside*, not as causes.
 
 ## Dataset labels
 
@@ -43,18 +40,17 @@ The system does **not** claim that Play/App Store/Reddit/YouTube comments are in
 ## Architecture
 
 ```
-SOURCE COLLECTION → RAW JSONL → VALIDATION → CLEANING → LANGUAGE
- → DEDUPE → SPAM/LOW-VALUE → RELEVANCE → BEHAVIORAL EXTRACTION
- → EMBEDDINGS (TF-IDF) → CLUSTERING → THEMES → OPPORTUNITY SCORING
- → RESEARCH GAPS → INTERVIEW PLAN
+PUBLIC UGC → COLLECT → CLEAN + DEDUPE → RELEVANCE → BEHAVIORAL EXTRACTION
+ → THEMES (5–10) → QUANTIFY IN CODE → RANK (six scores, 1–5)
+ → EVIDENCE + COUNTER-EVIDENCE → RESEARCH HANDOFF
 ```
 
-Each stage writes artifacts under `data/`. `text_original` is never overwritten.
+`text_original` is never overwritten. Demo analysis is stored in `data/processed_demo/` so it cannot overwrite public-source results.
 
 - **Backend:** Python FastAPI (`:43124`)
 - **Frontend:** Next.js + TypeScript + Tailwind (`:43125`)
-- **AI:** Optional OpenAI-compatible LLM. If no key is present, heuristic classifiers + sklearn clustering still run.
-- **YouTube / blocked sources:** CSV/JSON import is supported. Missing records are **not** fabricated.
+- **AI:** Optional LLM. Without a key, heuristics + TF-IDF clustering still run.
+- **Default sources:** Google Play + Reddit. YouTube via API or import. App Store collector is optional.
 
 ## Collection targets vs actuals
 
@@ -63,11 +59,11 @@ Targets are caps, not quotas:
 | Source | Target | Method |
 | --- | --- | --- |
 | Google Play (`com.myntra.android`) | ~3,000 | Public reviews via `google-play-scraper` |
-| Apple App Store (`id907394059`) | ~1,000 | Public iTunes Customer Reviews RSS |
-| Reddit | ~300 | Public search JSON, with PullPush archive fallback if Reddit JSON is blocked |
-| YouTube | ~500 | YouTube Data API v3 if `YOUTUBE_API_KEY` is set; otherwise import |
+| Reddit | ~300 | Public archive when live Reddit JSON is blocked |
+| YouTube | ~500 | API if keyed; otherwise import. Never fabricated |
+| App Store | optional | Collector exists; not part of the default workflow |
 
-The dashboard always shows collected / retained / analyzed / removed-with-reason.
+The dashboard shows collected → duplicates/low-value removed → irrelevant removed → relevant.
 
 ## Run locally
 
@@ -93,28 +89,22 @@ PYTHONPATH=. python3 -m uvicorn backend.api.main:app --host 127.0.0.1 --port 431
 cd frontend && npm install && npm run dev -- --port 43125 --hostname 127.0.0.1
 ```
 
-Open `http://127.0.0.1:43125`.
+Open `http://127.0.0.1:43125`. Switch **Demo / sample data** on Overview if `processed_demo` exists.
 
-Demo Mode can also be started from **Pipeline / Data Health** in the UI (no API keys required).
+## Opportunity ranking
 
-## Opportunity ranking formula
-
-Each dimension is 0–100. Composite score is a weighted sum:
+Each dimension is **1–5**. Composite is a weighted average (max 5):
 
 | Dimension | Weight |
 | --- | --- |
-| Evidence strength | 0.12 |
-| Frequency | 0.10 |
-| Purchase association (non-purchase language co-occurrence) | 0.18 |
-| User severity | 0.10 |
-| Segment concentration | 0.08 |
-| Source diversity | 0.08 |
-| Workaround intensity | 0.12 |
-| Potential user value | 0.08 |
-| Potential business relevance | 0.08 |
-| Product solvability (non-monetary) | 0.06 |
+| Evidence strength | 0.20 |
+| Frequency | 0.15 |
+| Purchase association (postponed / abandoned / bought alternative) | 0.25 |
+| User severity | 0.15 |
+| Workaround intensity | 0.15 |
+| Segment relevance | 0.10 |
 
-The opportunity detail page explains **why this ranked higher than the next one**.
+The opportunity page explains why one rank beat the next.
 
 ## Environment
 

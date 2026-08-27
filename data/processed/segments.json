@@ -22,16 +22,16 @@
     "workarounds": [],
     "external_research": [],
     "purchase_outcomes": {
-      "purchased": 184,
-      "unknown": 561,
-      "abandoned": 61,
-      "postponed": 11,
+      "unknown": 627,
+      "purchased": 55,
+      "abandoned": 99,
+      "postponed": 36,
       "still considering": 8
     },
     "dominant_opportunity_themes": [
-      "Users cannot tell from listing information how a product will look or feel in re",
-      "Users remain uncertain about how a garment will fit despite having some size inf",
-      "Price and value-for-money concerns appear alongside hesitation, even when users "
+      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
+      "Return and exchange friction shows up in the decision, not only after a package "
     ],
     "evidence_ids": [
       "go-46323c64128d14f7",
@@ -112,15 +112,16 @@
       "offline store"
     ],
     "purchase_outcomes": {
-      "unknown": 138,
-      "purchased": 131,
-      "abandoned": 8,
+      "unknown": 197,
+      "purchased": 43,
+      "abandoned": 25,
       "still considering": 32,
-      "postponed": 3
+      "postponed": 15
     },
     "dominant_opportunity_themes": [
-      "Users remain uncertain about how a garment will fit despite having some size inf",
-      "Users cannot tell from listing information how a product will look or feel in re"
+      "Users remain uncertain about how a garment will fit, even when some size informa",
+      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Return and exchange friction shows up in the decision, not only after a package "
     ],
     "evidence_ids": [
       "go-d9f5cb602e3b177f",
@@ -201,16 +202,16 @@
       "Reddit"
     ],
     "purchase_outcomes": {
-      "unknown": 71,
-      "purchased": 102,
+      "unknown": 104,
+      "abandoned": 36,
       "still considering": 89,
-      "abandoned": 16,
-      "postponed": 15
+      "postponed": 39,
+      "purchased": 25
     },
     "dominant_opportunity_themes": [
-      "Users remain uncertain about how a garment will fit despite having some size inf",
-      "Users cannot tell from listing information how a product will look or feel in re",
-      "Price and value-for-money concerns appear alongside hesitation, even when users "
+      "Users remain uncertain about how a garment will fit, even when some size informa",
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
+      "Return and exchange friction shows up in the decision, not only after a package "
     ],
     "evidence_ids": [
       "go-3c0793e5084c1c3e",
@@ -291,16 +292,16 @@
       "Instagram"
     ],
     "purchase_outcomes": {
-      "abandoned": 8,
-      "unknown": 143,
-      "purchased": 84,
+      "abandoned": 21,
+      "unknown": 176,
+      "purchased": 28,
       "still considering": 23,
-      "postponed": 3
+      "postponed": 13
     },
     "dominant_opportunity_themes": [
-      "Users remain uncertain about how a garment will fit despite having some size inf",
-      "Users cannot tell from listing information how a product will look or feel in re",
-      "Price and value-for-money concerns appear alongside hesitation, even when users "
+      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
+      "Users remain uncertain about how a garment will fit, even when some size informa"
     ],
     "evidence_ids": [
       "go-9623193bcbe57025",
@@ -381,16 +382,16 @@
       "Reddit"
     ],
     "purchase_outcomes": {
-      "unknown": 59,
-      "purchased": 60,
-      "abandoned": 3,
-      "still considering": 23,
-      "postponed": 1
+      "unknown": 86,
+      "purchased": 20,
+      "abandoned": 9,
+      "postponed": 8,
+      "still considering": 23
     },
     "dominant_opportunity_themes": [
-      "Users remain uncertain about how a garment will fit despite having some size inf",
-      "Users cannot tell from listing information how a product will look or feel in re",
-      "Price and value-for-money concerns appear alongside hesitation, even when users "
+      "Users remain uncertain about how a garment will fit, even when some size informa",
+      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Return and exchange friction shows up in the decision, not only after a package "
     ],
     "evidence_ids": [
       "go-b1cdc65f56305f18",
@@ -472,15 +473,15 @@
     ],
     "purchase_outcomes": {
       "still considering": 88,
-      "unknown": 11,
-      "purchased": 22,
-      "abandoned": 8,
-      "postponed": 1
+      "unknown": 20,
+      "abandoned": 12,
+      "purchased": 8,
+      "postponed": 2
     },
     "dominant_opportunity_themes": [
-      "Users remain uncertain about how a garment will fit despite having some size inf",
-      "Users cannot tell from listing information how a product will look or feel in re",
-      "Price and value-for-money concerns appear alongside hesitation, even when users "
+      "Users remain uncertain about how a garment will fit, even when some size informa",
+      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als"
     ],
     "evidence_ids": [
       "go-79e39482aa6123b1",
@@ -560,14 +561,16 @@
       "Instagram"
     ],
     "purchase_outcomes": {
-      "unknown": 22,
-      "purchased": 28,
+      "unknown": 30,
+      "abandoned": 11,
+      "purchased": 8,
       "still considering": 7,
-      "postponed": 1
+      "postponed": 2
     },
     "dominant_opportunity_themes": [
-      "Users remain uncertain about how a garment will fit despite having some size inf",
-      "Users cannot tell from listing information how a product will look or feel in re"
+      "Return and exchange friction shows up in the decision, not only after a package ",
+      "Users remain uncertain about how a garment will fit, even when some size informa",
+      "Users cannot tell from the listing whether quality will match the price they wou"
     ],
     "evidence_ids": [
       "go-27404417f32efb11",
@@ -646,8 +649,7 @@
       "unknown": 15
     },
     "dominant_opportunity_themes": [
-      "Users remain uncertain about how a garment will fit despite having some size inf",
-      "Users cannot tell from listing information how a product will look or feel in re"
+      "Users cannot tell from the listing whether quality will match the price they wou"
     ],
     "evidence_ids": [
       "go-7046a4c954d3c8c1",
@@ -699,12 +701,9 @@
     "purchase_outcomes": {
       "still considering": 5,
       "postponed": 1,
-      "unknown": 1,
-      "purchased": 1
+      "unknown": 2
     },
-    "dominant_opportunity_themes": [
-      "Users cannot tell from listing information how a product will look or feel in re"
-    ],
+    "dominant_opportunity_themes": [],
     "evidence_ids": [
       "go-a9cf32113d55254c",
       "ap-ab3fd2d7e5b5bb67",

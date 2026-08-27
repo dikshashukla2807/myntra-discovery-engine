@@ -1,0 +1,6 @@
+{"observation_id": "go-e746e73b0a37b2e7", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-860e4c1c98345cef", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "go-69437fcbb1dce324", "status": "excluded", "reason": "promotional", "stage": "quality"}
+{"observation_id": "ap-a9b5839e620b7d33", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "go-ab8b2d2be03f2022", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "App operations issue without product-decision evidence."}
+{"observation_id": "go-d9346c59fafdd082", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "App operations issue without product-decision evidence."}

@@ -1,0 +1,252 @@
+[
+  {
+    "segment_id": "research-heavy-shoppers",
+    "name": "research-heavy shoppers",
+    "definition": "Language about looking things up, photos, measurements, or leaving the app.",
+    "observation_count": 29,
+    "percentage": 67.44,
+    "major_barriers": [
+      "size",
+      "external research",
+      "comparison",
+      "return concern",
+      "material/fabric uncertainty"
+    ],
+    "major_uncertainties": [
+      "size",
+      "better alternative",
+      "return hassle",
+      "fabric/feel",
+      "review trust"
+    ],
+    "workarounds": [
+      "adding alternatives to wishlist",
+      "checking measurements manually",
+      "checking customer photos",
+      "comparing alternatives",
+      "checking another ecommerce platform"
+    ],
+    "external_research": [
+      "other ecommerce",
+      "friends/family",
+      "Instagram",
+      "YouTube",
+      "offline store"
+    ],
+    "purchase_outcomes": {
+      "purchased": 5,
+      "unknown": 7,
+      "still considering": 11,
+      "postponed": 3,
+      "abandoned": 2,
+      "purchased alternative": 1
+    },
+    "dominant_opportunity_themes": [
+      "Users keep multiple options in play and delay buying while they compare products",
+      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Users cannot tell which size to order from the listing, so some wait or look for"
+    ],
+    "evidence_ids": [
+      "go-74b3d4aa3ef05b86",
+      "go-dc091f7b98e0d53b",
+      "go-e326e15467d44de4",
+      "go-7c3a8cb778a5b78b",
+      "go-45d860d8fe378ee3",
+      "go-b9d4c6ca1192f930",
+      "go-58402dc3c746f677",
+      "go-f045de563c25fd23",
+      "go-ca247a1a6ed2b290",
+      "ap-1107fbb8a6b5cdbd",
+      "ap-a3d500acb0edaa1a",
+      "ap-c7b80dca37482023",
+      "ap-25f95e0e2b3466e3",
+      "re-0f0c6ee09bc97cd5",
+      "re-1af87b0ab49fbf3f",
+      "re-29447833b084d2cb",
+      "re-e437ccce1211d122",
+      "re-ba567575ef50ece4",
+      "re-d7ee5bb7d33b6a27",
+      "re-d6f20eba3509e9a6",
+      "re-2b8544988825d57d",
+      "yo-58957822b698def6",
+      "yo-e36c8a4c77c226da",
+      "yo-9ff4b1ff7c62c861",
+      "yo-013f6824876a718c",
+      "go-2f6e86c8b95895ba",
+      "go-cf47d8394e56d5ed",
+      "ap-ecc42d58423c3961",
+      "re-871d21b92d29ac3f"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "high-wishlist-users",
+    "name": "high-wishlist users",
+    "definition": "Language that explicitly mentions wishlist or saved items.",
+    "observation_count": 21,
+    "percentage": 48.84,
+    "major_barriers": [
+      "size",
+      "comparison",
+      "return concern",
+      "material/fabric uncertainty",
+      "external research"
+    ],
+    "major_uncertainties": [
+      "size",
+      "better alternative",
+      "other",
+      "return hassle",
+      "fabric/feel"
+    ],
+    "workarounds": [
+      "adding alternatives to wishlist",
+      "checking another ecommerce platform",
+      "checking customer photos",
+      "comparing alternatives",
+      "waiting"
+    ],
+    "external_research": [
+      "other ecommerce",
+      "YouTube",
+      "offline store"
+    ],
+    "purchase_outcomes": {
+      "purchased": 3,
+      "unknown": 2,
+      "still considering": 11,
+      "postponed": 3,
+      "abandoned": 1,
+      "purchased alternative": 1
+    },
+    "dominant_opportunity_themes": [
+      "Users keep multiple options in play and delay buying while they compare products",
+      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Users cannot tell which size to order from the listing, so some wait or look for"
+    ],
+    "evidence_ids": [
+      "go-74b3d4aa3ef05b86",
+      "go-e326e15467d44de4",
+      "go-7c3a8cb778a5b78b",
+      "go-45d860d8fe378ee3",
+      "go-b9d4c6ca1192f930",
+      "go-58402dc3c746f677",
+      "go-ca247a1a6ed2b290",
+      "ap-1107fbb8a6b5cdbd",
+      "ap-a3d500acb0edaa1a",
+      "ap-500c25ff0592fd65",
+      "ap-25f95e0e2b3466e3",
+      "re-0f0c6ee09bc97cd5",
+      "re-e437ccce1211d122",
+      "re-ba567575ef50ece4",
+      "re-d7ee5bb7d33b6a27",
+      "re-2b8544988825d57d",
+      "yo-58957822b698def6",
+      "yo-e36c8a4c77c226da",
+      "go-2f6e86c8b95895ba",
+      "go-cf47d8394e56d5ed",
+      "re-871d21b92d29ac3f"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "fit-conscious-shoppers",
+    "name": "fit-conscious shoppers",
+    "definition": "Language about fit or size as part of the decision.",
+    "observation_count": 9,
+    "percentage": 20.93,
+    "major_barriers": [
+      "size",
+      "fit",
+      "external research",
+      "product information",
+      "return concern"
+    ],
+    "major_uncertainties": [
+      "size",
+      "fit",
+      "return hassle",
+      "availability",
+      "better alternative"
+    ],
+    "workarounds": [
+      "checking measurements manually",
+      "adding alternatives to wishlist",
+      "visiting an offline store",
+      "comparing alternatives",
+      "Instagram"
+    ],
+    "external_research": [
+      "offline store",
+      "Instagram",
+      "Reddit",
+      "brand website"
+    ],
+    "purchase_outcomes": {
+      "purchased": 3,
+      "still considering": 1,
+      "unknown": 4,
+      "abandoned": 1
+    },
+    "dominant_opportunity_themes": [
+      "Users cannot tell which size to order from the listing, so some wait or look for",
+      "Users keep multiple options in play and delay buying while they compare products"
+    ],
+    "evidence_ids": [
+      "go-74b3d4aa3ef05b86",
+      "go-7c3a8cb778a5b78b",
+      "go-ca247a1a6ed2b290",
+      "ap-d1a0e6ce77fe21b4",
+      "ap-c7b80dca37482023",
+      "re-29447833b084d2cb",
+      "re-d6f20eba3509e9a6",
+      "yo-9ff4b1ff7c62c861",
+      "go-c54c032ef1b93013"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "unclassified",
+    "name": "unclassified",
+    "definition": "Relevant observations without a discovered behavioral segment signal.",
+    "observation_count": 8,
+    "percentage": 18.6,
+    "major_barriers": [
+      "quality uncertainty",
+      "decision overload",
+      "material/fabric uncertainty",
+      "return concern",
+      "product information"
+    ],
+    "major_uncertainties": [
+      "other",
+      "quality vs price",
+      "fabric/feel",
+      "return hassle"
+    ],
+    "workarounds": [],
+    "external_research": [],
+    "purchase_outcomes": {
+      "purchased": 3,
+      "unknown": 3,
+      "abandoned": 1,
+      "postponed": 1
+    },
+    "dominant_opportunity_themes": [
+      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Users cannot tell which size to order from the listing, so some wait or look for",
+      "Occasion timing is used to justify saving now and deciding later."
+    ],
+    "evidence_ids": [
+      "go-a560c9cc3163f673",
+      "re-b995d664a3d51d61",
+      "re-55fc60a5e2ecd588",
+      "yo-4f38ad8990844257",
+      "yo-82114b15041be383",
+      "yo-0232cef4a7784fa4",
+      "go-a93cee47aeb590a5",
+      "re-ef3962c14bfe611a"
+    ],
+    "discovered": true
+  }
+]

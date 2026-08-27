@@ -2,54 +2,68 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { DatasetBanner, PageHeader } from "@/components/layout/shell";
-import { Badge, Card } from "@/components/ui/primitives";
+import { Badge, Button, Card } from "@/components/ui/primitives";
 import { api, type Banner } from "@/lib/api";
 
 type Overview = {
   banner?: Banner;
+  demo_available?: boolean;
+  coverage_note?: string;
   funnel?: Record<string, number>;
   top_opportunities?: Array<{
     opportunity_id: string;
     rank: number;
     title: string;
     frequency: number;
+    frequency_percentage: number;
     purchase_association: number;
     confidence: string;
-    composite_score: number;
   }>;
-  behavioral?: {
-    purchase_outcomes?: Record<string, number>;
-    barriers?: Record<string, number>;
-    external_research_pct?: number;
-  };
   quality?: {
-    total_collected?: number;
-    relevant?: number;
-    source_distribution?: { collected?: Record<string, number> };
+    source_distribution?: { collected?: Record<string, number>; relevant?: Record<string, number> };
     disclaimer?: string;
+    coverage_note?: string;
+    duplicates_and_low_value_removed?: number;
+    irrelevant_removed?: number;
+    relevant?: number;
+    total_collected?: number;
   };
 };
 
 export default function OverviewPage() {
   const [data, setData] = useState<Overview | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [switching, setSwitching] = useState(false);
 
-  useEffect(() => {
+  function load() {
     api<Overview>("/api/overview")
       .then(setData)
       .catch((err: Error) => setError(err.message));
+  }
+
+  useEffect(() => {
+    load();
   }, []);
 
-  if (error) {
+  async function switchMode(mode: "public" | "demo") {
+    setSwitching(true);
+    try {
+      await api("/api/dataset/mode", { method: "POST", body: JSON.stringify({ mode }) });
+      setError(null);
+      load();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Could not switch dataset");
+    } finally {
+      setSwitching(false);
+    }
+  }
+
+  if (error && !data?.funnel) {
     return (
       <Card className="p-6">
-        <p className="font-medium">The dashboard has no processed dataset yet.</p>
+        <p className="font-medium">No processed dataset yet.</p>
         <p className="mt-2 text-sm text-zinc-600">{error}</p>
-        <p className="mt-4 text-sm">
-          Run collection + pipeline, or open Pipeline and start Demo Mode.
-        </p>
       </Card>
     );
   }
@@ -57,30 +71,34 @@ export default function OverviewPage() {
     return <p className="text-sm text-zinc-500">Loading overview…</p>;
   }
 
+  const collected = data.quality?.source_distribution?.collected || {};
   const funnel = [
     ["Collected", data.funnel.collected],
-    ["Valid", data.funnel.valid],
+    ["Duplicates / low-value removed", data.funnel.duplicates_removed],
+    ["Irrelevant removed", data.funnel.irrelevant_removed],
     ["Relevant", data.funnel.relevant],
     ["Purchase-related", data.funnel.purchase_related],
     ["Wishlist-related", data.funnel.wishlist_related],
   ];
-  const sourceRows = Object.entries(data.quality?.source_distribution?.collected || {}).map(
-    ([name, value]) => ({ name, value }),
-  );
-  const barrierRows = Object.entries(data.behavioral?.barriers || {})
-    .slice(0, 8)
-    .map(([name, value]) => ({ name, value }));
 
   return (
     <div>
       <DatasetBanner banner={data.banner} />
+      <div className="mb-4 flex flex-wrap gap-2">
+        <Button variant={data.banner?.mode === "public" ? "primary" : "outline"} disabled={switching} onClick={() => switchMode("public")}>
+          Public-source dataset
+        </Button>
+        <Button variant={data.banner?.mode === "demo" ? "primary" : "outline"} disabled={switching || !data.demo_available} onClick={() => switchMode("demo")}>
+          Demo / sample data
+        </Button>
+      </div>
       <PageHeader
         eyebrow="Business metric"
         title="Why don’t wishlisted items convert within 30 days?"
-        description="Growth is trying to increase the share of users who purchase at least one wishlisted item within 30 days — without monetary incentives. This overview only reports what public user-generated content actually contains."
+        description="Growth wants more users to buy at least one wishlisted item within 30 days — without monetary incentives. This engine only ranks candidate opportunity areas from public comments. It does not pick a solution."
       />
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {funnel.map(([label, value]) => (
           <Card key={String(label)} className="p-4">
             <p className="text-xs uppercase tracking-wide text-zinc-500">{label}</p>
@@ -89,44 +107,32 @@ export default function OverviewPage() {
         ))}
       </div>
 
-      <div className="mt-8 grid gap-6 lg:grid-cols-2">
-        <Card className="p-5">
-          <h3 className="text-sm font-semibold">Where did the public observations come from?</h3>
-          <p className="mb-4 mt-1 text-xs text-zinc-500">Actual collected counts. Gaps are not filled with synthetic rows.</p>
-          <div className="h-56">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={sourceRows}>
-                <XAxis dataKey="name" tick={{ fontSize: 11 }} />
-                <YAxis tick={{ fontSize: 11 }} />
-                <Tooltip />
-                <Bar dataKey="value" fill="#9f1239" radius={[4, 4, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </Card>
-        <Card className="p-5">
-          <h3 className="text-sm font-semibold">Which barriers show up in relevant comments?</h3>
-          <p className="mb-4 mt-1 text-xs text-zinc-500">
-            Counts of extracted barrier labels. Presence is not causation of 30-day non-conversion.
-          </p>
-          <div className="h-56">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={barrierRows} layout="vertical" margin={{ left: 80 }}>
-                <XAxis type="number" tick={{ fontSize: 11 }} />
-                <YAxis type="category" dataKey="name" tick={{ fontSize: 11 }} width={80} />
-                <Tooltip />
-                <Bar dataKey="value" fill="#44403c" radius={[0, 4, 4, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        </Card>
-      </div>
+      <Card className="mt-6 p-5">
+        <h3 className="text-sm font-semibold">Source counts (collected)</h3>
+        <div className="mt-3 grid gap-3 sm:grid-cols-4 text-sm">
+          <p>Google Play: <span className="font-semibold tabular-nums">{collected.google_play ?? 0}</span></p>
+          <p>Reddit: <span className="font-semibold tabular-nums">{collected.reddit ?? 0}</span></p>
+          <p>YouTube: <span className="font-semibold tabular-nums">{collected.youtube ?? 0}</span></p>
+          {(collected.app_store || 0) > 0 ? (
+            <p>App Store (optional): <span className="font-semibold tabular-nums">{collected.app_store}</span></p>
+          ) : (
+            <p className="text-zinc-500">App Store: not in default workflow</p>
+          )}
+        </div>
+        <p className="mt-3 text-xs text-zinc-500">
+          YouTube is 0 unless a public export or API key was used. Missing records are not fabricated.
+        </p>
+      </Card>
+
+      <Card className="mt-4 p-5 text-sm leading-6 text-zinc-700">
+        {data.coverage_note || data.quality?.coverage_note}
+      </Card>
 
       <div className="mt-8">
         <div className="mb-3 flex items-end justify-between">
-          <h3 className="text-sm font-semibold">Top 5 opportunity areas</h3>
+          <h3 className="text-sm font-semibold">Top opportunity areas</h3>
           <Link href="/opportunities" className="text-sm text-rose-800 underline">
-            Open landscape
+            Full landscape
           </Link>
         </div>
         <div className="space-y-3">
@@ -140,8 +146,8 @@ export default function OverviewPage() {
                   </div>
                   <div className="flex gap-2">
                     <Badge>freq {opp.frequency}</Badge>
-                    <Badge tone="rose">purchase assoc. {opp.purchase_association}</Badge>
-                    <Badge tone="amber">{opp.confidence}</Badge>
+                    <Badge tone="rose">{opp.frequency_percentage}% relevant</Badge>
+                    <Badge tone="amber">purchase assoc. {opp.purchase_association}</Badge>
                   </div>
                 </div>
               </Card>
@@ -149,7 +155,6 @@ export default function OverviewPage() {
           ))}
         </div>
       </div>
-
       <p className="mt-8 text-xs text-zinc-500">{data.quality?.disclaimer}</p>
     </div>
   );

@@ -5,7 +5,6 @@ from typing import Any
 
 from backend.analytics.gaps import build_gaps
 from backend.analytics.interviews import generate_interview_plan
-from backend.analytics.report import build_report, html_report
 from backend.analytics.segments import discover_segments
 from backend.pipeline.discover import (
     build_embeddings,
@@ -72,6 +71,8 @@ def run_pipeline(
     log = progress or (lambda msg: print(msg, flush=True))
     stages: list[dict[str, Any]] = []
     started = utc_now()
+    out_dir = settings.PROCESSED_DEMO_DIR if demo_only else settings.PROCESSED_PUBLIC_DIR
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     raw = load_raw_observations(include_demo=include_demo, demo_only=demo_only)
     stages.append(_stage("collection", "ok", len(raw), len(raw)))
@@ -97,7 +98,8 @@ def run_pipeline(
     stages.append(_stage("validation", "ok", len(raw), len(validated), len(raw) - len(validated)))
 
     cleaned = [clean_observation(o) for o in validated]
-    write_jsonl(settings.CLEAN_DIR / "observations.jsonl", cleaned)
+    if not demo_only:
+        write_jsonl(settings.CLEAN_DIR / "observations.jsonl", cleaned)
     stages.append(_stage("cleaning", "ok", len(cleaned), len(cleaned)))
 
     languaged = [detect_language(o) for o in cleaned]
@@ -131,7 +133,7 @@ def run_pipeline(
                     "notes": rel.get("relevance_rationale"),
                 }
             )
-    write_jsonl(settings.PROCESSED_DIR / "relevance.jsonl", relevances)
+    write_jsonl(out_dir / "relevance.jsonl", relevances)
     stages.append(_stage("relevance", "ok", len(included), len(relevant_obs), len(included) - len(relevant_obs)))
 
     extractions: list[dict[str, Any]] = []
@@ -140,7 +142,7 @@ def run_pipeline(
         ext = extraction_for(obs)
         extractions.append(ext)
         ext_map[obs["observation_id"]] = ext
-    write_jsonl(settings.PROCESSED_DIR / "extractions.jsonl", extractions)
+    write_jsonl(out_dir / "extractions.jsonl", extractions)
     stages.append(_stage("extraction", "ok", len(relevant_obs), len(extractions)))
 
     labels: list[int] = []
@@ -154,7 +156,7 @@ def run_pipeline(
             {"observation_id": o["observation_id"], "cluster_id": int(labels[i])}
             for i, o in enumerate(relevant_obs)
         ]
-        write_json(settings.PROCESSED_DIR / "clusters.json", assignment)
+        write_json(out_dir / "clusters.json", assignment)
         stages.append(_stage("embeddings", "ok", len(relevant_obs), len(relevant_obs)))
         stages.append(_stage("clustering", "ok", len(relevant_obs), len(relevant_obs)))
         themes = build_themes(relevant_obs, ext_map, labels)
@@ -166,45 +168,31 @@ def run_pipeline(
 
     opportunities = score_opportunities(themes, len(relevant_obs) or 1)
     stages.append(_stage("opportunity_scoring", "ok", len(opportunities), len(opportunities)))
-    write_json(settings.PROCESSED_DIR / "themes.json", themes)
-    write_json(settings.PROCESSED_DIR / "opportunities.json", opportunities)
+    write_json(out_dir / "themes.json", themes)
+    write_json(out_dir / "opportunities.json", opportunities)
 
     segments = discover_segments(relevant_obs, ext_map, opportunities)
-    write_json(settings.PROCESSED_DIR / "segments.json", segments)
+    write_json(out_dir / "segments.json", segments)
     gaps = build_gaps(opportunities)
-    write_json(settings.PROCESSED_DIR / "gaps.json", gaps)
+    write_json(out_dir / "gaps.json", gaps)
     interview = generate_interview_plan(opportunities[0], (opportunities[0].get("user_segment") or [None])[0]) if opportunities else None
-    write_json(settings.PROCESSED_DIR / "interview_plan.json", interview or {})
+    write_json(out_dir / "interview_plan.json", interview or {})
 
-    quality = _quality_report(raw, exclusions, included, relevant_obs, languaged)
-    write_json(settings.PROCESSED_DIR / "quality_report.json", quality)
-    write_jsonl(settings.PROCESSED_DIR / "exclusions.jsonl", exclusions)
-    write_jsonl(settings.CLEAN_DIR / "included.jsonl", included)
-    write_jsonl(settings.PROCESSED_DIR / "relevant_observations.jsonl", relevant_obs)
+    quality = _quality_report(raw, exclusions, included, relevant_obs)
+    write_json(out_dir / "quality_report.json", quality)
+    write_jsonl(out_dir / "exclusions.jsonl", exclusions)
+    if not demo_only:
+        write_jsonl(settings.CLEAN_DIR / "included.jsonl", included)
+    write_jsonl(out_dir / "relevant_observations.jsonl", relevant_obs)
 
     overview = _overview(raw, included, relevant_obs, ext_map, opportunities, quality)
-    write_json(settings.PROCESSED_DIR / "overview.json", overview)
+    write_json(out_dir / "overview.json", overview)
 
-    dataset_label = "demo_sample" if include_demo and all(o.get("dataset_label") == "demo_sample" for o in raw) else "public_source"
-    if include_demo and any(o.get("dataset_label") == "demo_sample" for o in raw) and any(o.get("dataset_label") == "public_source" for o in raw):
+    dataset_label = "demo_sample" if demo_only else "public_source"
+    if not demo_only and any(o.get("dataset_label") == "demo_sample" for o in raw):
         dataset_label = "mixed_public_and_demo"
-    if all(o.get("dataset_label") == "demo_sample" for o in raw) and raw:
+    if demo_only:
         dataset_label = "demo_sample"
-    elif any(o.get("dataset_label") == "public_source" for o in raw):
-        dataset_label = "public_source"
-
-    report = build_report(
-        quality=quality,
-        overview=overview,
-        opportunities=opportunities,
-        themes=themes,
-        segments=segments,
-        gaps=gaps,
-        interview=interview,
-        dataset_label=dataset_label,
-    )
-    write_json(settings.PROCESSED_DIR / "discovery_report.json", report)
-    (settings.PROCESSED_DIR / "discovery_report.html").write_text(html_report(report), encoding="utf-8")
 
     pipeline_status = {
         "last_run": utc_now(),
@@ -212,42 +200,44 @@ def run_pipeline(
         "stages": stages,
         "dataset_label": dataset_label,
         "weights": OPPORTUNITY_WEIGHTS,
-        "note": "Each stage writes artifacts under data/. Original text is never overwritten.",
+        "note": "Counts are calculated in code. Original text is never overwritten. Demo writes to data/processed_demo/.",
     }
-    write_json(settings.PROCESSED_DIR / "pipeline_status.json", pipeline_status)
-    log(f"[pipeline] done relevant={len(relevant_obs)} themes={len(themes)} opps={len(opportunities)}")
+    write_json(out_dir / "pipeline_status.json", pipeline_status)
+    mode = "demo" if demo_only else "public"
+    write_json(settings.ACTIVE_MODE_PATH, {"mode": mode})
+    log(f"[pipeline] done mode={mode} relevant={len(relevant_obs)} themes={len(themes)} opps={len(opportunities)}")
     return pipeline_status
 
 
-def _quality_report(raw, exclusions, included, relevant, languaged) -> dict[str, Any]:
+def _quality_report(raw, exclusions, included, relevant) -> dict[str, Any]:
     reasons = Counter(e.get("reason") for e in exclusions)
     sources_collected = Counter(o.get("source") for o in raw)
-    sources_included = Counter(o.get("source") for o in included)
     sources_relevant = Counter(o.get("source") for o in relevant)
-    ratings = Counter(str(int(o["rating"])) for o in raw if o.get("rating") is not None)
-    langs = Counter(o.get("language") or "unknown" for o in languaged)
-    dates = Counter((o.get("date") or "")[:7] or "unknown" for o in raw)
+    duplicate_like = reasons.get("duplicate", 0) + reasons.get("empty", 0) + reasons.get("low_information", 0) + reasons.get("spam", 0) + reasons.get("promotional", 0)
     return {
         "total_collected": len(raw),
+        "duplicates_and_low_value_removed": duplicate_like,
         "duplicates": reasons.get("duplicate", 0),
-        "spam": reasons.get("spam", 0) + reasons.get("promotional", 0) + reasons.get("bot", 0),
-        "irrelevant": reasons.get("irrelevant", 0),
-        "empty": reasons.get("empty", 0),
-        "low_information": reasons.get("low_information", 0),
-        "valid": len(included),
+        "irrelevant_removed": reasons.get("irrelevant", 0),
         "relevant": len(relevant),
-        "analyzed": len(relevant),
-        "removed": len(exclusions),
+        "valid": len(included),
         "removal_reasons": dict(reasons),
         "source_distribution": {
-            "collected": dict(sources_collected),
-            "valid": dict(sources_included),
-            "relevant": dict(sources_relevant),
+            "collected": {
+                "google_play": sources_collected.get("google_play", 0),
+                "reddit": sources_collected.get("reddit", 0),
+                "youtube": sources_collected.get("youtube", 0),
+                "app_store": sources_collected.get("app_store", 0),
+            },
+            "relevant": {
+                "google_play": sources_relevant.get("google_play", 0),
+                "reddit": sources_relevant.get("reddit", 0),
+                "youtube": sources_relevant.get("youtube", 0),
+                "app_store": sources_relevant.get("app_store", 0),
+            },
         },
-        "rating_distribution": dict(ratings),
-        "language_distribution": dict(langs),
-        "date_distribution": dict(sorted(dates.items())),
         "disclaimer": "Public user-generated content collected from source platforms. Not independently verified as genuine.",
+        "coverage_note": "Explicit wishlist/save language is rare in app-store reviews. That is a coverage gap, not a finding that users do not wishlist.",
     }
 
 
@@ -269,7 +259,7 @@ def _overview(raw, included, relevant, ext_map, opportunities, quality) -> dict[
             workarounds[w] += 1
         if ext.get("wishlist_behavior") not in {None, "no evidence", "unclear"}:
             wishlist_related += 1
-        if ext.get("purchase_outcome") in {"purchased", "postponed", "abandoned", "purchased alternative", "still considering"}:
+        if ext.get("purchase_outcome") in {"purchased", "postponed", "abandoned", "purchased alternative"}:
             purchase_related += 1
         if ext.get("external_research"):
             external += 1
@@ -277,22 +267,13 @@ def _overview(raw, included, relevant, ext_map, opportunities, quality) -> dict[
     return {
         "funnel": {
             "collected": len(raw),
-            "valid": len(included),
+            "duplicates_removed": quality.get("duplicates_and_low_value_removed", 0),
+            "irrelevant_removed": quality.get("irrelevant_removed", 0),
             "relevant": len(relevant),
             "purchase_related": purchase_related,
             "wishlist_related": wishlist_related,
         },
+        "coverage_note": quality.get("coverage_note"),
         "top_opportunities": opportunities[:5],
-        "behavioral": {
-            "user_intent": dict(intents),
-            "purchase_outcomes": dict(outcomes),
-            "why_consider_or_save": dict(Counter(
-                r for e in ext_map.values() for r in (e.get("consider_reasons") or []) if r not in {"unclear", "other"}
-            )),
-            "barriers": dict(barriers.most_common(12)),
-            "workarounds": dict(workarounds.most_common(12)),
-            "external_research_count": external,
-            "external_research_pct": round(100.0 * external / max(len(ext_map), 1), 2),
-        },
         "quality": quality,
     }

@@ -1,0 +1,335 @@
+{
+  "funnel": {
+    "collected": 49,
+    "duplicates_removed": 4,
+    "irrelevant_removed": 2,
+    "relevant": 43,
+    "purchase_related": 18,
+    "wishlist_related": 22
+  },
+  "coverage_note": "Explicit wishlist/save language is rare in app-store reviews. That is a coverage gap, not a finding that users do not wishlist.",
+  "top_opportunities": [
+    {
+      "opportunity_id": "opp-03",
+      "rank": 1,
+      "title": "Users keep multiple options in play and delay buying while they compare products or platforms.",
+      "description": "Users describing wishlist/save, post-purchase, postponed repeatedly surface comparison, size, product information. Some still complete a purchase; others postpone, abandon, or keep considering. This is an observed pattern in public comments, not a proven cause of 30-day wishlist conversion.",
+      "theme_ids": [
+        "theme-03"
+      ],
+      "frequency": 15,
+      "frequency_percentage": 34.88,
+      "purchase_association": 26.67,
+      "postponement_association": 20.0,
+      "abandonment_association": 6.67,
+      "alternative_purchase_association": 0.0,
+      "user_segment": [
+        "research-heavy shoppers",
+        "high-wishlist users"
+      ],
+      "evidence_strength": 4,
+      "confidence": "high",
+      "confidence_score": 0.797,
+      "existing_workaround": [
+        "adding alternatives to wishlist",
+        "checking customer photos",
+        "comparing alternatives",
+        "checking measurements manually"
+      ],
+      "research_gap": "Public comments mention 'comparison, size, product information' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+      "what_we_know": "15 relevant observations (34.88%) grouped here. Observed alongside postponed=3, abandoned=1, purchased alternative=0. These are co-occurrences, not causes.",
+      "scores": {
+        "evidence_strength": 4,
+        "frequency": 5,
+        "purchase_association": 4,
+        "user_severity": 5,
+        "workaround_intensity": 5,
+        "segment_relevance": 4
+      },
+      "composite_score": 4.45,
+      "supporting_evidence_ids": [
+        "go-74b3d4aa3ef05b86",
+        "go-10c53ca2b8ddc94a",
+        "go-dc091f7b98e0d53b",
+        "go-45d860d8fe378ee3",
+        "go-b9d4c6ca1192f930",
+        "go-58402dc3c746f677",
+        "ap-1107fbb8a6b5cdbd",
+        "ap-c7b80dca37482023",
+        "ap-40f708730194b783",
+        "ap-25f95e0e2b3466e3",
+        "re-e437ccce1211d122",
+        "re-d7ee5bb7d33b6a27",
+        "re-2b8544988825d57d",
+        "yo-e36c8a4c77c226da",
+        "go-cf47d8394e56d5ed"
+      ],
+      "counter_evidence_ids": [
+        "go-a560c9cc3163f673",
+        "go-ca247a1a6ed2b290",
+        "re-d6f20eba3509e9a6",
+        "yo-82114b15041be383",
+        "re-ef3962c14bfe611a"
+      ],
+      "why_ranked_higher": "Ranked #1 vs #2 because the weighted score is 0.80 higher (max 5). Biggest gap: segment relevance (4/5 vs 1/5).",
+      "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Purchase association is co-occurrence with postponed / abandoned / purchased-alternative language — not causation."
+    },
+    {
+      "opportunity_id": "opp-01",
+      "rank": 2,
+      "title": "Users cannot tell from the listing whether quality will match the price they would pay. Also observed with decision overload.",
+      "description": "Users describing post-purchase, wishlist/save repeatedly surface quality uncertainty, decision overload, material/fabric uncertainty. Some still complete a purchase; others postpone, abandon, or keep considering. This is an observed pattern in public comments, not a proven cause of 30-day wishlist conversion.",
+      "theme_ids": [
+        "theme-01"
+      ],
+      "frequency": 8,
+      "frequency_percentage": 18.6,
+      "purchase_association": 37.5,
+      "postponement_association": 12.5,
+      "abandonment_association": 12.5,
+      "alternative_purchase_association": 12.5,
+      "user_segment": [
+        "Insufficient evidence."
+      ],
+      "evidence_strength": 3,
+      "confidence": "high",
+      "confidence_score": 0.775,
+      "existing_workaround": [
+        "adding alternatives to wishlist",
+        "Google",
+        "checking another ecommerce platform"
+      ],
+      "research_gap": "Public comments mention 'quality uncertainty, decision overload, material/fabric uncertainty' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+      "what_we_know": "8 relevant observations (18.6%) grouped here. Observed alongside postponed=1, abandoned=1, purchased alternative=1. These are co-occurrences, not causes.",
+      "scores": {
+        "evidence_strength": 3,
+        "frequency": 3,
+        "purchase_association": 4,
+        "user_severity": 5,
+        "workaround_intensity": 5,
+        "segment_relevance": 1
+      },
+      "composite_score": 3.65,
+      "supporting_evidence_ids": [
+        "go-a560c9cc3163f673",
+        "re-0f0c6ee09bc97cd5",
+        "re-1af87b0ab49fbf3f",
+        "re-ba567575ef50ece4",
+        "re-55fc60a5e2ecd588",
+        "yo-4f38ad8990844257",
+        "go-a93cee47aeb590a5",
+        "re-871d21b92d29ac3f"
+      ],
+      "counter_evidence_ids": [
+        "go-74b3d4aa3ef05b86",
+        "go-dc091f7b98e0d53b",
+        "go-45d860d8fe378ee3",
+        "go-ca247a1a6ed2b290",
+        "ap-40f708730194b783",
+        "re-d6f20eba3509e9a6",
+        "yo-82114b15041be383",
+        "re-ef3962c14bfe611a"
+      ],
+      "why_ranked_higher": "Ranked #2 vs #3 because the weighted score is 0.20 higher (max 5). Biggest gap: workaround intensity (5/5 vs 3/5).",
+      "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Purchase association is co-occurrence with postponed / abandoned / purchased-alternative language — not causation."
+    },
+    {
+      "opportunity_id": "opp-00",
+      "rank": 3,
+      "title": "Users cannot tell from the listing whether quality will match the price they would pay. Also observed with appearance uncertainty.",
+      "description": "Users describing return/exchange, abandoned, wishlist/save repeatedly surface quality uncertainty, appearance uncertainty, return concern, delivery. Some still complete a purchase; others postpone, abandon, or keep considering. This is an observed pattern in public comments, not a proven cause of 30-day wishlist conversion.",
+      "theme_ids": [
+        "theme-00"
+      ],
+      "frequency": 5,
+      "frequency_percentage": 11.63,
+      "purchase_association": 40.0,
+      "postponement_association": 20.0,
+      "abandonment_association": 20.0,
+      "alternative_purchase_association": 0.0,
+      "user_segment": [
+        "Insufficient evidence."
+      ],
+      "evidence_strength": 3,
+      "confidence": "high",
+      "confidence_score": 0.766,
+      "existing_workaround": [
+        "adding alternatives to wishlist",
+        "waiting"
+      ],
+      "research_gap": "Public comments mention 'quality uncertainty, appearance uncertainty, return concern, delivery' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+      "what_we_know": "5 relevant observations (11.63%) grouped here. Observed alongside postponed=1, abandoned=1, purchased alternative=0. These are co-occurrences, not causes.",
+      "scores": {
+        "evidence_strength": 3,
+        "frequency": 2,
+        "purchase_association": 5,
+        "user_severity": 5,
+        "workaround_intensity": 3,
+        "segment_relevance": 1
+      },
+      "composite_score": 3.45,
+      "supporting_evidence_ids": [
+        "go-e326e15467d44de4",
+        "ap-a3d500acb0edaa1a",
+        "yo-58957822b698def6",
+        "go-2f6e86c8b95895ba",
+        "re-ef3962c14bfe611a"
+      ],
+      "counter_evidence_ids": [
+        "go-74b3d4aa3ef05b86",
+        "go-dc091f7b98e0d53b",
+        "go-45d860d8fe378ee3",
+        "go-a560c9cc3163f673",
+        "go-ca247a1a6ed2b290",
+        "ap-40f708730194b783",
+        "re-d6f20eba3509e9a6",
+        "yo-82114b15041be383"
+      ],
+      "why_ranked_higher": "Ranked #3 vs #4 because the weighted score is 0.40 higher (max 5). Biggest gap: purchase association (5/5 vs 1/5).",
+      "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Purchase association is co-occurrence with postponed / abandoned / purchased-alternative language — not causation."
+    },
+    {
+      "opportunity_id": "opp-04",
+      "rank": 4,
+      "title": "Users cannot tell which size to order from the listing, so some wait or look for extra measurements.",
+      "description": "Users describing post-purchase, return/exchange repeatedly surface size, fit, external research, return concern. Some still complete a purchase; others postpone, abandon, or keep considering. This is an observed pattern in public comments, not a proven cause of 30-day wishlist conversion.",
+      "theme_ids": [
+        "theme-04"
+      ],
+      "frequency": 9,
+      "frequency_percentage": 20.93,
+      "purchase_association": 0.0,
+      "postponement_association": 0.0,
+      "abandonment_association": 0.0,
+      "alternative_purchase_association": 0.0,
+      "user_segment": [
+        "Insufficient evidence."
+      ],
+      "evidence_strength": 3,
+      "confidence": "high",
+      "confidence_score": 0.778,
+      "existing_workaround": [
+        "adding alternatives to wishlist",
+        "checking measurements manually",
+        "visiting an offline store",
+        "Instagram"
+      ],
+      "research_gap": "Public comments mention 'size, fit, external research, return concern' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+      "what_we_know": "9 relevant observations (20.93%) grouped here. Observed alongside postponed=0, abandoned=0, purchased alternative=0. These are co-occurrences, not causes.",
+      "scores": {
+        "evidence_strength": 3,
+        "frequency": 4,
+        "purchase_association": 1,
+        "user_severity": 5,
+        "workaround_intensity": 5,
+        "segment_relevance": 1
+      },
+      "composite_score": 3.05,
+      "supporting_evidence_ids": [
+        "go-7c3a8cb778a5b78b",
+        "go-ca247a1a6ed2b290",
+        "ap-d1a0e6ce77fe21b4",
+        "re-29447833b084d2cb",
+        "re-d6f20eba3509e9a6",
+        "yo-82114b15041be383",
+        "yo-9ff4b1ff7c62c861",
+        "yo-0232cef4a7784fa4",
+        "go-c54c032ef1b93013"
+      ],
+      "counter_evidence_ids": [
+        "go-dc091f7b98e0d53b",
+        "go-45d860d8fe378ee3",
+        "go-a560c9cc3163f673",
+        "ap-40f708730194b783",
+        "re-ef3962c14bfe611a"
+      ],
+      "why_ranked_higher": "Ranked #4 vs #5 because the weighted score is 0.30 higher (max 5). Biggest gap: frequency (4/5 vs 3/5).",
+      "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Purchase association is co-occurrence with postponed / abandoned / purchased-alternative language — not causation."
+    },
+    {
+      "opportunity_id": "opp-02",
+      "rank": 5,
+      "title": "Occasion timing is used to justify saving now and deciding later.",
+      "description": "Users describing consideration, wishlist/save repeatedly surface occasion, social validation, external research. Some still complete a purchase; others postpone, abandon, or keep considering. This is an observed pattern in public comments, not a proven cause of 30-day wishlist conversion.",
+      "theme_ids": [
+        "theme-02"
+      ],
+      "frequency": 6,
+      "frequency_percentage": 13.95,
+      "purchase_association": 0.0,
+      "postponement_association": 0.0,
+      "abandonment_association": 0.0,
+      "alternative_purchase_association": 0.0,
+      "user_segment": [
+        "Insufficient evidence."
+      ],
+      "evidence_strength": 3,
+      "confidence": "high",
+      "confidence_score": 0.769,
+      "existing_workaround": [
+        "asking friends/family",
+        "Instagram"
+      ],
+      "research_gap": "Public comments mention 'occasion, social validation, external research' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+      "what_we_know": "6 relevant observations (13.95%) grouped here. Observed alongside postponed=0, abandoned=0, purchased alternative=0. These are co-occurrences, not causes.",
+      "scores": {
+        "evidence_strength": 3,
+        "frequency": 3,
+        "purchase_association": 1,
+        "user_severity": 5,
+        "workaround_intensity": 4,
+        "segment_relevance": 1
+      },
+      "composite_score": 2.75,
+      "supporting_evidence_ids": [
+        "go-198977996ac71ecb",
+        "go-f045de563c25fd23",
+        "ap-500c25ff0592fd65",
+        "re-b995d664a3d51d61",
+        "yo-013f6824876a718c",
+        "ap-ecc42d58423c3961"
+      ],
+      "counter_evidence_ids": [
+        "go-74b3d4aa3ef05b86",
+        "go-dc091f7b98e0d53b",
+        "go-45d860d8fe378ee3",
+        "go-a560c9cc3163f673",
+        "go-ca247a1a6ed2b290",
+        "re-d6f20eba3509e9a6",
+        "yo-82114b15041be383",
+        "re-ef3962c14bfe611a"
+      ],
+      "why_ranked_higher": "Lowest of the discovered opportunities on the six 1–5 scores.",
+      "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Purchase association is co-occurrence with postponed / abandoned / purchased-alternative language — not causation."
+    }
+  ],
+  "quality": {
+    "total_collected": 49,
+    "duplicates_and_low_value_removed": 4,
+    "duplicates": 0,
+    "irrelevant_removed": 2,
+    "relevant": 43,
+    "valid": 45,
+    "removal_reasons": {
+      "low_information": 3,
+      "promotional": 1,
+      "irrelevant": 2
+    },
+    "source_distribution": {
+      "collected": {
+        "google_play": 20,
+        "reddit": 12,
+        "youtube": 7,
+        "app_store": 10
+      },
+      "relevant": {
+        "google_play": 16,
+        "reddit": 12,
+        "youtube": 7,
+        "app_store": 8
+      }
+    },
+    "disclaimer": "Public user-generated content collected from source platforms. Not independently verified as genuine.",
+    "coverage_note": "Explicit wishlist/save language is rare in app-store reviews. That is a coverage gap, not a finding that users do not wishlist."
+  }
+}

@@ -1,14 +1,29 @@
 from __future__ import annotations
 
-from functools import lru_cache
 from typing import Any
 
-from backend.utils.io import read_json, read_jsonl
+from backend.utils.io import read_json, read_jsonl, write_json
 from config import settings
 
 
+def _mode() -> str:
+    data = read_json(settings.ACTIVE_MODE_PATH, {"mode": "public"}) or {"mode": "public"}
+    mode = data.get("mode") or "public"
+    return "demo" if mode == "demo" else "public"
+
+
+def set_mode(mode: str) -> dict[str, str]:
+    mode = "demo" if mode == "demo" else "public"
+    write_json(settings.ACTIVE_MODE_PATH, {"mode": mode})
+    return dataset_banner()
+
+
+def processed_dir():
+    return settings.PROCESSED_DEMO_DIR if _mode() == "demo" else settings.PROCESSED_PUBLIC_DIR
+
+
 def _p(*parts: str):
-    return settings.PROCESSED_DIR.joinpath(*parts)
+    return processed_dir().joinpath(*parts)
 
 
 def load_overview() -> dict[str, Any]:
@@ -31,16 +46,8 @@ def load_opportunities() -> list[dict[str, Any]]:
     return read_json(_p("opportunities.json"), []) or []
 
 
-def load_segments() -> list[dict[str, Any]]:
-    return read_json(_p("segments.json"), []) or []
-
-
 def load_gaps() -> list[dict[str, Any]]:
     return read_json(_p("gaps.json"), []) or []
-
-
-def load_report() -> dict[str, Any]:
-    return read_json(_p("discovery_report.json"), {}) or {}
 
 
 def load_interview() -> dict[str, Any]:
@@ -48,21 +55,17 @@ def load_interview() -> dict[str, Any]:
 
 
 def load_relevant() -> list[dict[str, Any]]:
-    return read_jsonl(settings.PROCESSED_DIR / "relevant_observations.jsonl")
+    return read_jsonl(processed_dir() / "relevant_observations.jsonl")
 
 
 def load_extractions() -> dict[str, dict[str, Any]]:
-    rows = read_jsonl(settings.PROCESSED_DIR / "extractions.jsonl")
+    rows = read_jsonl(processed_dir() / "extractions.jsonl")
     return {r["observation_id"]: r for r in rows}
 
 
 def load_relevance() -> dict[str, dict[str, Any]]:
-    rows = read_jsonl(settings.PROCESSED_DIR / "relevance.jsonl")
+    rows = read_jsonl(processed_dir() / "relevance.jsonl")
     return {r["observation_id"]: r for r in rows}
-
-
-def load_exclusions() -> list[dict[str, Any]]:
-    return read_jsonl(settings.PROCESSED_DIR / "exclusions.jsonl")
 
 
 def load_clusters() -> dict[str, int]:
@@ -70,20 +73,16 @@ def load_clusters() -> dict[str, int]:
     return {r["observation_id"]: r["cluster_id"] for r in rows if "observation_id" in r}
 
 
+def demo_available() -> bool:
+    return (settings.PROCESSED_DEMO_DIR / "overview.json").exists()
+
+
 def dataset_banner() -> dict[str, str]:
-    status = load_pipeline()
-    label = status.get("dataset_label") or "unknown"
-    if label == "demo_sample":
+    if _mode() == "demo":
         return {
             "mode": "demo",
-            "label": "Demo / Sample Data",
+            "label": "DEMO / SAMPLE DATA",
             "detail": "These observations are labeled sample data. They are not real user research and must not be presented as public-source findings.",
-        }
-    if label == "mixed_public_and_demo":
-        return {
-            "mode": "mixed",
-            "label": "Mixed dataset",
-            "detail": "Public-source records and demo/sample records are both present. Filter by dataset_label before quoting evidence.",
         }
     return {
         "mode": "public",

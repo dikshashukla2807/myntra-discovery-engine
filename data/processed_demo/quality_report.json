@@ -1,0 +1,29 @@
+{
+  "total_collected": 49,
+  "duplicates_and_low_value_removed": 4,
+  "duplicates": 0,
+  "irrelevant_removed": 2,
+  "relevant": 43,
+  "valid": 45,
+  "removal_reasons": {
+    "low_information": 3,
+    "promotional": 1,
+    "irrelevant": 2
+  },
+  "source_distribution": {
+    "collected": {
+      "google_play": 20,
+      "reddit": 12,
+      "youtube": 7,
+      "app_store": 10
+    },
+    "relevant": {
+      "google_play": 16,
+      "reddit": 12,
+      "youtube": 7,
+      "app_store": 8
+    }
+  },
+  "disclaimer": "Public user-generated content collected from source platforms. Not independently verified as genuine.",
+  "coverage_note": "Explicit wishlist/save language is rare in app-store reviews. That is a coverage gap, not a finding that users do not wishlist."
+}

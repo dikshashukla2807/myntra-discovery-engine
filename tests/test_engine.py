@@ -177,17 +177,66 @@ def test_opportunity_scoring_transparent():
             "confidence": "medium",
             "confidence_score": 0.6,
             "research_gap": "gap",
+            "what_we_know": "20 observations",
         }
     ]
     opps = score_opportunities(themes, 50)
     assert opps[0]["rank"] == 1
-    assert "scores" in opps[0]
-    assert abs(sum({"evidence_strength":0.12,"frequency":0.10,"purchase_association":0.18,"user_severity":0.10,"segment_concentration":0.08,"source_diversity":0.08,"workaround_intensity":0.12,"potential_user_value":0.08,"potential_business_relevance":0.08,"product_solvability":0.06}.values()) - 1.0) < 1e-9
-    assert opps[0]["claim_type"] == "OPPORTUNITY"
+    assert set(opps[0]["scores"]) == {
+        "evidence_strength",
+        "frequency",
+        "purchase_association",
+        "user_severity",
+        "workaround_intensity",
+        "segment_relevance",
+    }
+    assert all(1 <= v <= 5 for v in opps[0]["scores"].values())
     assert "not causation" in opps[0]["scoring_notes"]
+    # still considering must not inflate purchase association
+    assert opps[0]["purchase_association"] == round(100.0 * (8 + 5) / 20, 2)
 
 
-def test_api_health(monkeypatch, tmp_path: Path):
+def test_theme_named_from_dominant_barrier():
+    from backend.pipeline.discover import _name_theme
+
+    name = _name_theme(["quality uncertainty", "fit"], ["fit"], [], ["post-purchase"])
+    assert name.lower().startswith("users cannot tell from the listing whether quality")
+
+
+def test_duplicate_theme_titles_are_disambiguated():
+    from backend.pipeline.discover import _unique_theme_names
+
+    shared = "Delivery reliability is mentioned in the same comments as buying hesitation."
+    themes = [
+        {
+            "theme_name": shared,
+            "barriers": ["delivery", "return concern"],
+            "uncertainties": [],
+            "cluster_id": 1,
+        },
+        {
+            "theme_name": shared,
+            "barriers": ["delivery", "quality uncertainty"],
+            "uncertainties": [],
+            "cluster_id": 2,
+        },
+    ]
+    names = [t["theme_name"] for t in _unique_theme_names(themes)]
+    assert len(names) == len(set(names))
+    assert all(n.startswith("Delivery reliability") for n in names)
+    assert any("return concern" in n for n in names)
+    assert any("quality uncertainty" in n for n in names)
+
+
+def test_post_purchase_review_is_not_treated_as_postponement():
+    ext = extract_behavior(
+        "I bought this kurta last month. The quality is poor and stitching came undone after one wash."
+    )
+    assert ext["user_intent"] == "post-purchase"
+    assert ext["purchase_outcome"] == "purchased"
+
+
+def test_api_health():
     from backend.api.main import app
 
     client = TestClient(app)
@@ -200,16 +249,12 @@ def test_frontend_pages_exist():
     root = Path(__file__).resolve().parents[1] / "frontend" / "src" / "app"
     expected = [
         "page.tsx",
-        "explorer/page.tsx",
-        "signals/page.tsx",
+        "evidence/page.tsx",
         "opportunities/page.tsx",
         "opportunities/[id]/page.tsx",
-        "segments/page.tsx",
-        "evidence/page.tsx",
-        "gaps/page.tsx",
-        "interviews/page.tsx",
-        "pipeline/page.tsx",
-        "report/page.tsx",
+        "research/page.tsx",
     ]
     for rel in expected:
         assert (root / rel).exists(), rel
+    for gone in ["explorer/page.tsx", "signals/page.tsx", "pipeline/page.tsx", "report/page.tsx"]:
+        assert not (root / gone).exists(), gone
