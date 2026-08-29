@@ -8,6 +8,8 @@ Built for a NextLeap Product Management project (Myntra · Growth).
 
 This is **not** a sentiment tool, review summarizer, or feature recommender. It does **not** assume the problem is price, fit, quality, notifications, or anything else. Public user-generated content is collected, cleaned, classified, clustered, and traced back to original sources so a PM can choose what to validate in 5–6 interviews.
 
+**Read without opening the dashboard:** [`docs/DISCOVERY_BRIEF.md`](docs/DISCOVERY_BRIEF.md) is a full walkthrough of every screen — metric, funnel, six hypothesis tests, all 11 opportunities, sourced quotes, and the interview handoff — using the current public-source snapshot.
+
 It also does **not** answer “what feature should Myntra build?” That decision comes after primary research.
 
 **Constraint encoded in scoring notes:** monetary incentives cannot be used as a solution, even if price appears as a barrier in the evidence.
@@ -128,7 +130,7 @@ data/      raw, clean, processed, fixtures, exports
 config/    settings, queries, taxonomies
 scripts/   collect, pipeline, demo fixtures
 tests/
-docs/PHASE1_AUDIT.md
+docs/     DISCOVERY_BRIEF.md (complete UI walkthrough), PHASE1_AUDIT.md, DATASET.md
 ```
 
 ## Critical rules this repo enforces
