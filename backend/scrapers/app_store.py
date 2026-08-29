@@ -13,7 +13,7 @@ from typing import Any, Callable
 import httpx
 
 from backend.pipeline.normalize import normalize_record
-from backend.utils.io import utc_now, write_json, write_jsonl
+from backend.utils.io import load_jsonl_unique, utc_now, write_json, write_jsonl
 from backend.utils.rate_limit import retry
 from config import settings
 
@@ -91,12 +91,15 @@ def collect_app_store(
     target = target or settings.APP_STORE_REVIEW_TARGET
     # Myntra is an India-focused app; IN is the authentic market.
     # Additional storefronts are tried only to recover more public reviews of the same app.
-    countries = countries or ["in"]
+    # Additional storefronts recover more public reviews of the same app listing.
+    countries = countries or ["in", "us", "gb", "ae", "sg", "au", "ca", "my"]
     sorts = ["mostrecent", "mosthelpful"]
     collected_at = utc_now()
-    seen: set[str] = set()
-    out: list[dict[str, Any]] = []
+    path = settings.RAW_DIR / "app_store" / "reviews.jsonl"
+    out, seen = load_jsonl_unique(path)
+    start = len(out)
     log = progress or (lambda msg: print(msg, flush=True))
+    log(f"[app_store] keeping {start} existing unique reviews; collecting toward {target}")
 
     headers = {"User-Agent": "MyntraDiscoveryEngine/1.0 (academic product research)"}
     with httpx.Client(headers=headers, follow_redirects=True) as client:

@@ -1,8 +1,8 @@
 {
   "source": "reddit",
-  "target": 300,
-  "collected": 300,
-  "collected_at": "2026-08-26T16:30:24Z",
+  "target": 1500,
+  "collected": 1394,
+  "collected_at": "2026-08-29T07:53:14Z",
   "query_categories": [
     "myntra_wishlist",
     "myntra_saved",
@@ -33,13 +33,23 @@
     "myntra_fit",
     "myntra_quality",
     "myntra_return",
+    "myntra_size",
+    "myntra_ajio",
+    "myntra_amazon",
+    "myntra_delivery",
     "online_fashion"
   ],
   "subreddits": [
     "india",
     "AskIndia",
     "IndianFashionAddicts",
-    "IndiaSpeaks"
+    "IndiaSpeaks",
+    "delhi",
+    "mumbai",
+    "bangalore",
+    "hyderabad",
+    "Pune",
+    "indianfashionforum"
   ],
   "path": "/workspace/data/raw/reddit/observations.jsonl",
   "collection_method": "arctic_shift_public_archive",

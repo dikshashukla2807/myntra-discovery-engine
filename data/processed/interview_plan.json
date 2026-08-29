@@ -1,9 +1,9 @@
 {
-  "opportunity_id": "opp-02",
-  "selected_opportunity": "Delivery reliability is mentioned in the same comments as buying hesitation. Also observed with return concern.",
+  "opportunity_id": "opp-03",
+  "selected_opportunity": "Delivery reliability is mentioned in the same comments as buying hesitation. Also observed with product information.",
   "target_segment": "research-heavy shoppers",
-  "what_we_know": "435 relevant observations (27.02%) grouped here. Observed alongside postponed=74, abandoned=100, purchased alternative=0. These are co-occurrences, not causes.",
-  "what_we_dont_know": "Public comments mention 'delivery, return concern, quality uncertainty, size' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+  "what_we_know": "655 relevant observations (13.91%) grouped here. Observed alongside postponed=43, abandoned=249, purchased alternative=0. These are co-occurrences, not causes.",
+  "what_we_dont_know": "Public comments mention 'delivery, return concern, product information' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
   "research_hypothesis": "If this barrier is a true decision blocker for high-intent / high-wishlist users, we should hear it unprompted in stories of products they wanted but did not buy. This remains a hypothesis until interviews.",
   "research_objective": "Understand what actually happens between expressing interest (save/wishlist) and buying or not buying, for this opportunity area — without validating a solution.",
   "interview_questions": [

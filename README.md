@@ -57,12 +57,14 @@ PUBLIC UGC → COLLECT → CLEAN + DEDUPE → RELEVANCE → BEHAVIORAL EXTRACTIO
 
 Targets are caps, not quotas:
 
-| Source | Target | Method |
+| Source | Target (cap) | Method |
 | --- | --- | --- |
-| Google Play (`com.myntra.android`) | ~3,000 | Public reviews via `google-play-scraper` |
-| Reddit | ~300 | Public archive when live Reddit JSON is blocked |
-| YouTube | ~500 | API if keyed; otherwise import. Never fabricated |
-| App Store | optional | Collector exists; not part of the default workflow |
+| Google Play (`com.myntra.android`) | 5,500 | Public reviews via `google-play-scraper` (newest + most relevant + rating; unique IDs merged) |
+| Reddit | 1,500 | Public Arctic Shift archive (posts + comments) when live Reddit JSON is blocked |
+| YouTube | 500 | API if keyed; otherwise import. Never fabricated |
+| App Store | 2,000 | Public iTunes RSS; included when `--include-app-store` is passed |
+
+Re-collect **merges** with existing unique `source_id`s. Missing records are not fabricated. YouTube stays 0 without a key.
 
 The dashboard shows collected → duplicates/low-value removed → irrelevant removed → relevant.
 

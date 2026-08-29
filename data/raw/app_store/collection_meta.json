@@ -1,9 +1,9 @@
 {
   "source": "app_store",
   "app_id": "907394059",
-  "target": 1000,
-  "collected": 799,
-  "collected_at": "2026-08-26T16:16:21Z",
+  "target": 2000,
+  "collected": 899,
+  "collected_at": "2026-08-29T07:53:11Z",
   "path": "/workspace/data/raw/app_store/reviews.jsonl",
   "note": "Public iTunes Customer Reviews RSS. Individual review permalinks are not provided by the feed; source_url is the public app page."
 }

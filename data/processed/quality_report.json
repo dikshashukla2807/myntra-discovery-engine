@@ -1,29 +1,30 @@
 {
-  "total_collected": 4099,
-  "duplicates_and_low_value_removed": 1788,
-  "duplicates": 1095,
-  "irrelevant_removed": 701,
-  "relevant": 1610,
-  "valid": 2311,
+  "total_collected": 7793,
+  "duplicates_and_low_value_removed": 1886,
+  "duplicates": 1158,
+  "irrelevant_removed": 1199,
+  "relevant": 4708,
+  "valid": 5907,
   "removal_reasons": {
-    "low_information": 631,
+    "low_information": 659,
     "empty": 61,
-    "duplicate": 1095,
-    "spam": 1,
-    "irrelevant": 701
+    "duplicate": 1158,
+    "spam": 3,
+    "promotional": 5,
+    "irrelevant": 1199
   },
   "source_distribution": {
     "collected": {
-      "google_play": 3000,
-      "reddit": 300,
+      "google_play": 5500,
+      "reddit": 1394,
       "youtube": 0,
-      "app_store": 799
+      "app_store": 899
     },
     "relevant": {
-      "google_play": 758,
-      "reddit": 261,
+      "google_play": 2928,
+      "reddit": 1157,
       "youtube": 0,
-      "app_store": 591
+      "app_store": 623
     }
   },
   "disclaimer": "Public user-generated content collected from source platforms. Not independently verified as genuine.",

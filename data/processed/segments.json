@@ -3,18 +3,18 @@
     "segment_id": "unclassified",
     "name": "unclassified",
     "definition": "Relevant observations without a discovered behavioral segment signal.",
-    "observation_count": 825,
-    "percentage": 51.24,
+    "observation_count": 2404,
+    "percentage": 51.06,
     "major_barriers": [
       "delivery",
-      "quality uncertainty",
       "return concern",
-      "reviews/trust",
-      "product information"
+      "quality uncertainty",
+      "product information",
+      "reviews/trust"
     ],
     "major_uncertainties": [
-      "quality vs price",
       "return hassle",
+      "quality vs price",
       "review trust",
       "fabric/feel",
       "availability"
@@ -22,15 +22,15 @@
     "workarounds": [],
     "external_research": [],
     "purchase_outcomes": {
-      "unknown": 627,
-      "purchased": 55,
-      "abandoned": 99,
-      "postponed": 36,
-      "still considering": 8
+      "unknown": 1669,
+      "purchased": 216,
+      "abandoned": 412,
+      "postponed": 66,
+      "still considering": 41
     },
     "dominant_opportunity_themes": [
-      "Users cannot tell from the listing whether quality will match the price they wou",
       "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
+      "Users cannot tell from the listing whether quality will match the price they wou",
       "Return and exchange friction shows up in the decision, not only after a package "
     ],
     "evidence_ids": [
@@ -78,121 +78,31 @@
     "discovered": true
   },
   {
-    "segment_id": "fit-conscious-shoppers",
-    "name": "fit-conscious shoppers",
-    "definition": "Language about fit or size as part of the decision.",
-    "observation_count": 312,
-    "percentage": 19.38,
-    "major_barriers": [
-      "fit",
-      "size",
-      "return concern",
-      "delivery",
-      "quality uncertainty"
-    ],
-    "major_uncertainties": [
-      "fit",
-      "size",
-      "return hassle",
-      "quality vs price",
-      "fabric/feel"
-    ],
-    "workarounds": [
-      "asking friends/family",
-      "checking another ecommerce platform",
-      "checking measurements manually",
-      "waiting",
-      "comparing alternatives"
-    ],
-    "external_research": [
-      "friends/family",
-      "other ecommerce",
-      "Instagram",
-      "Reddit",
-      "offline store"
-    ],
-    "purchase_outcomes": {
-      "unknown": 197,
-      "purchased": 43,
-      "abandoned": 25,
-      "still considering": 32,
-      "postponed": 15
-    },
-    "dominant_opportunity_themes": [
-      "Users cannot tell from the listing whether quality will match the price they wou",
-      "Users remain uncertain about how a garment will fit, even when some size informa",
-      "Delivery reliability is mentioned in the same comments as buying hesitation. Als"
-    ],
-    "evidence_ids": [
-      "go-d9f5cb602e3b177f",
-      "go-d342e5a3d35ef147",
-      "go-8d3af6cd03fe3850",
-      "go-3ae9f676cafbcba5",
-      "go-5a3c2f3f490db3b6",
-      "go-95a45f84e98e07f9",
-      "go-23e59f801e9f766c",
-      "go-f681a952cb63f31f",
-      "go-e2239acb3fe74144",
-      "go-382dfd33f3b5cfb1",
-      "go-cc45ca414cc4d826",
-      "go-84b7ca4ff4736cfe",
-      "go-22689db4ad911d00",
-      "go-6e52daa52c1fb6ab",
-      "go-d3b3a5fdfe4ed10a",
-      "go-13db67ccb4c6feba",
-      "go-778894c7028abc9f",
-      "go-521b62d46e0bae8f",
-      "go-a3cd462c90d83508",
-      "go-009ecf50424f2490",
-      "go-9359dfe16479a8d6",
-      "go-ae83bed58f9e0760",
-      "go-5b76babbb71ee41f",
-      "go-771dd70e7ec2b82c",
-      "go-204ba7a26c0257e3",
-      "go-0ee79eb04b307d4e",
-      "go-e59f0dd4700c7409",
-      "go-2505fe9da9c2e530",
-      "go-96628d431d34f80e",
-      "go-1a0c95fc238aa770",
-      "go-4caf8875b47e83e2",
-      "go-052f7c7607514877",
-      "go-8309fc71e4fef383",
-      "go-ec1a19ebb37f2e94",
-      "go-6b80315fdb23c766",
-      "ap-4b6d577ac9b89c3f",
-      "ap-bb9fdd64ec2e3e04",
-      "ap-111ffe3817c936f5",
-      "ap-d920d6011087b8ce",
-      "ap-88be5a4bc1bd6b3c"
-    ],
-    "discovered": true
-  },
-  {
     "segment_id": "research-heavy-shoppers",
     "name": "research-heavy shoppers",
     "definition": "Language about looking things up, photos, measurements, or leaving the app.",
-    "observation_count": 293,
-    "percentage": 18.2,
+    "observation_count": 1098,
+    "percentage": 23.32,
     "major_barriers": [
+      "comparison",
       "delivery",
       "return concern",
-      "comparison",
       "quality uncertainty",
       "price"
     ],
     "major_uncertainties": [
-      "return hassle",
       "better alternative",
+      "return hassle",
       "quality vs price",
-      "fit",
-      "size"
+      "size",
+      "fit"
     ],
     "workarounds": [
       "checking another ecommerce platform",
       "asking friends/family",
       "waiting",
-      "comparing alternatives",
-      "visiting an offline store"
+      "visiting an offline store",
+      "comparing alternatives"
     ],
     "external_research": [
       "other ecommerce",
@@ -202,16 +112,17 @@
       "Reddit"
     ],
     "purchase_outcomes": {
-      "unknown": 104,
-      "abandoned": 36,
-      "still considering": 89,
-      "postponed": 39,
-      "purchased": 25
+      "unknown": 345,
+      "abandoned": 90,
+      "still considering": 467,
+      "postponed": 94,
+      "purchased": 100,
+      "purchased alternative": 2
     },
     "dominant_opportunity_themes": [
-      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Users keep multiple options in play and delay buying while they compare products",
       "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
-      "Some users hesitate to purchase because they lack sufficient confidence or infor"
+      "Return and exchange friction shows up in the decision, not only after a package "
     ],
     "evidence_ids": [
       "go-3c0793e5084c1c3e",
@@ -251,38 +162,38 @@
       "go-14ac6dedf837167a",
       "go-0264654036e9ea7c",
       "go-19021587a4e49e9e",
-      "ap-f12619538d669e1e",
-      "ap-7cdccdf7be037bef",
-      "ap-df43bfc8e89d7ab7"
+      "go-aa92bcdc0aa84459",
+      "go-84a2385da42c192c",
+      "go-209f3ae3d39c7ec3"
     ],
     "discovered": true
   },
   {
-    "segment_id": "price-sensitive-shoppers",
-    "name": "price-sensitive shoppers",
-    "definition": "Language about price, value, discounts, or waiting for sales.",
-    "observation_count": 261,
-    "percentage": 16.21,
+    "segment_id": "fit-conscious-shoppers",
+    "name": "fit-conscious shoppers",
+    "definition": "Language about fit or size as part of the decision.",
+    "observation_count": 747,
+    "percentage": 15.87,
     "major_barriers": [
-      "price",
-      "quality uncertainty",
-      "delivery",
+      "size",
+      "fit",
       "return concern",
-      "material/fabric uncertainty"
+      "delivery",
+      "quality uncertainty"
     ],
     "major_uncertainties": [
-      "quality vs price",
-      "return hassle",
-      "fabric/feel",
       "size",
-      "better alternative"
+      "fit",
+      "return hassle",
+      "quality vs price",
+      "fabric/feel"
     ],
     "workarounds": [
       "checking another ecommerce platform",
       "asking friends/family",
-      "waiting",
-      "comparing alternatives",
-      "visiting an offline store"
+      "checking measurements manually",
+      "visiting an offline store",
+      "waiting"
     ],
     "external_research": [
       "other ecommerce",
@@ -292,16 +203,106 @@
       "Instagram"
     ],
     "purchase_outcomes": {
-      "abandoned": 21,
-      "unknown": 176,
-      "purchased": 28,
-      "still considering": 23,
-      "postponed": 13
+      "unknown": 490,
+      "purchased": 81,
+      "abandoned": 53,
+      "still considering": 100,
+      "postponed": 23
     },
     "dominant_opportunity_themes": [
-      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Users keep multiple options in play and delay buying while they compare products",
       "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
-      "Users remain uncertain about how a garment will fit, even when some size informa"
+      "Return and exchange friction shows up in the decision, not only after a package "
+    ],
+    "evidence_ids": [
+      "go-d9f5cb602e3b177f",
+      "go-d342e5a3d35ef147",
+      "go-8d3af6cd03fe3850",
+      "go-3ae9f676cafbcba5",
+      "go-5a3c2f3f490db3b6",
+      "go-95a45f84e98e07f9",
+      "go-23e59f801e9f766c",
+      "go-f681a952cb63f31f",
+      "go-e2239acb3fe74144",
+      "go-382dfd33f3b5cfb1",
+      "go-cc45ca414cc4d826",
+      "go-84b7ca4ff4736cfe",
+      "go-22689db4ad911d00",
+      "go-6e52daa52c1fb6ab",
+      "go-d3b3a5fdfe4ed10a",
+      "go-13db67ccb4c6feba",
+      "go-778894c7028abc9f",
+      "go-521b62d46e0bae8f",
+      "go-a3cd462c90d83508",
+      "go-009ecf50424f2490",
+      "go-9359dfe16479a8d6",
+      "go-ae83bed58f9e0760",
+      "go-5b76babbb71ee41f",
+      "go-771dd70e7ec2b82c",
+      "go-204ba7a26c0257e3",
+      "go-0ee79eb04b307d4e",
+      "go-e59f0dd4700c7409",
+      "go-2505fe9da9c2e530",
+      "go-96628d431d34f80e",
+      "go-1a0c95fc238aa770",
+      "go-4caf8875b47e83e2",
+      "go-052f7c7607514877",
+      "go-8309fc71e4fef383",
+      "go-ec1a19ebb37f2e94",
+      "go-6b80315fdb23c766",
+      "go-923971fe3f06cf3e",
+      "go-dd2c2c40076f7af3",
+      "go-ab97c9d439f1a2ea",
+      "go-2204a4e988f3be7b",
+      "go-7b18d61e7fbe91f6"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "price-sensitive-shoppers",
+    "name": "price-sensitive shoppers",
+    "definition": "Language about price, value, discounts, or waiting for sales.",
+    "observation_count": 698,
+    "percentage": 14.83,
+    "major_barriers": [
+      "price",
+      "quality uncertainty",
+      "delivery",
+      "return concern",
+      "comparison"
+    ],
+    "major_uncertainties": [
+      "quality vs price",
+      "return hassle",
+      "better alternative",
+      "fabric/feel",
+      "size"
+    ],
+    "workarounds": [
+      "checking another ecommerce platform",
+      "asking friends/family",
+      "visiting an offline store",
+      "comparing alternatives",
+      "waiting"
+    ],
+    "external_research": [
+      "other ecommerce",
+      "friends/family",
+      "offline store",
+      "Reddit",
+      "Instagram"
+    ],
+    "purchase_outcomes": {
+      "abandoned": 63,
+      "unknown": 425,
+      "purchased": 81,
+      "still considering": 103,
+      "postponed": 26
+    },
+    "dominant_opportunity_themes": [
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
+      "Users keep multiple options in play and delay buying while they compare products",
+      "Users cannot tell from the listing whether quality will match the price they wou"
     ],
     "evidence_ids": [
       "go-9623193bcbe57025",
@@ -348,30 +349,30 @@
     "discovered": true
   },
   {
-    "segment_id": "brand-loyal-shoppers",
-    "name": "brand-loyal shoppers",
-    "definition": "Language about brand, authenticity, or originals.",
-    "observation_count": 146,
-    "percentage": 9.07,
+    "segment_id": "comparison-heavy-shoppers",
+    "name": "comparison-heavy shoppers",
+    "definition": "Language about comparing products or platforms.",
+    "observation_count": 670,
+    "percentage": 14.23,
     "major_barriers": [
-      "return concern",
+      "comparison",
       "delivery",
-      "quality uncertainty",
       "price",
-      "size"
+      "quality uncertainty",
+      "return concern"
     ],
     "major_uncertainties": [
-      "return hassle",
-      "quality vs price",
-      "size",
       "better alternative",
-      "fit"
+      "quality vs price",
+      "return hassle",
+      "fit",
+      "fabric/feel"
     ],
     "workarounds": [
       "checking another ecommerce platform",
       "asking friends/family",
+      "comparing alternatives",
       "visiting an offline store",
-      "waiting",
       "Instagram"
     ],
     "external_research": [
@@ -382,16 +383,107 @@
       "Reddit"
     ],
     "purchase_outcomes": {
-      "unknown": 86,
-      "purchased": 20,
-      "abandoned": 9,
-      "postponed": 8,
-      "still considering": 23
+      "still considering": 453,
+      "unknown": 98,
+      "abandoned": 40,
+      "purchased": 63,
+      "postponed": 14,
+      "purchased alternative": 2
     },
     "dominant_opportunity_themes": [
-      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Users keep multiple options in play and delay buying while they compare products",
       "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
-      "Users remain uncertain about how a garment will fit, even when some size informa"
+      "Some users hesitate to purchase because they lack sufficient confidence or infor"
+    ],
+    "evidence_ids": [
+      "go-79e39482aa6123b1",
+      "go-3c0793e5084c1c3e",
+      "go-a1363b97678478bb",
+      "go-8fea26f00e0588e5",
+      "go-4e0b18ae49c78e82",
+      "go-dc43d799ca802f6c",
+      "go-065e11428fef63c3",
+      "go-51cae484ca6419a9",
+      "go-43dc405e82ce46c4",
+      "go-454ce2128beb2df1",
+      "go-e5eec3d16c0182e0",
+      "go-6e52daa52c1fb6ab",
+      "go-0125a458395f241c",
+      "go-99dc53e01cf1add3",
+      "go-e2d38333bdfcb4dd",
+      "go-c055ae2b6340f45a",
+      "go-9d0854be74186a9c",
+      "go-fe2a7213321bbbc3",
+      "go-e853310be278b29b",
+      "go-39b92a4ddf650ea1",
+      "go-885120885d71770e",
+      "go-48e5805c516c1ad5",
+      "go-0264654036e9ea7c",
+      "go-3bb554e6e8217f11",
+      "go-60e5b65ee3ac1168",
+      "go-aa92bcdc0aa84459",
+      "go-5d94b2d2f3b4887b",
+      "go-ac1a40db7a7a4f1a",
+      "go-701f75c708921f85",
+      "go-b56af6d82a28c5a6",
+      "go-a4d50dd3793d9984",
+      "go-5b7fe27dab0c0ab6",
+      "go-9089720483dda6de",
+      "go-9c44cf4e2c1946d5",
+      "go-2898ab49c7229aff",
+      "go-d9d13f62c09c15f1",
+      "go-ef531ccdf904a888",
+      "go-5c28ac805c0ee56b",
+      "go-b3b1e9a9396ed297",
+      "go-348119284665cda8"
+    ],
+    "discovered": true
+  },
+  {
+    "segment_id": "brand-loyal-shoppers",
+    "name": "brand-loyal shoppers",
+    "definition": "Language about brand, authenticity, or originals.",
+    "observation_count": 398,
+    "percentage": 8.45,
+    "major_barriers": [
+      "return concern",
+      "delivery",
+      "quality uncertainty",
+      "price",
+      "comparison"
+    ],
+    "major_uncertainties": [
+      "return hassle",
+      "quality vs price",
+      "better alternative",
+      "size",
+      "fabric/feel"
+    ],
+    "workarounds": [
+      "checking another ecommerce platform",
+      "asking friends/family",
+      "visiting an offline store",
+      "waiting",
+      "comparing alternatives"
+    ],
+    "external_research": [
+      "other ecommerce",
+      "friends/family",
+      "offline store",
+      "Instagram",
+      "brand website"
+    ],
+    "purchase_outcomes": {
+      "unknown": 236,
+      "purchased": 61,
+      "abandoned": 22,
+      "still considering": 62,
+      "postponed": 17
+    },
+    "dominant_opportunity_themes": [
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
+      "Users keep multiple options in play and delay buying while they compare products",
+      "Return and exchange friction shows up in the decision, not only after a package "
     ],
     "evidence_ids": [
       "go-b1cdc65f56305f18",
@@ -427,103 +519,13 @@
       "go-4aa6bcffbffa1ee3",
       "go-e1733258bb6cb0b5",
       "go-53ef90c1ef43d08f",
-      "ap-d4ff889cc7aa116e",
-      "ap-fb593651b0b5b8cc",
-      "ap-18e56f7424469f45",
-      "ap-8b09996b00f503b5",
-      "ap-df43bfc8e89d7ab7",
-      "ap-5827f882b9dca92b",
-      "ap-60c517684701f423"
-    ],
-    "discovered": true
-  },
-  {
-    "segment_id": "comparison-heavy-shoppers",
-    "name": "comparison-heavy shoppers",
-    "definition": "Language about comparing products or platforms.",
-    "observation_count": 130,
-    "percentage": 8.07,
-    "major_barriers": [
-      "comparison",
-      "quality uncertainty",
-      "delivery",
-      "price",
-      "return concern"
-    ],
-    "major_uncertainties": [
-      "better alternative",
-      "quality vs price",
-      "return hassle",
-      "fit",
-      "fabric/feel"
-    ],
-    "workarounds": [
-      "checking another ecommerce platform",
-      "comparing alternatives",
-      "asking friends/family",
-      "Reddit",
-      "Instagram"
-    ],
-    "external_research": [
-      "other ecommerce",
-      "friends/family",
-      "Reddit",
-      "Instagram",
-      "offline store"
-    ],
-    "purchase_outcomes": {
-      "still considering": 88,
-      "unknown": 20,
-      "abandoned": 12,
-      "purchased": 8,
-      "postponed": 2
-    },
-    "dominant_opportunity_themes": [
-      "Users cannot tell from the listing whether quality will match the price they wou",
-      "Some users hesitate to purchase because they lack sufficient confidence or infor",
-      "Delivery reliability is mentioned in the same comments as buying hesitation. Als"
-    ],
-    "evidence_ids": [
-      "go-79e39482aa6123b1",
-      "go-3c0793e5084c1c3e",
-      "go-a1363b97678478bb",
-      "go-8fea26f00e0588e5",
-      "go-4e0b18ae49c78e82",
-      "go-dc43d799ca802f6c",
-      "go-065e11428fef63c3",
-      "go-51cae484ca6419a9",
-      "go-43dc405e82ce46c4",
-      "go-454ce2128beb2df1",
-      "go-e5eec3d16c0182e0",
-      "go-6e52daa52c1fb6ab",
-      "go-0125a458395f241c",
-      "go-99dc53e01cf1add3",
-      "go-e2d38333bdfcb4dd",
-      "go-c055ae2b6340f45a",
-      "go-9d0854be74186a9c",
-      "go-fe2a7213321bbbc3",
-      "go-e853310be278b29b",
-      "go-39b92a4ddf650ea1",
-      "go-885120885d71770e",
-      "go-48e5805c516c1ad5",
-      "go-0264654036e9ea7c",
-      "go-3bb554e6e8217f11",
-      "go-60e5b65ee3ac1168",
-      "ap-f12619538d669e1e",
-      "ap-7cdccdf7be037bef",
-      "ap-305aabbbe6638a7b",
-      "ap-d4cee2c475bf8ba6",
-      "ap-481886ec01faa4c8",
-      "ap-016d93876d8b4f2a",
-      "ap-e600af2999f609d0",
-      "ap-981bf3231f3c0868",
-      "ap-4072a14e1b5a33b0",
-      "ap-8d0b37434c58a79d",
-      "ap-40ffe05b94478e99",
-      "ap-2aadbda35c0260d3",
-      "ap-33b929fa67e034ac",
-      "ap-5e6c2d7bfe7d3da6",
-      "ap-b7ca3c2628716e29"
+      "go-003686987ee0b763",
+      "go-ac1a40db7a7a4f1a",
+      "go-cc5a7d11eb97fff6",
+      "go-ef90b9ad9adc1ba6",
+      "go-2ee972cbdab9ad21",
+      "go-0acb349f259c2bb9",
+      "go-8581d0dd68da296b"
     ],
     "discovered": true
   },
@@ -531,46 +533,47 @@
     "segment_id": "occasion-driven-shoppers",
     "name": "occasion-driven shoppers",
     "definition": "Language about events, weddings, office, or timed need.",
-    "observation_count": 58,
-    "percentage": 3.6,
+    "observation_count": 154,
+    "percentage": 3.27,
     "major_barriers": [
       "occasion",
       "delivery",
+      "comparison",
       "return concern",
-      "fit",
       "quality uncertainty"
     ],
     "major_uncertainties": [
       "occasion suitability",
+      "better alternative",
       "return hassle",
-      "fit",
       "quality vs price",
-      "size"
+      "fit"
     ],
     "workarounds": [
-      "asking friends/family",
       "checking another ecommerce platform",
-      "waiting",
+      "asking friends/family",
       "visiting an offline store",
-      "adding alternatives to wishlist"
+      "Instagram",
+      "waiting"
     ],
     "external_research": [
-      "friends/family",
       "other ecommerce",
+      "friends/family",
       "offline store",
-      "Instagram"
+      "Instagram",
+      "Google"
     ],
     "purchase_outcomes": {
-      "unknown": 30,
-      "abandoned": 11,
-      "purchased": 8,
-      "still considering": 7,
-      "postponed": 2
+      "unknown": 67,
+      "purchased": 20,
+      "abandoned": 20,
+      "still considering": 41,
+      "postponed": 6
     },
     "dominant_opportunity_themes": [
-      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Users keep multiple options in play and delay buying while they compare products",
       "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
-      "Users remain uncertain about how a garment will fit, even when some size informa"
+      "Some users wishlist products for a future occasion such as a festival, event, va"
     ],
     "evidence_ids": [
       "go-27404417f32efb11",
@@ -578,41 +581,41 @@
       "go-521b62d46e0bae8f",
       "go-a0a22ca77adf4b83",
       "go-8f40f28c4c28751b",
+      "go-6aa3d2094938e525",
+      "go-fca01973f46f6b6b",
+      "go-155c69152c41aa35",
+      "go-b545f07540c2c77a",
+      "go-ce0070fdc5589cef",
+      "go-8aa4ca43d2170582",
+      "go-515b8383b973d8a9",
+      "go-c24afa8209b5991e",
+      "go-4e67a7aad7ff7b31",
+      "go-21e6e4b4932459e4",
+      "go-a718385629b43fc3",
+      "go-4dea49ca3937d447",
+      "go-0b3f5ae055e07858",
+      "go-b1b8a29db965dc46",
+      "go-6f4b543c80fac2c9",
+      "go-5af0e1c1d661950a",
+      "go-49f23ddf4fa4efae",
+      "go-ef8832cf90d53e7c",
+      "go-f535a3532ebaba0d",
+      "go-9a9bb7b9ddc9fea7",
+      "go-b0c323d5545c77f7",
+      "go-4cba91bbd0dd8729",
+      "go-7f1d96d160968fcc",
+      "go-10d12926c8031a3e",
+      "go-349c8a78ee101fea",
+      "go-398814dc4a3f6856",
+      "go-7190b7bcf4a61be3",
+      "go-ed6016b38b66e35a",
+      "go-6488d7f111b14675",
+      "go-81ca198863e72dfd",
+      "go-0bd7a908ee799daf",
       "ap-37c7244463a8525c",
       "ap-9cb9a05a4c270ac9",
       "ap-8e038e5aadd11ccc",
-      "ap-09bc066834810e3a",
-      "ap-d4cee2c475bf8ba6",
-      "ap-e5f79d2506cdb9b8",
-      "ap-481886ec01faa4c8",
-      "ap-de7904b09c4b9aca",
-      "ap-129cffd32c0149eb",
-      "ap-841f06ecab944489",
-      "ap-a65d59b8c136c79b",
-      "ap-827eebac17cc69e3",
-      "ap-b6087450fc57b4aa",
-      "ap-a134983d504527f3",
-      "ap-c00a6c3e9eead03c",
-      "ap-173a2813d5f720f7",
-      "ap-88333b236903d1ac",
-      "ap-a2c182c7c02ee008",
-      "ap-98f175c986a87234",
-      "ap-8a58dc5606120b21",
-      "ap-aa026df4eb59a0d4",
-      "ap-463707589e69624e",
-      "ap-d7d7685f43134d10",
-      "ap-9d40b92d3d4fdb88",
-      "ap-e212280d61e1ba18",
-      "ap-01742c9cda202626",
-      "ap-a030bc2722b44680",
-      "ap-9b553f9048b2436a",
-      "ap-edf422e277a65c97",
-      "ap-48229207bc78e8be",
-      "ap-3fcc61ada8898917",
-      "ap-c3ffb3f06c490866",
-      "ap-659385029b88cc3b",
-      "ap-4311929d1dc31a54",
-      "re-1e03ba1cc0b608fc"
+      "ap-09bc066834810e3a"
     ],
     "discovered": true
   },
@@ -620,37 +623,43 @@
     "segment_id": "exploratory-browsers",
     "name": "exploratory browsers",
     "definition": "Language about browsing, inspiration, or just looking.",
-    "observation_count": 15,
-    "percentage": 0.93,
+    "observation_count": 72,
+    "percentage": 1.53,
     "major_barriers": [
       "quality uncertainty",
+      "delivery",
       "material/fabric uncertainty",
       "price",
-      "size",
-      "occasion"
+      "size"
     ],
     "major_uncertainties": [
       "quality vs price",
       "fabric/feel",
       "size",
-      "occasion suitability",
-      "fit"
+      "fit",
+      "occasion suitability"
     ],
     "workarounds": [
       "asking friends/family",
       "checking another ecommerce platform",
-      "comparing alternatives"
+      "visiting an offline store",
+      "comparing alternatives",
+      "Google"
     ],
     "external_research": [
       "friends/family",
-      "other ecommerce"
+      "other ecommerce",
+      "offline store",
+      "Google",
+      "Reddit"
     ],
     "purchase_outcomes": {
-      "unknown": 15
+      "unknown": 72
     },
     "dominant_opportunity_themes": [
-      "Users cannot tell from the listing whether quality will match the price they wou",
-      "Some users hesitate to purchase because they lack sufficient confidence or infor"
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
+      "Users keep multiple options in play and delay buying while they compare products",
+      "Users cannot tell from the listing whether quality will match the price they wou"
     ],
     "evidence_ids": [
       "go-7046a4c954d3c8c1",
@@ -659,15 +668,40 @@
       "go-687197d538138837",
       "go-82aa5b3e49c7a75e",
       "go-12e2073b90f43a18",
-      "ap-9cb9a05a4c270ac9",
-      "ap-9836b1d5cc9c21c4",
-      "ap-01c92356c1381a6a",
-      "ap-18e56f7424469f45",
-      "ap-31fd934705a55fda",
-      "ap-17deb6c69555c1cc",
-      "ap-18f90617ba3e3f42",
-      "ap-dd97e1c275a0f3f3",
-      "re-7abb2d362093a163"
+      "go-ab97c9d439f1a2ea",
+      "go-811be4d5ecb6442e",
+      "go-8012c0b4c18b3ae8",
+      "go-df62538a66f8b1e1",
+      "go-9d077f40290eacdf",
+      "go-300cd3e5d0d97426",
+      "go-7fd1e9ea037f985c",
+      "go-8aa4ca43d2170582",
+      "go-cbe7fff3d588fed9",
+      "go-d72a2fd2424bc7f2",
+      "go-5a50fb2074138dd9",
+      "go-1a9a56c395b024c1",
+      "go-62e74c591cf1db05",
+      "go-c156438abd04f2a1",
+      "go-e73dda55c01f72a2",
+      "go-1de59bdce706966a",
+      "go-0ef8fa3d76f1a407",
+      "go-8e4abc39eafda4d1",
+      "go-bd2759adf0fe21aa",
+      "go-b1b8a29db965dc46",
+      "go-240aaf1650e67080",
+      "go-f84959c5f609b5bf",
+      "go-fcc08bcc88bfc8c2",
+      "go-18cafb7d2db4d406",
+      "go-41a24b1cd998a560",
+      "go-706a9beb9f5bc5f1",
+      "go-7d33f41ef52c9658",
+      "go-b04f747e0f29dcea",
+      "go-0dcfd5e496ea03d3",
+      "go-42ccda4dcc42b62a",
+      "go-1ca7826aff6a8d92",
+      "go-f93b38d2d93d2b4e",
+      "go-43a24f09d5fac58b",
+      "go-258a6cd7aa87fd3a"
     ],
     "discovered": true
   },
@@ -675,48 +709,62 @@
     "segment_id": "high-wishlist-users",
     "name": "high-wishlist users",
     "definition": "Language that explicitly mentions wishlist or saved items.",
-    "observation_count": 8,
-    "percentage": 0.5,
+    "observation_count": 19,
+    "percentage": 0.4,
     "major_barriers": [
-      "price",
       "size",
+      "reviews/trust",
+      "price",
       "return concern",
-      "quality uncertainty",
       "delivery"
     ],
     "major_uncertainties": [
       "size",
+      "review trust",
       "return hassle",
       "quality vs price",
-      "review trust",
       "occasion suitability"
     ],
     "workarounds": [
       "adding alternatives to wishlist",
       "asking friends/family",
-      "waiting"
+      "comparing alternatives",
+      "waiting",
+      "checking measurements manually"
     ],
     "external_research": [
       "friends/family"
     ],
     "purchase_outcomes": {
-      "still considering": 5,
+      "still considering": 15,
       "postponed": 1,
-      "unknown": 2
+      "unknown": 3
     },
     "dominant_opportunity_themes": [
-      "Users cannot tell from the listing whether quality will match the price they wou",
-      "Delivery reliability is mentioned in the same comments as buying hesitation. Als"
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
+      "Users keep multiple options in play and delay buying while they compare products",
+      "Some users hesitate to purchase because they lack sufficient confidence or infor"
     ],
     "evidence_ids": [
       "go-a9cf32113d55254c",
+      "go-aa92bcdc0aa84459",
+      "go-778912d1ef030d1d",
+      "go-4e83ef7e074d6c50",
+      "go-91da2830c472714d",
+      "go-cb370285895336ac",
+      "go-4a2ed4c7f2400f42",
+      "go-5a85dcd1a0b45300",
       "ap-ab3fd2d7e5b5bb67",
       "ap-a65d59b8c136c79b",
       "ap-308b878ee466ceff",
       "ap-7e71452897523ebf",
       "ap-6cb79f22f00369c7",
       "ap-45034f40022cce4a",
-      "re-86adc5f963e16940"
+      "re-86adc5f963e16940",
+      "re-254f4dd0a8d68ffe",
+      "re-b6dab717e88a0a81",
+      "re-c80ec01b29395234",
+      "re-c06953d12bb42c6a"
     ],
     "discovered": true
   }

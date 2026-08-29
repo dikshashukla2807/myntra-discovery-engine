@@ -1781,11 +1781,109 @@
 {"observation_id": "ap-f5cd77757a36976e", "status": "excluded", "reason": "low_information", "stage": "quality"}
 {"observation_id": "ap-0004a14d56aa83cf", "status": "excluded", "reason": "empty", "stage": "quality"}
 {"observation_id": "ap-d18c00c927e4b5cb", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-dfcb1545777ea4bb", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-226a584b8a5f3c98", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-1fae40dcb57fd972", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-6081cca7ed6308bf", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-02fd8cf66b5f378a", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-397c3129d241d13f", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-d2768022ec7d9a90", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-3736bf32ea8b3ec7", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-569cd284ce7aca3c", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-dbaddf17c2e7f505", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-1c4f16057a6cda97", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-05219c37f41c499c", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-34b8a67369d42918", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-f5c77209c792f7b5", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-095ec3dd65eca617", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-487047e454b02dc4", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-590198a03ea48f8e", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-c153012728909b32", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-2e0404578da02684", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-21ee7a4616502f0d", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-e14b67badc43a1a9", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-bc62ed098494cae3", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-7548c4ca0b9e5954", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-7159f0f88f2a3778", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-9778e047101a1469", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-fb780bd8d6eb11df", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-0ce57dcb8a8e4daa", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-c35f21867cab7bb5", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-32ca5005e4127e8e", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-50e6145225912632", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-c3b017bbc13008af", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-eadbca018f168da9", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-0e685d10ae935052", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-7bc7d8ce5cb9f7f9", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-ef5f6f64fb8c0b48", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-eeb49d61458009b3", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-10542e5e5a9633c8", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-94d0fd874650260b", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-983a4bdd7e9970a6", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-c5d42d3115469b81", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-b9fdc0e940ae0057", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-2470f7f59f5b38d6", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "ap-9c56f3a685c59445", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "ap-f66aa61f53d01845", "status": "excluded", "reason": "duplicate", "stage": "quality"}
 {"observation_id": "re-72b2b0e45fd8700a", "status": "excluded", "reason": "low_information", "stage": "quality"}
 {"observation_id": "re-4d595f8157c6c161", "status": "excluded", "reason": "low_information", "stage": "quality"}
 {"observation_id": "re-745821b05fd995a8", "status": "excluded", "reason": "spam", "stage": "quality"}
 {"observation_id": "re-eb474bc62b60d6d6", "status": "excluded", "reason": "duplicate", "stage": "quality"}
 {"observation_id": "re-4b900b24645eaac7", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-dbf80f38dd77b8a9", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "re-ffa94f237dba0762", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "re-b731c3d525bb9b6b", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-d3c3c1ef64c6f3fc", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-fa05a1424d1a550d", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-442dd2731a94ee47", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-dd603112d73eeec7", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-1b36992410bd2991", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-ccd71572ad5dbdc4", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-28a79a5f90eb7782", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-0b3fb9d2ae29eb05", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-1aa89a5a7dee3349", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-4da03e2b2a634126", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-c8f094bd0e85ac08", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-b133b0ea14299ff2", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "re-3e0ebe66c39cdfa9", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "re-6f8d762b2f169f13", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-76ff97360f65efab", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-b98f34d336e2427e", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-e3ed3cca011b5c88", "status": "excluded", "reason": "promotional", "stage": "quality"}
+{"observation_id": "re-ae4d85ffaad4f386", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-30c381538b497133", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "re-af71e08efc806f9b", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-23b779d26dfb703b", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-3037bdf382dde816", "status": "excluded", "reason": "promotional", "stage": "quality"}
+{"observation_id": "re-a6a8026f7c1d5547", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "re-9f8bdafd677ccfb1", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-815f3eb83bb7b6a1", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "re-64efebda520b7714", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-f79813ee2aa2d993", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-fe39657b3f216289", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-70876aee84420afa", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-5eb2be9e6bb1fbd6", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-aba31878cf5b302e", "status": "excluded", "reason": "promotional", "stage": "quality"}
+{"observation_id": "re-5471fdcb031022be", "status": "excluded", "reason": "spam", "stage": "quality"}
+{"observation_id": "re-376b0d91a3c59c9f", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-6232aac2738ce073", "status": "excluded", "reason": "promotional", "stage": "quality"}
+{"observation_id": "re-49ecf67a11e06549", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-58840e3c4c7eee75", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-62899033f294d126", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-7db60cd76333e007", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-083a502dde49af87", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-dcf6f432c103f3ba", "status": "excluded", "reason": "low_information", "stage": "quality"}
+{"observation_id": "re-1594a15886b8154c", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-d90d780343990e4d", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-92ebc228ae3a5685", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-394500863aaa80b4", "status": "excluded", "reason": "promotional", "stage": "quality"}
+{"observation_id": "re-b813dce3e277e9da", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-d03b69329e641668", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-109b5689f9518ee2", "status": "excluded", "reason": "spam", "stage": "quality"}
+{"observation_id": "re-c96c5739e734a511", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-4f932e8e18bc71b2", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-edfeddd2ec0a1f70", "status": "excluded", "reason": "duplicate", "stage": "quality"}
+{"observation_id": "re-9fa37f4a236b7824", "status": "excluded", "reason": "duplicate", "stage": "quality"}
 {"observation_id": "go-06f112e9959ce6b9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "go-389e8be6d256241a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "go-e3307cf97524f4d7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
@@ -2388,6 +2486,336 @@
 {"observation_id": "go-128de02e5fc88f74", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "go-c42030af2c3488a0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "go-50501037614005ab", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-135b3cb8f5d87ac6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e81ed79151f8a186", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-2812abcc9678e661", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e8514b0a0e56f3e1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-89644cfb8bbc92dd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-099025fc714e5bcf", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-696fc09d0352a5d0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-a7c7ad926f233d73", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-2248bf0a81461e10", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e4641210b56530ed", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-293dbe22878bbfbe", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-dd7cb6e41197ede9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-90bad74cac0858c1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-265ca7d5250e3c8a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5c11ec76f72ee24f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-18f35da25d219a39", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-29d9b4181a1d299e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5bb2c74cd2c369f1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-2e8ed44c6bfe634c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-596257f33cd321ae", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-0a0138ef0a683624", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-6d04d74f3e8818d9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-fe37500f7760ba9c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f056a7166910ea03", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-bb1cc403eb14d143", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-a75bf61f0e48f286", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d60df55b12a87dbc", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-66363fc987fed2ce", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "App operations issue without product-decision evidence."}
+{"observation_id": "go-401ea846946151b6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-4d7386f616962d3a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-bfd726d829f59c33", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-33562daebec7aad3", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f12932f1faf27ea7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-aff4bbc15bfbee09", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-9fbeddb0a3e78d38", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e762b7be5c3a1c8d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-84934c1810f09b09", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-72b2deff48b88d20", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-9968d4009044a57d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e7965a25393510e8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-668ce079f0481091", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-92ad5a8ba69167b5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-1b9c9b611b21c2df", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5c226f036a11819b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-62ab54c027fc50e0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-411131efcd714b32", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7053ed28f1a360d9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-792425169c74777e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f25bd8d3fd089d6d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7c47164b1f8e1ed4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-4a3696d6bf94674f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-bdd07531e8b50bef", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-b26600f30ec6d307", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e5d30d64d5cd0124", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-3fb118e48959efcf", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-a5b5069a797b7711", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f9c8ecc06b3b3538", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-77d1b287b57cdbe0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-63513fb4c75ed9de", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-3ebf4ab9621e5cf6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d2f25f640aa08c7a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-2241cd368480f6a3", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d2b05fa0e367caf0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-ff72dd535fcbebb2", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-33023e45e2986520", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-61e9e992c33cb65e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8e2cd69950a31805", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-bf66a85d0dd4e388", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "App operations issue without product-decision evidence."}
+{"observation_id": "go-226928f69134d7c3", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-cb68fb58299717e4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-fecf5454b1f79521", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-0befa788411712ab", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-1b2ea7cfd04f9d23", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c25717d15f4b5ef5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-979fdbc7a37f3036", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5fb2a6250e0e2b9f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c2af9939015b1e1e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7c6a8244d5862201", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8b328b3168fdfda4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-6e4c2f9974792a2b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-71efa0f17f9d860e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d5445242aa2381ad", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-687ab28df0ee969d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f5fe4ee4b1fa00d9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-a0e71b8524fe6567", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-b446b0be3c3547a0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d505d9ecaf95a005", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-219f5ad5f3c4ce1f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-938fd7e20b07b0c6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7b3b1ea4ea0cd196", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-52b1d788408c5949", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-ccdcffa9b4414f85", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-406c5a2c98ceb146", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c03f35b2c1bbf292", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-0846cbb9605aed77", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-bac3a6d5d507321d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-1adf4094eea2cf6b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-0e10956299f59d62", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-08aee3762b9a9da6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e2df87cd578fc9b5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-76489a7ec464a3c1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-18ffb0b0e18e40ae", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-982e425f1200002d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-ac2c1df6710e9741", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "App operations issue without product-decision evidence."}
+{"observation_id": "go-690fbd3e9bef1887", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-df5d105706bfe2fa", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-0259a0164476e2b1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5c7c1553847635d6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8012e117eb38e426", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-762e2d201d6f6b08", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e97cb27fd59ca6bd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d2f45f88f0dcfb52", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d2d46487192d0f3d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d0c31af2e4e5c2f3", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-04788da37f12d48d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-773a03f5549935ca", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f599f6b839a4dcfc", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-718eac39a43a1b7c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-df72a00f188e7be3", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-609aa840ec9afbc7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-278326913a2aff23", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f5d5911ff4b0c544", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "App operations issue without product-decision evidence."}
+{"observation_id": "go-f7b745eeb1a2e197", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5d3b3368751a021b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-6d8ada1893ff318e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c8e6b5254f732236", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7c2507c5d2f0a31d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "App operations issue without product-decision evidence."}
+{"observation_id": "go-bd5ece8c1adc6db5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-0461fcaeaba2bcec", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-9120af57964f87b9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-44c56eb2c1e86e0f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5439b965ead4c5ea", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-0309a54c88a81177", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-665e4963cbce0bdd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-6842d3c883ff8f66", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-06cedef373841e34", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "App operations issue without product-decision evidence."}
+{"observation_id": "go-02d829d336608bdb", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-05253609292ba960", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-88f72c10753ebd4d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-2a420cd894380afd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7cfb6e23167c1d4f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-ef917b79eb5cf3d4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-82567edc3399886e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-80ec739428db873b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-ac422de96fb50dd8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-6be6ecd6e171d2ad", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-95833c7834361e37", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-57e980f95f4babd6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8939c66d52d050af", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-4bf318d312acf2ac", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-a236698e431d3c95", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-867815d442c79008", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-ce5b452b74e4d0c5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e3773653f155a636", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f91e6ea20fb7659a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f1ac4df3314687c0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-9f6ac1292e56147d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-3517249855f812fb", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-543089f831a40ca9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-669eae4340580476", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-eae09f3221924b25", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e4227d185c32f3ed", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7fa90004972854e9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-85cf9fabe01e4229", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-fd2f133c65be32cb", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-4da297c5ed90a8d1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-b61c201d24230bf1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-44626983e9e6da3c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-735296c4de7eb107", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f484dafda4efe9eb", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-4d4ab2d8741ecfff", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-2457e1fe693dd911", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-02ecdee038dfb9a1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e88a88d83c558471", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-950d9232545ef0f8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-b0ceae96fd47d158", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8e25a674b53eeec4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e2330bbd64a20dd3", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-10c4b0b591e4c1a1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c06ef359dac4d060", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7e0393c5c6a50891", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-14a717be6100934c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5393b265b537ee31", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-b93156e4146e9da6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f06a7e2f12bcff5a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d3d75408fe94ae5e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-38b789f5c8a3dc52", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7b5abdfd9d86a733", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c2e387753fdd7e15", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-020de1a1c425c07b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-4307c74de664b38a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-3eadcad7d521fd7c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-ccf8b72768a04262", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d2c7524e552fd130", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-9b2398fe9c1da3e6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-632c8af79ba9552d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-aa640c7d800e756f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-fd44bc802fbc51a7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-30d88a1c68d6af29", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-433e426a333ad407", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-20be51e4625e0827", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-67e16f930f23718a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c534be247a43aa90", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c6570f6c75edba1e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c0409e9645afd1f1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-10d3be3e2daaeb50", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e3c038a1b76cb07f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-6658c73d3013e052", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-a2685b6b44bbdab1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-2d5e17e0c73eacb3", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-1b144c9af7891171", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c2a2d556cab6fc86", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-a520009269e82906", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7af64ef30e019ff1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d0019ed4993c1a83", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8b873548b5fcd879", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-1841e61292ba5537", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5e3cb2db81731b15", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-6b0a4c4e488ff156", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f4253e2ea8f40709", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-cbaba1531bfb1d58", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e35a0379b5ab54c7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-48a775ef45c506e8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-a3721d75ccf1c2de", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c4c7192d255e4e8b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8f2ac844689d398c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e0e26257702a5780", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-50a3b61bbc6a9f9b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-56fead5f3e759cc2", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5c898dbcca662039", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-4eab7b7359229c30", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5c6c3bc3dc143dc3", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-44eb364731f707c0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-96ff06045fa4b9a4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-980a08bfaf2b3a53", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-89b6bb25c1856f68", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5919d29428fef726", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-4869ce236c7da269", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-41bb54e9c6f3a2d1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-fbf67d159467e596", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-32a96133663fa197", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-ff09ae257e159b7f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5e3d922802a9fc1b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-1465f75a97e54a15", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-1b8aa5016a0415e6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-89252ac57c4578c2", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-88016d7cc2de1e76", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7df130f70f6b7643", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d40f9b3e1ccd1ac6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-9bae4d33f06170ba", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-352f821586182977", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7b952bbeec372c5e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8bcbc64fb26ff29e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-6206392070639f9e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-081880fef5bd1e54", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-3e9977183eb4d475", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-62aa0af8df11cb0c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-fec4c4d4dc96e27d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8d1ddecc99241997", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e6597902ffd7b9e5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "App operations issue without product-decision evidence."}
+{"observation_id": "go-9dc0a3d0e7004e1e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c98511ea150fc644", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-056714f91d02d2b8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-ef37ef31d1256736", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-773343950fa5f08b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-87272a5fa5701a91", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-1f5ae9e48d170b94", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-b4a8194d1f6a9fe2", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-9a63db02de780d42", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8852f1610034c4e5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-25596928c48bec3e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e75368bef8855112", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-20f9180f240ef3da", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-451d163cb2bf0a0c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7cda335bf6377758", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5c99dd9d3baee346", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c769554ceea93840", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-b9ceb4007561977c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7d807121bf9e94dd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-fd7b7c340d874b06", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-68327d2169320080", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-270cb07e1d835c8f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8d4a060884ede1a5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7ce4eab77d432a83", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-da8176b28aa5fc7b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-afb81cf61dedf6c5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-61159a1740f2bc61", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-b1898edfdb9118ca", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5ffefc6a3dcbbf9c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-09c43ce6e4cc0801", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-25fc467057c720e3", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f0cadfce2c2bf9f7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-bb25cdea18c40dc5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-2416c92004c25a8e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-be3023ff87e8fb1a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d3a6707764b85b0e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-58131eff89e7d906", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-1d5a461a87c7de38", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-3148273dbcab9fe6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-2a0c8a897ebf474f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-dd32b2b492abc765", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-b1759c20743dafdb", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-b562b543e0d289dd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f6f05d30878efbf3", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-55d944429fbfb2d9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e88151d276997dd4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-e36b392f687c76e3", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f198459687fabbe4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-6e8a0c76e194b273", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-c39b659e30eee3af", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-b38253c5710af2f9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-6ec496ebbcdff93d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-01569f59b25ba860", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-f089f1c0f1220b82", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-aa708de977de3e75", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-8387915e9b4214d7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-33a9f0b89d5ec726", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5723dc6fbdbd3b4f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-20599d7cae8b7cd9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-ae1dce09c55c05c4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d322b191e08615fb", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-5aed43f03a71e367", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-d58d23071c262760", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-7fc90ddc82f95883", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-dbb68fd5a7891c12", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-97195baebca89f8e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-ed4b9bca78db61f1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-6a82d6acdfefae65", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-0a30962e65559bfa", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "go-aef5d726d16047b5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "ap-09c001d045ed0b3b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "ap-f2e0b64dc725b12c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "ap-a4524b4f20a2d5bd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
@@ -2453,6 +2881,30 @@
 {"observation_id": "ap-57b1e9a4b62a8ed7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "ap-a7acf40bee1569b4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "ap-e15e9ad3e62df5ac", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-aa98025bf59b0065", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-aee1469970221f44", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-c6c90a22591a6768", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-767ad7ea67d2fca0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-a31f99e619721bf8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-286f0591439e2dae", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-54572753f1e4210b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-d7a3166283de92a9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-4b6ac112fc28b550", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-ce25be8a4edddc60", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-fc270c119f24fb52", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-feca8772f83dc0fd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-338584af090c2aa0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-bef856021fd95194", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-73807639561e2f7a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-d3ab6e61e7d0bd34", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-866a4d8d1b95ad24", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-ee6af408e74b999f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-1ace2ac13e2cb42e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-23e2471a3e036ae5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-05aa062c9a6b7b1a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-52968cb08a26dbc4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-9f459247acbdb589", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "ap-afffeb6eb72ea8d7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "re-840f4fc08961829d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "re-117b5aa9a4e80210", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "re-41e1b52f51dfb537", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
@@ -2487,3 +2939,147 @@
 {"observation_id": "re-0e6e6a5495523e49", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "re-c1037ce72a0082b7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
 {"observation_id": "re-55fa799183a26e80", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-5ac4249720cdfc3a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-642167a3e467ba82", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-ed57a036dfe6ac22", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-d90e42d95f95122b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-094936477eedb3f8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-dc6f3df4f42b602a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-7f71b276899f819e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-5bc3ff4f21e7392d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-5b0a8ae433b982c8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-3d464678d28464eb", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-239556986c200d28", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-04883ceb3376694a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-b801738005f9f956", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-977465207005d026", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-b10865ab6f33dd6a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-61fbb37decbbb746", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-215fd55f58188dc9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-a9d5734a50f0f20a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-43cb6da5c35f1ead", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-7f7c80597144d556", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-29182d8db310c0c4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-dea4664cf7335240", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-06e3caf78c2414ff", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-1d2883ea6abd0ca2", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-1c96dd8fcd8af0ec", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-c2e1fc395d8e3e09", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-8f083546501718b2", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-ac5f56b299bc681f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-c2164ca0ae90dbc4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-100ec5d91fadfa54", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-eb97f3918b8a8d55", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-938e7f8d2a74ca71", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-b3eed58b7ebe38a0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-f0fc8b5b832bc0ab", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-6007671b9ce1cd38", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-31a1095aa72cf362", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-80f73f3196ad8ebd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-d596954f6e985637", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-4a413b05274f36ac", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-ed6d336fde29db56", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-401cb2ab7833427b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-790f1358e19e30ff", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-e517a36b75793356", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-8ba4a39bd23ee3fe", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-6e429785f2d7fe82", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-bc1ab498d52233cd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-4b8cac1ba2778c1e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-1f5b0738e6328bd8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-96106971b75b3ba7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-f670ef1caabe35d4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-b3ac85bc17ff7231", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-35554ce515cd547c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-899873c33d24a274", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-f8e09c9abe5fb051", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-9cdaf8424ddfc63e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-e34f6d6fafe3a2f2", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-32160a2e5d90dcb6", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-a6ef2b1ef523f38e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-a33ee8815d2d190c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-0abcc548f9110f1b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-47940c4a196e8414", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-b5decb117cf3c284", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-80a48e6de4e53bee", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-c8ce44a66331409e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-f454666d425385c5", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-5b9683e3619149a8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-d534629311420f77", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-01fce64d285a47f4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-da7cc2ac6962b728", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-62ee37addb6a53d2", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-8432f58ea18d62a9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-3555d0d6e1741036", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-4a286f0fc58e8097", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-5ffd95d02e93eb1a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-8e2450387f241f71", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-2ffb4014de913dd7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-6843404d03081247", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-7b00a74254e22866", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-74c4e6ef62ec67d0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-298659afa9f3102f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-350fbf6ef13334a0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-135b0ed7e76ceed9", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-17cf6b3c815f58ff", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-fa6b850a74512b5b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-bd78c73f2da90c9f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-e17d415765fcf0de", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-ff3742462abc245c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-a71a43cb46a6cc39", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-521ddd995305a561", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-33c880e94c5fbab8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-e8d31ad56af855ef", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-e2b5bcb4c6cac8f2", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-7147893c96b9fce7", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-85ff3e0ce3e1626a", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-0b340899e70b0bcd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-81255a36b3e03b4b", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-9f1867aed4ab3524", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-9f0431bf771abb36", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-1597892caed7b667", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-428ac3a9e0c33931", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-046e30f282f87b58", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-1a0fd4a705e8aceb", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-0ae846e9bf1b85f0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-bbb04f729bcc7a52", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-93efbc7cd5617578", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-ce45264602f65482", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-3bf7ac99ad864738", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-b7e5c1870f304158", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-2d07d7a2aae267ca", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-3174d6cc0cbe92be", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-aa811b7f7740e460", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-1af02e9b96f3fa59", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-02b602afe35d4234", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-7244522e853dc6d1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-2f42eb2d59dc6404", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-14de724a5cebc421", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-2abef9345f8d0154", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-2ce7763e2837cf91", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-7c4f9ca96f06c688", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-8f3965c86bce2f86", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-60f2619463cf5553", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-de5ba62ec174cb15", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-83e9391519aa5bfd", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-bd689a1c6536b602", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-3c8fda9f47160d2c", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-8fd0cc77582604fa", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-12246ab51e60d431", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-dc8cb5039728f1c0", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-e09fcb8741a0733e", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-3b89b4e53b07fdea", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-7d09e43d6b5e304f", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-23992a94bbef3eef", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-8da3d39cf726c07d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-f01eae4ebbfe22d1", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-bb37871b83b1f9eb", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-0207cf7501759f31", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-ce7da22ae2410ac4", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-ff19de19bae98328", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-37436a99fe589d0d", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-12b8c26954b008df", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-546eac7764372953", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-5c97fe5215db7f88", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-5dcf02af415284b2", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}
+{"observation_id": "re-1d4bb1a01c0f8ff8", "status": "excluded", "reason": "irrelevant", "stage": "relevance", "notes": "No evidence of product consideration, purchase decision, or shopping uncertainty."}

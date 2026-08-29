@@ -14,7 +14,7 @@ from urllib.parse import quote_plus
 import httpx
 
 from backend.pipeline.normalize import normalize_record
-from backend.utils.io import utc_now, write_json, write_jsonl
+from backend.utils.io import load_jsonl_unique, utc_now, write_json, write_jsonl
 from backend.utils.rate_limit import retry
 from config import settings
 from config.queries import REDDIT_QUERY_CATEGORIES
@@ -24,16 +24,24 @@ SUBREDDITS = [
     "AskIndia",
     "IndianFashionAddicts",
     "IndiaSpeaks",
+    "delhi",
+    "mumbai",
+    "bangalore",
+    "hyderabad",
+    "Pune",
+    "indianfashionforum",
 ]
 
-# Broad public-archive queries. Full category list is still stored on each record
-# when the query text matches a category.
 ARCHIVE_QUERIES = [
     ("myntra_broad", "myntra"),
     ("myntra_wishlist", "myntra wishlist"),
     ("myntra_fit", "myntra fit"),
     ("myntra_quality", "myntra quality"),
     ("myntra_return", "myntra return"),
+    ("myntra_size", "myntra size"),
+    ("myntra_ajio", "myntra ajio"),
+    ("myntra_amazon", "myntra amazon"),
+    ("myntra_delivery", "myntra delivery"),
     ("online_fashion", "online shopping clothes"),
 ]
 
@@ -124,9 +132,11 @@ def collect_reddit(
 ) -> list[dict[str, Any]]:
     target = target or settings.REDDIT_TARGET
     collected_at = utc_now()
-    seen: set[str] = set()
-    out: list[dict[str, Any]] = []
+    path = settings.RAW_DIR / "reddit" / "observations.jsonl"
+    out, seen = load_jsonl_unique(path)
+    start = len(out)
     log = progress or (lambda msg: print(msg, flush=True))
+    log(f"[reddit] keeping {start} existing unique observations; collecting toward {target}")
     headers = {"User-Agent": "MyntraDiscoveryEngine/1.0 (academic research; public archive)"}
 
     with httpx.Client(headers=headers, follow_redirects=True) as client:
@@ -137,7 +147,10 @@ def collect_reddit(
             for subreddit in SUBREDDITS:
                 if len(out) >= target:
                     break
-                kinds = [("t3", "posts/search", f"query={quote_plus(query)}")]
+                kinds = [
+                    ("t3", "posts/search", f"query={quote_plus(query)}"),
+                    ("t1", "comments/search", f"body={quote_plus(query)}"),
+                ]
                 for kind, path, param in kinds:
                     if len(out) >= target:
                         break
@@ -166,8 +179,8 @@ def collect_reddit(
                     log(f"[reddit] {len(out)} unique (+{added})")
                     time.sleep(sleep_seconds)
 
-        # If still short of target, run leftover original query strings in r/india only.
-        if len(out) < min(target, 150):
+        # Broader archive search is skipped without a subreddit — Arctic Shift returns 400.
+        if len(out) < target:
             for spec in REDDIT_QUERY_CATEGORIES[:8]:
                 if len(out) >= target:
                     break

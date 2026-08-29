@@ -13,7 +13,7 @@ from typing import Any, Callable
 from google_play_scraper import Sort, reviews as play_reviews
 
 from backend.pipeline.normalize import normalize_record
-from backend.utils.io import utc_now, write_json, write_jsonl
+from backend.utils.io import load_jsonl_unique, utc_now, write_json, write_jsonl
 from backend.utils.rate_limit import retry
 from config import settings
 
@@ -58,52 +58,58 @@ def collect_google_play(
 ) -> list[dict[str, Any]]:
     """Paginate public reviews. Target is a cap, not a fabrication quota."""
     target = target or settings.PLAY_REVIEW_TARGET
-    langs = langs or [("en", "in"), ("hi", "in")]
+    langs = langs or [("en", "in"), ("hi", "in"), ("ta", "in"), ("te", "in"), ("en", "us")]
     collected_at = utc_now()
-    seen: set[str] = set()
-    out: list[dict[str, Any]] = []
-    log = progress or (lambda msg: print(msg, flush=True))
-
-    per_lang = max(200, target)
-    for lang, country in langs:
-        if len(out) >= target:
-            break
-        token = None
-        log(f"[google_play] collecting lang={lang} country={country}")
-        while len(out) < target:
-            remaining = min(200, target - len(out), per_lang)
-            token_ref = token
-
-            def _fetch(t=token_ref, n=remaining, lg=lang, ctry=country):
-                return play_reviews(
-                    APP_ID,
-                    lang=lg,
-                    country=ctry,
-                    sort=Sort.NEWEST,
-                    count=n,
-                    continuation_token=t,
-                )
-
-            batch, token = retry(_fetch, attempts=4, base_delay=2.0)
-            if not batch:
-                break
-            added = 0
-            for raw in batch:
-                review_id = str(raw.get("reviewId") or "")
-                if not review_id or review_id in seen:
-                    continue
-                seen.add(review_id)
-                out.append(_serialize_review(raw, collected_at))
-                added += 1
-                if len(out) >= target:
-                    break
-            log(f"[google_play] {len(out)} unique reviews (+{added})")
-            if not token or added == 0:
-                break
-            time.sleep(sleep_seconds)
-
     raw_path = settings.RAW_DIR / "google_play" / "reviews.jsonl"
     meta_path = settings.RAW_DIR / "google_play" / "collection_meta.json"
+    out, seen = load_jsonl_unique(raw_path)
+    start = len(out)
+    log = progress or (lambda msg: print(msg, flush=True))
+    log(f"[google_play] keeping {start} existing unique reviews; collecting toward {target}")
+
+    sorts = (Sort.MOST_RELEVANT, Sort.NEWEST, Sort.RATING)
+    for sort in sorts:
+        if len(out) >= target:
+            break
+        for lang, country in langs:
+            if len(out) >= target:
+                break
+            token = None
+            empty_pages = 0
+            log(f"[google_play] sort={sort.name} lang={lang} country={country}")
+            while len(out) < target:
+                remaining = min(200, target - len(out))
+                token_ref = token
+
+                def _fetch(t=token_ref, n=remaining, lg=lang, ctry=country, srt=sort):
+                    return play_reviews(
+                        APP_ID,
+                        lang=lg,
+                        country=ctry,
+                        sort=srt,
+                        count=n,
+                        continuation_token=t,
+                    )
+
+                batch, token = retry(_fetch, attempts=4, base_delay=2.0)
+                if not batch:
+                    break
+                added = 0
+                for raw in batch:
+                    review_id = str(raw.get("reviewId") or "")
+                    if not review_id or review_id in seen:
+                        continue
+                    seen.add(review_id)
+                    out.append(_serialize_review(raw, collected_at))
+                    added += 1
+                    if len(out) >= target:
+                        break
+                log(f"[google_play] {len(out)} unique reviews (+{added} this page, +{len(out) - start} this run)")
+                empty_pages = empty_pages + 1 if added == 0 else 0
+                if not token or empty_pages >= 4:
+                    break
+                time.sleep(sleep_seconds)
+
     write_jsonl(raw_path, out)
     write_json(
         meta_path,

@@ -1,8 +1,8 @@
 [
   {
-    "opportunity_id": "opp-02",
-    "opportunity_title": "Delivery reliability is mentioned in the same comments as buying hesitation. Also observed with return concern.",
-    "research_gap": "Public comments mention 'delivery, return concern, quality uncertainty, size' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+    "opportunity_id": "opp-03",
+    "opportunity_title": "Delivery reliability is mentioned in the same comments as buying hesitation. Also observed with product information.",
+    "research_gap": "Public comments mention 'delivery, return concern, product information' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
     "unknowns": [
       "Does this actually cause users to postpone purchase after wishlisting, or is it only mentioned in the same comments?",
       "Is this concentrated in a specific behavioral segment, category (apparel vs footwear), or price band?",
@@ -32,9 +32,25 @@
     "suggested_interview_count": 5
   },
   {
-    "opportunity_id": "opp-03",
-    "opportunity_title": "Delivery reliability is mentioned in the same comments as buying hesitation. Also observed with price.",
+    "opportunity_id": "opp-06",
+    "opportunity_title": "Delivery reliability is mentioned in the same comments as buying hesitation. Also observed with return concern.",
     "research_gap": "Public comments mention 'delivery, return concern, price' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+    "unknowns": [
+      "Does this actually cause users to postpone purchase after wishlisting, or is it only mentioned in the same comments?",
+      "Is this concentrated in a specific behavioral segment, category (apparel vs footwear), or price band?",
+      "Does this occur before saving, at the moment of saving, or in the days after saving?",
+      "How severe is it relative to other open questions the user still has?",
+      "What workaround do users currently prefer, and does it actually resolve the uncertainty?",
+      "Would resolving this change purchase intent within 30 days, or would another barrier remain?"
+    ],
+    "claim_type": "HYPOTHESIS",
+    "why_primary_research": "Public UGC can show that a theme exists. It cannot show whether the theme causes 30-day wishlist conversion failure for Myntra users in the target metric.",
+    "suggested_interview_count": 5
+  },
+  {
+    "opportunity_id": "opp-05",
+    "opportunity_title": "Delivery reliability is mentioned in the same comments as buying hesitation. Also observed with size.",
+    "research_gap": "Public comments mention 'delivery, return concern, product information, size' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
     "unknowns": [
       "Does this actually cause users to postpone purchase after wishlisting, or is it only mentioned in the same comments?",
       "Is this concentrated in a specific behavioral segment, category (apparel vs footwear), or price band?",
@@ -64,9 +80,9 @@
     "suggested_interview_count": 5
   },
   {
-    "opportunity_id": "opp-01",
-    "opportunity_title": "Users cannot tell from the listing whether quality will match the price they would pay. Also observed with return concern.",
-    "research_gap": "Public comments mention 'quality uncertainty, return concern, delivery, price' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+    "opportunity_id": "opp-h5",
+    "opportunity_title": "Some users intend to purchase a wishlisted product later but lose the opportunity because the product, size, or color becomes unavailable.",
+    "research_gap": "Public comments cannot tell us whether Availability / Size / Color is the primary reason a wishlisted item fails to convert within 30 days, who it hits hardest, or whether it happens before or after saving.",
     "unknowns": [
       "Does this actually cause users to postpone purchase after wishlisting, or is it only mentioned in the same comments?",
       "Is this concentrated in a specific behavioral segment, category (apparel vs footwear), or price band?",
@@ -80,9 +96,9 @@
     "suggested_interview_count": 5
   },
   {
-    "opportunity_id": "opp-06",
-    "opportunity_title": "Users remain uncertain about how a garment will fit, even when some size information is available.",
-    "research_gap": "Public comments mention 'fit, product information, comparison, quality uncertainty' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+    "opportunity_id": "opp-h3",
+    "opportunity_title": "Some users wishlist products for a future occasion such as a festival, event, vacation, wedding, or other planned use.",
+    "research_gap": "Public comments cannot tell us whether Future Occasion is the primary reason a wishlisted item fails to convert within 30 days, who it hits hardest, or whether it happens before or after saving.",
     "unknowns": [
       "Does this actually cause users to postpone purchase after wishlisting, or is it only mentioned in the same comments?",
       "Is this concentrated in a specific behavioral segment, category (apparel vs footwear), or price band?",
@@ -96,25 +112,9 @@
     "suggested_interview_count": 5
   },
   {
-    "opportunity_id": "opp-05",
-    "opportunity_title": "Users cannot tell from the listing whether quality will match the price they would pay. Also observed with price.",
-    "research_gap": "Public comments mention 'quality uncertainty, price, delivery' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
-    "unknowns": [
-      "Does this actually cause users to postpone purchase after wishlisting, or is it only mentioned in the same comments?",
-      "Is this concentrated in a specific behavioral segment, category (apparel vs footwear), or price band?",
-      "Does this occur before saving, at the moment of saving, or in the days after saving?",
-      "How severe is it relative to other open questions the user still has?",
-      "What workaround do users currently prefer, and does it actually resolve the uncertainty?",
-      "Would resolving this change purchase intent within 30 days, or would another barrier remain?"
-    ],
-    "claim_type": "HYPOTHESIS",
-    "why_primary_research": "Public UGC can show that a theme exists. It cannot show whether the theme causes 30-day wishlist conversion failure for Myntra users in the target metric.",
-    "suggested_interview_count": 5
-  },
-  {
-    "opportunity_id": "opp-07",
-    "opportunity_title": "Users cannot tell from the listing whether quality will match the price they would pay. Also observed with delivery.",
-    "research_gap": "Public comments mention 'quality uncertainty, delivery, price' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+    "opportunity_id": "opp-02",
+    "opportunity_title": "Users keep multiple options in play and delay buying while they compare products or platforms.",
+    "research_gap": "Public comments mention 'comparison, fit, price, quality uncertainty' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
     "unknowns": [
       "Does this actually cause users to postpone purchase after wishlisting, or is it only mentioned in the same comments?",
       "Is this concentrated in a specific behavioral segment, category (apparel vs footwear), or price band?",
@@ -129,8 +129,40 @@
   },
   {
     "opportunity_id": "opp-04",
-    "opportunity_title": "Users cannot tell from the listing whether quality will match the price they would pay. Also observed with size.",
-    "research_gap": "Public comments mention 'quality uncertainty, delivery, price' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+    "opportunity_title": "Users cannot tell from the listing whether quality will match the price they would pay. Also observed with price.",
+    "research_gap": "Public comments mention 'quality uncertainty, price, delivery, material/fabric uncertainty' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+    "unknowns": [
+      "Does this actually cause users to postpone purchase after wishlisting, or is it only mentioned in the same comments?",
+      "Is this concentrated in a specific behavioral segment, category (apparel vs footwear), or price band?",
+      "Does this occur before saving, at the moment of saving, or in the days after saving?",
+      "How severe is it relative to other open questions the user still has?",
+      "What workaround do users currently prefer, and does it actually resolve the uncertainty?",
+      "Would resolving this change purchase intent within 30 days, or would another barrier remain?"
+    ],
+    "claim_type": "HYPOTHESIS",
+    "why_primary_research": "Public UGC can show that a theme exists. It cannot show whether the theme causes 30-day wishlist conversion failure for Myntra users in the target metric.",
+    "suggested_interview_count": 5
+  },
+  {
+    "opportunity_id": "opp-01",
+    "opportunity_title": "Delivery reliability is mentioned in the same comments as buying hesitation. Also observed with quality uncertainty.",
+    "research_gap": "Public comments mention 'delivery, return concern, quality uncertainty, size' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
+    "unknowns": [
+      "Does this actually cause users to postpone purchase after wishlisting, or is it only mentioned in the same comments?",
+      "Is this concentrated in a specific behavioral segment, category (apparel vs footwear), or price band?",
+      "Does this occur before saving, at the moment of saving, or in the days after saving?",
+      "How severe is it relative to other open questions the user still has?",
+      "What workaround do users currently prefer, and does it actually resolve the uncertainty?",
+      "Would resolving this change purchase intent within 30 days, or would another barrier remain?"
+    ],
+    "claim_type": "HYPOTHESIS",
+    "why_primary_research": "Public UGC can show that a theme exists. It cannot show whether the theme causes 30-day wishlist conversion failure for Myntra users in the target metric.",
+    "suggested_interview_count": 5
+  },
+  {
+    "opportunity_id": "opp-07",
+    "opportunity_title": "Users cannot tell from the listing whether quality will match the price they would pay. Also observed with return concern.",
+    "research_gap": "Public comments mention 'quality uncertainty, price, return concern' in this cluster. We do not know whether it actually prevents 30-day wishlist conversion, for whom it is strongest, or whether it happens before or after saving an item.",
     "unknowns": [
       "Does this actually cause users to postpone purchase after wishlisting, or is it only mentioned in the same comments?",
       "Is this concentrated in a specific behavioral segment, category (apparel vs footwear), or price band?",

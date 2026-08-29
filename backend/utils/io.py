@@ -75,6 +75,19 @@ def iter_jsonl(path: PathLike) -> Iterator[dict[str, Any]]:
                 yield json.loads(line)
 
 
+def load_jsonl_unique(path: PathLike, id_field: str = "source_id") -> tuple[list[dict[str, Any]], set[str]]:
+    """Load existing JSONL without dropping prior public records on a re-collect."""
+    rows: list[dict[str, Any]] = []
+    seen: set[str] = set()
+    for row in read_jsonl(path):
+        sid = str(row.get(id_field) or "")
+        if not sid or sid in seen:
+            continue
+        seen.add(sid)
+        rows.append(row)
+    return rows, seen
+
+
 def load_all_jsonl(directory: PathLike) -> list[dict[str, Any]]:
     directory = _path(directory)
     rows: list[dict[str, Any]] = []

@@ -1,17 +1,17 @@
 {
-  "collected_at": "2026-08-26T16:31:33Z",
+  "collected_at": "2026-08-29T08:58:09Z",
   "targets": {
-    "google_play": 3000,
-    "app_store": 1000,
-    "reddit": 300,
-    "youtube": 500
+    "google_play": 5500,
+    "reddit": 1500,
+    "youtube": 500,
+    "app_store": 2000
   },
   "actual": {
-    "google_play": 3000,
-    "app_store": 799,
-    "reddit": 300,
-    "youtube": 0
+    "google_play": 5500,
+    "reddit": 1394,
+    "youtube": 0,
+    "app_store": 899
   },
-  "total": 4099,
-  "note": "Targets are caps. Missing records were not fabricated."
+  "total": 7793,
+  "note": "Targets are caps. Missing records were not fabricated. Existing unique records are kept on re-collect."
 }
