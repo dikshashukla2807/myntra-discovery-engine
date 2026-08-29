@@ -14,13 +14,14 @@ It also does **not** answer “what feature should Myntra build?” That decisio
 
 ## What you get
 
-A 5-page PM research tool:
+A PM research tool:
 
-1. Overview — funnel, source counts, top opportunities
-2. Evidence Explorer — original comments + extraction + source URL
-3. Opportunity Landscape — ranked table
-4. Opportunity detail — evidence, quantification, counter-evidence, gap
-5. Research handoff — what we know / don’t / interview questions
+1. Overview — funnel, hypothesis status counts, top candidate opportunities
+2. Hypothesis Testing — six starting hypotheses, status, comparison table, evidence
+3. Evidence Explorer — original comments + extraction + source URL
+4. Opportunity Landscape — ranked table (hypothesis-tagged or emerging)
+5. Opportunity detail — evidence, quantification, counter-evidence, gap
+6. Research handoff — ready for primary research (not a final solution)
 
 It stops at **opportunity + evidence + research gap**. It does not recommend a feature.
 
@@ -41,8 +42,8 @@ The system does **not** claim that Play/App Store/Reddit/YouTube comments are in
 
 ```
 PUBLIC UGC → COLLECT → CLEAN + DEDUPE → RELEVANCE → BEHAVIORAL EXTRACTION
- → THEMES (5–10) → QUANTIFY IN CODE → RANK (six scores, 1–5)
- → EVIDENCE + COUNTER-EVIDENCE → RESEARCH HANDOFF
+ → HYPOTHESIS TESTING (H1–H6) → THEMES (including emerging) → QUANTIFY IN CODE → RANK (six scores, 1–5)
+ → EVIDENCE + COUNTER-EVIDENCE → RESEARCH HANDOFF (ready for primary research)
 ```
 
 `text_original` is never overwritten. Demo analysis is stored in `data/processed_demo/` so it cannot overwrite public-source results.

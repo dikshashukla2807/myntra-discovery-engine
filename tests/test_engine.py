@@ -191,7 +191,7 @@ def test_opportunity_scoring_transparent():
         "segment_relevance",
     }
     assert all(1 <= v <= 5 for v in opps[0]["scores"].values())
-    assert "not causation" in opps[0]["scoring_notes"]
+    assert "causation" in opps[0]["scoring_notes"]
     # still considering must not inflate purchase association
     assert opps[0]["purchase_association"] == round(100.0 * (8 + 5) / 20, 2)
 
@@ -236,7 +236,61 @@ def test_post_purchase_review_is_not_treated_as_postponement():
     assert ext["purchase_outcome"] == "purchased"
 
 
-def test_api_health():
+def test_h2_price_mention_is_not_automatic_support():
+    from backend.pipeline.hypotheses import classify_observation
+
+    text = "The price is too high for this quality."
+    obs = {"observation_id": "t-price", "text_original": text}
+    ext = extract_behavior(text)
+    stance = classify_observation(obs, ext)["stances"]["H2"]["stance"]
+    assert stance != "supporting"
+
+
+def test_h2_budget_postponement_is_support():
+    from backend.pipeline.hypotheses import classify_observation
+
+    text = "I liked the dress but didn't buy it because I wasn't ready to spend that much."
+    obs = {"observation_id": "t-budget", "text_original": text}
+    ext = extract_behavior(text)
+    row = classify_observation(obs, ext)["stances"]["H2"]
+    assert row["stance"] == "supporting"
+
+
+def test_h4_platform_name_alone_is_not_switch():
+    from backend.pipeline.hypotheses import classify_observation
+
+    text = "Myntra sends as many notifications as Amazon. App keeps crashing."
+    obs = {"observation_id": "t-amz", "text_original": text, "source": "google_play"}
+    ext = extract_behavior(text)
+    assert classify_observation(obs, ext)["stances"]["H4"]["stance"] != "supporting"
+
+
+def test_hypothesis_counts_are_calculated():
+    from backend.pipeline.hypotheses import test_hypotheses
+
+    rows = [
+        {
+            "observation_id": "a",
+            "source": "google_play",
+            "text_original": "I liked the dress but didn't buy it because I wasn't ready to spend that much.",
+        },
+        {
+            "observation_id": "b",
+            "source": "reddit",
+            "text_original": "The price is high but I bought it anyway. Worth the price.",
+        },
+        {
+            "observation_id": "c",
+            "source": "google_play",
+            "text_original": "Size chart is confusing so I didn't buy the jeans I saved for later.",
+        },
+    ]
+    ext = {r["observation_id"]: extract_behavior(r["text_original"]) for r in rows}
+    _, results, _ = test_hypotheses(rows, ext)
+    h2 = next(r for r in results if r["hypothesis_id"] == "H2")
+    assert h2["support_count"] == len(h2["supporting_observations"])
+    assert h2["support_count"] + h2["counter_count"] <= 3
+    assert h2["status"] in {"supported", "weakly_supported", "contradicted", "insufficient_evidence"}
     from backend.api.main import app
 
     client = TestClient(app)
@@ -252,6 +306,8 @@ def test_frontend_pages_exist():
         "evidence/page.tsx",
         "opportunities/page.tsx",
         "opportunities/[id]/page.tsx",
+        "hypotheses/page.tsx",
+        "hypotheses/[id]/page.tsx",
         "research/page.tsx",
     ]
     for rel in expected:

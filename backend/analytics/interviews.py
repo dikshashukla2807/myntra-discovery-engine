@@ -67,9 +67,23 @@ def generate_interview_plan(opportunity: dict[str, Any], segment: str | None = N
             "and buying or not buying, for this opportunity area — without validating a solution."
         ),
         "interview_questions": questions[:12],
+        "research_objectives": [
+            "What actually happened between saving/wishlisting and deciding not to buy?",
+            "Was this barrier the main reason, or one of several?",
+            "Who else was involved, and what information was still missing?",
+            "When in the 30 days after saving did the decision stall?",
+        ][:4],
+        "ready_for_primary_research": True,
+        "end_state": "READY FOR PRIMARY RESEARCH",
+        "why_primary_research": (
+            "Public UGC can show that a pattern exists and whether it is observed alongside "
+            "postponement or non-purchase. It cannot prove the final user problem, severity, "
+            "or whether fixing it would change 30-day wishlist conversion. That takes 5–6 interviews."
+        ),
         "notes": [
             "Ask for the last real episode, not hypotheticals.",
             "Follow the story: trigger → save → wait → research → decide.",
             "Do not pitch a feature. The engine stops at opportunity + evidence + research gap.",
+            "End state: ready for primary research — not a final solution.",
         ],
     }

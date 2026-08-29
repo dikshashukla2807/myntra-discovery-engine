@@ -1,6 +1,6 @@
 {
-  "last_run": "2026-08-27T18:41:36Z",
-  "started_at": "2026-08-27T18:41:26Z",
+  "last_run": "2026-08-29T07:23:44Z",
+  "started_at": "2026-08-29T07:23:34Z",
   "stages": [
     {
       "name": "collection",
@@ -10,7 +10,7 @@
       "failed": 0,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:26Z"
+      "updated_at": "2026-08-29T07:23:34Z"
     },
     {
       "name": "validation",
@@ -20,7 +20,7 @@
       "failed": 0,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:26Z"
+      "updated_at": "2026-08-29T07:23:34Z"
     },
     {
       "name": "cleaning",
@@ -30,7 +30,7 @@
       "failed": 0,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:26Z"
+      "updated_at": "2026-08-29T07:23:34Z"
     },
     {
       "name": "language",
@@ -40,7 +40,7 @@
       "failed": 0,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:34Z"
+      "updated_at": "2026-08-29T07:23:41Z"
     },
     {
       "name": "duplicates",
@@ -50,7 +50,7 @@
       "failed": 1788,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:34Z"
+      "updated_at": "2026-08-29T07:23:41Z"
     },
     {
       "name": "spam",
@@ -60,7 +60,7 @@
       "failed": 632,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:34Z"
+      "updated_at": "2026-08-29T07:23:41Z"
     },
     {
       "name": "relevance",
@@ -70,7 +70,7 @@
       "failed": 701,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:34Z"
+      "updated_at": "2026-08-29T07:23:42Z"
     },
     {
       "name": "extraction",
@@ -80,7 +80,17 @@
       "failed": 0,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:35Z"
+      "updated_at": "2026-08-29T07:23:43Z"
+    },
+    {
+      "name": "hypothesis_testing",
+      "status": "ok",
+      "processed": 6,
+      "successful": 6,
+      "failed": 0,
+      "pending": 0,
+      "error": null,
+      "updated_at": "2026-08-29T07:23:43Z"
     },
     {
       "name": "embeddings",
@@ -90,7 +100,7 @@
       "failed": 0,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:36Z"
+      "updated_at": "2026-08-29T07:23:44Z"
     },
     {
       "name": "clustering",
@@ -100,27 +110,27 @@
       "failed": 0,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:36Z"
+      "updated_at": "2026-08-29T07:23:44Z"
     },
     {
       "name": "themes",
       "status": "ok",
-      "processed": 8,
-      "successful": 8,
+      "processed": 9,
+      "successful": 9,
       "failed": 0,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:36Z"
+      "updated_at": "2026-08-29T07:23:44Z"
     },
     {
       "name": "opportunity_scoring",
       "status": "ok",
-      "processed": 8,
-      "successful": 8,
+      "processed": 9,
+      "successful": 9,
       "failed": 0,
       "pending": 0,
       "error": null,
-      "updated_at": "2026-08-27T18:41:36Z"
+      "updated_at": "2026-08-29T07:23:44Z"
     }
   ],
   "dataset_label": "public_source",

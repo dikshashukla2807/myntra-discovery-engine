@@ -100,6 +100,62 @@ def opportunity_detail(opportunity_id: str) -> dict[str, Any]:
     }
 
 
+@app.get("/api/hypotheses")
+def hypotheses() -> dict[str, Any]:
+    rows = store.load_hypotheses()
+    return {
+        "hypotheses": rows,
+        "comparison": store.load_hypothesis_comparison() or [
+            {
+                "hypothesis_id": r["hypothesis_id"],
+                "hypothesis_name": r["hypothesis_name"],
+                "evidence": r.get("evidence_label"),
+                "support": r.get("support_count"),
+                "counter_evidence": r.get("counter_count"),
+                "purchase_association": r.get("purchase_association"),
+                "confidence": r.get("confidence"),
+                "priority": r.get("priority"),
+                "status": r.get("status"),
+            }
+            for r in rows
+        ],
+        "summary": {
+            "tested": len(rows),
+            "supported": sum(1 for r in rows if r.get("status") == "supported"),
+            "weakly_supported": sum(1 for r in rows if r.get("status") == "weakly_supported"),
+            "contradicted": sum(1 for r in rows if r.get("status") == "contradicted"),
+            "insufficient_evidence": sum(1 for r in rows if r.get("status") == "insufficient_evidence"),
+        },
+        "banner": store.dataset_banner(),
+    }
+
+
+@app.get("/api/hypotheses/{hypothesis_id}")
+def hypothesis_detail(hypothesis_id: str) -> dict[str, Any]:
+    rows = store.load_hypotheses()
+    match = next((r for r in rows if r["hypothesis_id"].lower() == hypothesis_id.lower()), None)
+    if not match:
+        raise HTTPException(404, "Hypothesis not found")
+    ext = store.load_extractions()
+    rel_obs = {o["observation_id"]: o for o in store.load_relevant()}
+
+    def pack(ids: list[str]) -> list[dict[str, Any]]:
+        out = []
+        for oid in ids[:25]:
+            obs = rel_obs.get(oid)
+            if not obs:
+                continue
+            out.append({"observation": obs, "extraction": ext.get(oid)})
+        return out
+
+    return {
+        "hypothesis": match,
+        "supporting": pack(match.get("supporting_observations") or []),
+        "counter": pack(match.get("counter_observations") or []),
+        "banner": store.dataset_banner(),
+    }
+
+
 @app.get("/api/observations")
 def observations(
     source: str | None = None,
@@ -108,6 +164,8 @@ def observations(
     purchase_outcome: str | None = None,
     barrier: str | None = None,
     theme: str | None = None,
+    hypothesis: str | None = None,
+    stance: str | None = None,
     limit: int = Query(25, ge=1, le=100),
     offset: int = Query(0, ge=0),
 ) -> dict[str, Any]:
@@ -116,6 +174,7 @@ def observations(
     clusters = store.load_clusters()
     themes = store.load_themes()
     cluster_to_theme = {t.get("cluster_id"): t for t in themes}
+    classified = store.load_hypothesis_classifications()
 
     filtered: list[dict[str, Any]] = []
     for obs in rows:
@@ -136,11 +195,23 @@ def observations(
             blob = (theme_obj.get("theme_id") or "") + " " + (theme_obj.get("theme_name") or "")
             if theme.lower() not in blob.lower():
                 continue
+        stances = (classified.get(obs["observation_id"]) or {}).get("stances") or {}
+        if hypothesis:
+            hid = hypothesis.upper()
+            payload = stances.get(hid) or {}
+            current = payload.get("stance")
+            if stance:
+                if current != stance:
+                    continue
+            elif current not in {"supporting", "counter", "unclear"}:
+                continue
+        elif stance and not any(v.get("stance") == stance for v in stances.values()):
+            continue
         if q:
             text = (obs.get("text_original") or "") + " " + (obs.get("title") or "")
             if q.lower() not in text.lower():
                 continue
-        filtered.append({"observation": obs, "extraction": e, "theme": theme_obj})
+        filtered.append({"observation": obs, "extraction": e, "theme": theme_obj, "hypothesis_stances": stances})
     total = len(filtered)
     return {"total": total, "offset": offset, "limit": limit, "results": filtered[offset : offset + limit]}
 
@@ -156,5 +227,6 @@ def research(opportunity_id: str | None = None) -> dict[str, Any]:
     segment = (match.get("user_segment") or [None])[0]
     plan = generate_interview_plan(match, None if segment == "Insufficient evidence." else segment)
     plan["opportunities"] = [{"opportunity_id": o["opportunity_id"], "rank": o["rank"], "title": o["title"]} for o in opps]
+    plan["end_state"] = "READY FOR PRIMARY RESEARCH"
     plan["banner"] = store.dataset_banner()
     return plan

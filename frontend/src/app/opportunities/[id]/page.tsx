@@ -30,6 +30,10 @@ type Detail = {
     scores: Record<string, number>;
     why_ranked_higher: string;
     scoring_notes: string;
+    origin?: string;
+    source_hypothesis?: string | null;
+    source_hypothesis_name?: string | null;
+    uncertainty_kinds?: string[];
   };
   supporting: Array<{
     observation: { observation_id: string; source: string; source_url: string; date?: string; text_original: string };
@@ -63,7 +67,11 @@ export default function OpportunityDetailPage() {
       <p className="text-sm">
         <Link className="text-rose-800 underline" href="/opportunities">← Landscape</Link>
       </p>
-      <PageHeader eyebrow={`Rank #${o.rank}`} title={o.title} description={o.description} />
+      <PageHeader
+        eyebrow={`Rank #${o.rank}${o.origin === "emerging" || !o.source_hypothesis ? " · Emerging opportunity" : ` · ${o.source_hypothesis}`}`}
+        title={o.title}
+        description={o.description}
+      />
 
       <Card className="mb-6 p-5">
         <h3 className="text-sm font-semibold">What we observed</h3>

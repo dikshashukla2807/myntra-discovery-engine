@@ -16,6 +16,9 @@ type Plan = {
   research_objective: string;
   interview_questions: string[];
   notes: string[];
+  end_state?: string;
+  why_primary_research?: string;
+  research_objectives?: string[];
   opportunities: Array<{ opportunity_id: string; rank: number; title: string }>;
 };
 
@@ -42,7 +45,7 @@ function HandoffInner() {
       <DatasetBanner banner={banner} />
       <PageHeader
         title="Research handoff"
-        description="What public data can and cannot tell us. Interview questions are about past behavior. They do not ask whether someone would use a feature."
+        description="Public data can surface a candidate opportunity. It cannot prove the final user problem. This page ends at ready for primary research — not a final solution."
       />
       {plan ? (
         <>
@@ -79,13 +82,24 @@ function HandoffInner() {
               <p className="mt-3 text-xs text-zinc-500">{plan.research_objective}</p>
             </Card>
             <Card className="p-5">
+              <h3 className="text-sm font-semibold">What we should ask users</h3>
+              <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm leading-6">
+                {(plan.research_objectives || []).map((q) => <li key={q}>{q}</li>)}
+              </ol>
+              <p className="mt-3 text-xs text-zinc-500">These are research objectives, not feature-validation questions.</p>
+            </Card>
+            <Card className="p-5">
               <h3 className="text-sm font-semibold">Interview questions</h3>
               <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm leading-6">
                 {plan.interview_questions.map((q) => <li key={q}>{q}</li>)}
               </ol>
               <ul className="mt-4 list-disc pl-5 text-xs text-zinc-500">
-                {plan.notes.map((n) => <li key={n}>{n}</li>)}
+                {(plan.notes || []).map((n) => <li key={n}>{n}</li>)}
               </ul>
+            </Card>
+            <Card className="border-emerald-200 bg-emerald-50 p-5">
+              <p className="text-xs font-semibold uppercase tracking-wide text-emerald-900">{plan.end_state || "READY FOR PRIMARY RESEARCH"}</p>
+              <p className="mt-2 text-sm leading-6 text-emerald-950">{plan.why_primary_research}</p>
             </Card>
           </div>
         </>

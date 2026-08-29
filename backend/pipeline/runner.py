@@ -14,6 +14,13 @@ from backend.pipeline.discover import (
     relevance_for,
     score_opportunities,
 )
+from backend.pipeline.hypotheses import (
+    attach_origin,
+    comparison_table,
+    extra_hypothesis_themes,
+    summary_counts,
+    test_hypotheses,
+)
 from backend.pipeline.quality import clean_observation, detect_language, quality_gate, source_duplicate_key
 from backend.utils.io import load_all_jsonl, read_jsonl, utc_now, write_json, write_jsonl
 from config import settings
@@ -29,6 +36,7 @@ STAGE_ORDER = [
     "spam",
     "relevance",
     "extraction",
+    "hypothesis_testing",
     "embeddings",
     "clustering",
     "themes",
@@ -145,6 +153,12 @@ def run_pipeline(
     write_jsonl(out_dir / "extractions.jsonl", extractions)
     stages.append(_stage("extraction", "ok", len(relevant_obs), len(extractions)))
 
+    classifications, hypothesis_results, unexplained = test_hypotheses(relevant_obs, ext_map)
+    write_jsonl(out_dir / "hypothesis_classifications.jsonl", classifications)
+    write_json(out_dir / "hypotheses.json", hypothesis_results)
+    write_json(out_dir / "hypothesis_comparison.json", comparison_table(hypothesis_results))
+    stages.append(_stage("hypothesis_testing", "ok", len(hypothesis_results), len(hypothesis_results)))
+
     labels: list[int] = []
     themes: list[dict[str, Any]] = []
     if len(relevant_obs) >= 6:
@@ -160,11 +174,14 @@ def run_pipeline(
         stages.append(_stage("embeddings", "ok", len(relevant_obs), len(relevant_obs)))
         stages.append(_stage("clustering", "ok", len(relevant_obs), len(relevant_obs)))
         themes = build_themes(relevant_obs, ext_map, labels)
+        themes = attach_origin(themes, hypothesis_results)
+        themes.extend(extra_hypothesis_themes(themes, hypothesis_results, relevant_obs, ext_map))
         stages.append(_stage("themes", "ok", len(themes), len(themes)))
     else:
         stages.append(_stage("embeddings", "skipped", 0, 0, error="not enough relevant observations"))
         stages.append(_stage("clustering", "skipped", 0, 0))
-        stages.append(_stage("themes", "skipped", 0, 0))
+        themes = extra_hypothesis_themes([], hypothesis_results, relevant_obs, ext_map)
+        stages.append(_stage("themes", "ok" if themes else "skipped", len(themes), len(themes)))
 
     opportunities = score_opportunities(themes, len(relevant_obs) or 1)
     stages.append(_stage("opportunity_scoring", "ok", len(opportunities), len(opportunities)))
@@ -185,7 +202,16 @@ def run_pipeline(
         write_jsonl(settings.CLEAN_DIR / "included.jsonl", included)
     write_jsonl(out_dir / "relevant_observations.jsonl", relevant_obs)
 
-    overview = _overview(raw, included, relevant_obs, ext_map, opportunities, quality)
+    overview = _overview(
+        raw,
+        included,
+        relevant_obs,
+        ext_map,
+        opportunities,
+        quality,
+        hypothesis_results,
+        unexplained,
+    )
     write_json(out_dir / "overview.json", overview)
 
     dataset_label = "demo_sample" if demo_only else "public_source"
@@ -241,7 +267,7 @@ def _quality_report(raw, exclusions, included, relevant) -> dict[str, Any]:
     }
 
 
-def _overview(raw, included, relevant, ext_map, opportunities, quality) -> dict[str, Any]:
+def _overview(raw, included, relevant, ext_map, opportunities, quality, hypothesis_results=None, unexplained=0) -> dict[str, Any]:
     wishlist_related = 0
     purchase_related = 0
     intents: Counter[str] = Counter()
@@ -264,6 +290,10 @@ def _overview(raw, included, relevant, ext_map, opportunities, quality) -> dict[
         if ext.get("external_research"):
             external += 1
 
+    hyp_summary = summary_counts(hypothesis_results or [])
+    candidates = [o for o in opportunities if o.get("candidate_opportunity", True)]
+    top = (candidates or opportunities)[:5]
+
     return {
         "funnel": {
             "collected": len(raw),
@@ -274,6 +304,8 @@ def _overview(raw, included, relevant, ext_map, opportunities, quality) -> dict[
             "wishlist_related": wishlist_related,
         },
         "coverage_note": quality.get("coverage_note"),
-        "top_opportunities": opportunities[:5],
+        "hypotheses_summary": hyp_summary,
+        "unexplained_relevant": unexplained,
+        "top_opportunities": top,
         "quality": quality,
     }

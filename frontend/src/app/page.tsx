@@ -11,6 +11,14 @@ type Overview = {
   demo_available?: boolean;
   coverage_note?: string;
   funnel?: Record<string, number>;
+  hypotheses_summary?: {
+    tested?: number;
+    supported?: number;
+    weakly_supported?: number;
+    contradicted?: number;
+    insufficient_evidence?: number;
+  };
+  unexplained_relevant?: number;
   top_opportunities?: Array<{
     opportunity_id: string;
     rank: number;
@@ -19,6 +27,8 @@ type Overview = {
     frequency_percentage: number;
     purchase_association: number;
     confidence: string;
+    origin?: string;
+    source_hypothesis?: string | null;
   }>;
   quality?: {
     source_distribution?: { collected?: Record<string, number>; relevant?: Record<string, number> };
@@ -95,7 +105,7 @@ export default function OverviewPage() {
       <PageHeader
         eyebrow="Business metric"
         title="Why don’t wishlisted items convert within 30 days?"
-        description="Growth wants more users to buy at least one wishlisted item within 30 days — without monetary incentives. This engine only ranks candidate opportunity areas from public comments. It does not pick a solution."
+        description="Growth wants more users to buy at least one wishlisted item within 30 days — without monetary incentives. We started with six hypotheses, tested them on public comments, and still look for emerging themes. This engine does not pick a solution."
       />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -124,13 +134,31 @@ export default function OverviewPage() {
         </p>
       </Card>
 
+      <Card className="mt-6 p-5">
+        <h3 className="text-sm font-semibold">Initial hypotheses tested</h3>
+        <div className="mt-3 grid gap-3 sm:grid-cols-5 text-sm">
+          <p>Tested: <span className="font-semibold tabular-nums">{data.hypotheses_summary?.tested ?? 6}</span></p>
+          <p>Supported: <span className="font-semibold tabular-nums">{data.hypotheses_summary?.supported ?? 0}</span></p>
+          <p>Weakly supported: <span className="font-semibold tabular-nums">{data.hypotheses_summary?.weakly_supported ?? 0}</span></p>
+          <p>Contradicted: <span className="font-semibold tabular-nums">{data.hypotheses_summary?.contradicted ?? 0}</span></p>
+          <p>Insufficient evidence: <span className="font-semibold tabular-nums">{data.hypotheses_summary?.insufficient_evidence ?? 0}</span></p>
+        </div>
+        <p className="mt-3 text-xs text-zinc-500">
+          Status is calculated from classified comments. A common keyword (for example “price”) is not enough to support a hypothesis.
+          {typeof data.unexplained_relevant === "number" ? ` ${data.unexplained_relevant} relevant comments did not support any of the six starting hypotheses.` : ""}
+        </p>
+        <Link href="/hypotheses" className="mt-3 inline-block text-sm text-rose-800 underline">
+          Open hypothesis testing
+        </Link>
+      </Card>
+
       <Card className="mt-4 p-5 text-sm leading-6 text-zinc-700">
         {data.coverage_note || data.quality?.coverage_note}
       </Card>
 
       <div className="mt-8">
         <div className="mb-3 flex items-end justify-between">
-          <h3 className="text-sm font-semibold">Top opportunity areas</h3>
+          <h3 className="text-sm font-semibold">Top candidate opportunities</h3>
           <Link href="/opportunities" className="text-sm text-rose-800 underline">
             Full landscape
           </Link>
@@ -141,7 +169,14 @@ export default function OverviewPage() {
               <Card className="p-4 hover:border-rose-200">
                 <div className="flex flex-wrap items-start justify-between gap-3">
                   <div className="max-w-3xl">
-                    <p className="text-xs text-zinc-500">#{opp.rank}</p>
+                    <p className="text-xs text-zinc-500">
+                      #{opp.rank}
+                      {opp.origin === "emerging"
+                        ? " · Emerging opportunity"
+                        : opp.source_hypothesis
+                          ? ` · ${opp.source_hypothesis}`
+                          : ""}
+                    </p>
                     <p className="font-medium leading-6">{opp.title}</p>
                   </div>
                   <div className="flex gap-2">

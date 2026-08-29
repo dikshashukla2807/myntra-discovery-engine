@@ -74,7 +74,11 @@
     "what_we_know": "15 relevant observations (34.88%) grouped here. Observed alongside postponed=3, abandoned=1, purchased alternative=0. These are co-occurrences, not causes.",
     "cluster_id": 3,
     "postponement_count": 3,
-    "non_purchase_count": 4
+    "non_purchase_count": 4,
+    "source_hypothesis": "H6",
+    "source_hypothesis_name": "Product Uncertainty",
+    "origin": "initial_hypothesis",
+    "candidate_opportunity": true
   },
   {
     "theme_id": "theme-04",
@@ -144,7 +148,11 @@
     "what_we_know": "9 relevant observations (20.93%) grouped here. Observed alongside postponed=0, abandoned=0, purchased alternative=0. These are co-occurrences, not causes.",
     "cluster_id": 4,
     "postponement_count": 0,
-    "non_purchase_count": 0
+    "non_purchase_count": 0,
+    "source_hypothesis": null,
+    "source_hypothesis_name": null,
+    "origin": "emerging",
+    "candidate_opportunity": true
   },
   {
     "theme_id": "theme-01",
@@ -213,7 +221,11 @@
     "what_we_know": "8 relevant observations (18.6%) grouped here. Observed alongside postponed=1, abandoned=1, purchased alternative=1. These are co-occurrences, not causes.",
     "cluster_id": 1,
     "postponement_count": 1,
-    "non_purchase_count": 3
+    "non_purchase_count": 3,
+    "source_hypothesis": "H6",
+    "source_hypothesis_name": "Product Uncertainty",
+    "origin": "initial_hypothesis",
+    "candidate_opportunity": true
   },
   {
     "theme_id": "theme-02",
@@ -274,7 +286,11 @@
     "what_we_know": "6 relevant observations (13.95%) grouped here. Observed alongside postponed=0, abandoned=0, purchased alternative=0. These are co-occurrences, not causes.",
     "cluster_id": 2,
     "postponement_count": 0,
-    "non_purchase_count": 0
+    "non_purchase_count": 0,
+    "source_hypothesis": null,
+    "source_hypothesis_name": null,
+    "origin": "emerging",
+    "candidate_opportunity": true
   },
   {
     "theme_id": "theme-00",
@@ -338,6 +354,10 @@
     "what_we_know": "5 relevant observations (11.63%) grouped here. Observed alongside postponed=1, abandoned=1, purchased alternative=0. These are co-occurrences, not causes.",
     "cluster_id": 0,
     "postponement_count": 1,
-    "non_purchase_count": 2
+    "non_purchase_count": 2,
+    "source_hypothesis": null,
+    "source_hypothesis_name": null,
+    "origin": "emerging",
+    "candidate_opportunity": true
   }
 ]

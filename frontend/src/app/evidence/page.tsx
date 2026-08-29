@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { Suspense, useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { DatasetBanner, PageHeader } from "@/components/layout/shell";
 import { Badge, Button, Card } from "@/components/ui/primitives";
 import { api, type Banner } from "@/lib/api";
@@ -26,15 +27,19 @@ type Row = {
     confidence?: number;
   };
   theme?: { theme_id: string; theme_name: string };
+  hypothesis_stances?: Record<string, { stance?: string }>;
 };
 
-export default function EvidencePage() {
+function EvidenceInner() {
+  const params = useSearchParams();
   const [q, setQ] = useState("");
   const [source, setSource] = useState("");
   const [intent, setIntent] = useState("");
   const [outcome, setOutcome] = useState("");
   const [barrier, setBarrier] = useState("");
   const [theme, setTheme] = useState("");
+  const [hypothesis, setHypothesis] = useState(params.get("hypothesis") || "");
+  const [stance, setStance] = useState(params.get("stance") || "");
   const [offset, setOffset] = useState(0);
   const [total, setTotal] = useState(0);
   const [rows, setRows] = useState<Row[]>([]);
@@ -49,10 +54,12 @@ export default function EvidencePage() {
     if (outcome) p.set("purchase_outcome", outcome);
     if (barrier) p.set("barrier", barrier);
     if (theme) p.set("theme", theme);
+    if (hypothesis) p.set("hypothesis", hypothesis);
+    if (stance) p.set("stance", stance);
     p.set("limit", "25");
     p.set("offset", String(offset));
     return p.toString();
-  }, [q, source, intent, outcome, barrier, theme, offset]);
+  }, [q, source, intent, outcome, barrier, theme, hypothesis, stance, offset]);
 
   useEffect(() => {
     setLoading(true);
@@ -115,6 +122,25 @@ export default function EvidencePage() {
           </select>
         </label>
         <label className="text-xs text-zinc-600">
+          Hypothesis
+          <select className="mt-1 w-full rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm" value={hypothesis} onChange={(e) => { setOffset(0); setHypothesis(e.target.value); }}>
+            <option value="">All hypotheses</option>
+            {["H1", "H2", "H3", "H4", "H5", "H6"].map((x) => (
+              <option key={x}>{x}</option>
+            ))}
+          </select>
+        </label>
+        <label className="text-xs text-zinc-600">
+          Supporting / counter
+          <select className="mt-1 w-full rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm" value={stance} onChange={(e) => { setOffset(0); setStance(e.target.value); }}>
+            <option value="">Any stance</option>
+            <option value="supporting">Supporting</option>
+            <option value="counter">Counter</option>
+            <option value="unclear">Unclear</option>
+            <option value="neutral">Neutral / not about this hypothesis</option>
+          </select>
+        </label>
+        <label className="text-xs text-zinc-600">
           Theme
           <input value={theme} onChange={(e) => { setOffset(0); setTheme(e.target.value); }} placeholder="Filter by theme text" className="mt-1 w-full rounded-md border border-zinc-300 bg-white px-3 py-2 text-sm" />
         </label>
@@ -157,5 +183,13 @@ export default function EvidencePage() {
         <Button variant="outline" disabled={offset + 25 >= total} onClick={() => setOffset(offset + 25)}>Next</Button>
       </div>
     </div>
+  );
+}
+
+export default function EvidencePage() {
+  return (
+    <Suspense fallback={<p className="text-sm text-zinc-500">Loading evidence…</p>}>
+      <EvidenceInner />
+    </Suspense>
   );
 }

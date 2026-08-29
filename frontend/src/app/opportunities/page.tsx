@@ -16,6 +16,9 @@ type Opp = {
   evidence_strength: number;
   confidence: string;
   research_gap: string;
+  origin?: string;
+  source_hypothesis?: string | null;
+  source_hypothesis_name?: string | null;
 };
 
 export default function OpportunitiesPage() {
@@ -70,6 +73,7 @@ export default function OpportunitiesPage() {
               <th className="px-3 py-2">Purchase assoc.</th>
               <th className="px-3 py-2">Evidence (1–5)</th>
               <th className="px-3 py-2">Confidence</th>
+              <th className="px-3 py-2">Source</th>
               <th className="px-3 py-2">Research gap</th>
             </tr>
           </thead>
@@ -87,6 +91,13 @@ export default function OpportunitiesPage() {
                 <td className="px-3 py-3 tabular-nums">{row.purchase_association}</td>
                 <td className="px-3 py-3 tabular-nums">{row.evidence_strength}</td>
                 <td className="px-3 py-3"><Badge tone="amber">{row.confidence}</Badge></td>
+                <td className="px-3 py-3">
+                  {row.origin === "emerging" || !row.source_hypothesis ? (
+                    <Badge tone="sky">Emerging opportunity</Badge>
+                  ) : (
+                    <Badge>{row.source_hypothesis} {row.source_hypothesis_name || ""}</Badge>
+                  )}
+                </td>
                 <td className="max-w-xs px-3 py-3 text-xs text-zinc-600">{row.research_gap}</td>
               </tr>
             ))}

@@ -1,0 +1,262 @@
+[
+  {
+    "hypothesis_id": "H6",
+    "hypothesis_name": "Product Uncertainty",
+    "statement": "Some users hesitate to purchase because they lack sufficient confidence or information about the product.",
+    "status": "supported",
+    "evidence_label": "Moderate",
+    "supporting_observations": [
+      "go-74b3d4aa3ef05b86",
+      "go-e326e15467d44de4",
+      "go-7c3a8cb778a5b78b",
+      "go-b9d4c6ca1192f930",
+      "go-58402dc3c746f677",
+      "ap-c7b80dca37482023",
+      "ap-25f95e0e2b3466e3",
+      "re-1af87b0ab49fbf3f",
+      "re-29447833b084d2cb",
+      "re-ba567575ef50ece4",
+      "re-55fc60a5e2ecd588",
+      "yo-e36c8a4c77c226da",
+      "yo-9ff4b1ff7c62c861",
+      "go-2f6e86c8b95895ba",
+      "go-a93cee47aeb590a5"
+    ],
+    "counter_observations": [],
+    "support_count": 15,
+    "counter_count": 0,
+    "unclear_count": 3,
+    "relevant_observation_count": 18,
+    "support_percentage": 34.88,
+    "counter_percentage": 0.0,
+    "purchase_related_support": 4,
+    "purchase_related_counter": 0,
+    "purchase_association": 26.67,
+    "support_outcomes": {
+      "purchased": 1,
+      "unknown": 6,
+      "still considering": 4,
+      "abandoned": 1,
+      "purchased alternative": 1,
+      "postponed": 2
+    },
+    "source_distribution": {
+      "google_play": 7,
+      "app_store": 2,
+      "reddit": 4,
+      "youtube": 2
+    },
+    "affected_segments": [
+      "research-heavy shoppers",
+      "high-wishlist users",
+      "fit-conscious shoppers",
+      "comparison-heavy shoppers"
+    ],
+    "common_workarounds": [
+      "adding alternatives to wishlist",
+      "checking measurements manually",
+      "comparing alternatives",
+      "YouTube",
+      "checking customer photos"
+    ],
+    "uncertainty_kinds": [
+      "size",
+      "quality",
+      "returns",
+      "material/fabric",
+      "reviews",
+      "comparison",
+      "product information",
+      "appearance"
+    ],
+    "confidence": "high",
+    "candidate_opportunity": true,
+    "reasoning": "15 observations support Product Uncertainty and 0 go against it (15 is 34.9% of relevant comments). 4 supporting comments are observed alongside postponement, abandonment, or alternative purchase (association 26.67%). That is co-occurrence, not causation.",
+    "research_gap": "Public comments cannot tell us whether Product Uncertainty is the primary reason a wishlisted item fails to convert within 30 days, who it hits hardest, or whether it happens before or after saving.",
+    "priority": 1
+  },
+  {
+    "hypothesis_id": "H1",
+    "hypothesis_name": "Wishlist as Bookmarking",
+    "statement": "Some users wishlist products primarily as a bookmarking mechanism rather than because they have strong purchase intent.",
+    "status": "contradicted",
+    "evidence_label": "Counter-weighted",
+    "supporting_observations": [
+      "ap-1107fbb8a6b5cdbd",
+      "re-e437ccce1211d122",
+      "go-2f6e86c8b95895ba"
+    ],
+    "counter_observations": [
+      "go-74b3d4aa3ef05b86",
+      "go-45d860d8fe378ee3",
+      "go-a560c9cc3163f673",
+      "go-ca247a1a6ed2b290"
+    ],
+    "support_count": 3,
+    "counter_count": 4,
+    "unclear_count": 15,
+    "relevant_observation_count": 22,
+    "support_percentage": 6.98,
+    "counter_percentage": 9.3,
+    "purchase_related_support": 3,
+    "purchase_related_counter": 0,
+    "purchase_association": 100.0,
+    "support_outcomes": {
+      "postponed": 3
+    },
+    "source_distribution": {
+      "app_store": 1,
+      "reddit": 1,
+      "google_play": 1
+    },
+    "affected_segments": [
+      "high-wishlist users",
+      "research-heavy shoppers"
+    ],
+    "common_workarounds": [
+      "adding alternatives to wishlist",
+      "waiting"
+    ],
+    "uncertainty_kinds": [],
+    "confidence": "high",
+    "candidate_opportunity": false,
+    "reasoning": "Counter-evidence (4) outweighs supporting comments (3) for Wishlist as Bookmarking. Treat the starting hypothesis as challenged, not confirmed.",
+    "research_gap": "Public comments cannot tell us whether Wishlist as Bookmarking is the primary reason a wishlisted item fails to convert within 30 days, who it hits hardest, or whether it happens before or after saving.",
+    "priority": 2
+  },
+  {
+    "hypothesis_id": "H4",
+    "hypothesis_name": "Cross-Platform Comparison",
+    "statement": "Some users wishlist an item on Myntra but later find the same or a similar item elsewhere and purchase it from another platform.",
+    "status": "insufficient_evidence",
+    "evidence_label": "Insufficient",
+    "supporting_observations": [
+      "re-ba567575ef50ece4"
+    ],
+    "counter_observations": [],
+    "support_count": 1,
+    "counter_count": 0,
+    "unclear_count": 11,
+    "relevant_observation_count": 12,
+    "support_percentage": 2.33,
+    "counter_percentage": 0.0,
+    "purchase_related_support": 1,
+    "purchase_related_counter": 0,
+    "purchase_association": 100.0,
+    "support_outcomes": {
+      "purchased alternative": 1
+    },
+    "source_distribution": {
+      "reddit": 1
+    },
+    "affected_segments": [
+      "Insufficient evidence."
+    ],
+    "common_workarounds": [
+      "checking another ecommerce platform",
+      "adding alternatives to wishlist"
+    ],
+    "uncertainty_kinds": [],
+    "confidence": "low",
+    "candidate_opportunity": false,
+    "reasoning": "Cross-Platform Comparison was tested on 43 relevant observations. 1 supported it and 0 contradicted it — not enough classified evidence to judge.",
+    "research_gap": "Public UGC does not contain enough behavioral evidence to accept or reject Cross-Platform Comparison. Interviews are required if this remains a suspected conversion path.",
+    "priority": 3
+  },
+  {
+    "hypothesis_id": "H5",
+    "hypothesis_name": "Availability / Size / Color",
+    "statement": "Some users intend to purchase a wishlisted product later but lose the opportunity because the product, size, or color becomes unavailable.",
+    "status": "insufficient_evidence",
+    "evidence_label": "Insufficient",
+    "supporting_observations": [
+      "ap-d1a0e6ce77fe21b4"
+    ],
+    "counter_observations": [],
+    "support_count": 1,
+    "counter_count": 0,
+    "unclear_count": 0,
+    "relevant_observation_count": 1,
+    "support_percentage": 2.33,
+    "counter_percentage": 0.0,
+    "purchase_related_support": 0,
+    "purchase_related_counter": 0,
+    "purchase_association": 0.0,
+    "support_outcomes": {
+      "unknown": 1
+    },
+    "source_distribution": {
+      "app_store": 1
+    },
+    "affected_segments": [
+      "Insufficient evidence."
+    ],
+    "common_workarounds": [],
+    "uncertainty_kinds": [],
+    "confidence": "low",
+    "candidate_opportunity": false,
+    "reasoning": "Availability / Size / Color was tested on 43 relevant observations. 1 supported it and 0 contradicted it — not enough classified evidence to judge.",
+    "research_gap": "Public UGC does not contain enough behavioral evidence to accept or reject Availability / Size / Color. Interviews are required if this remains a suspected conversion path.",
+    "priority": 4
+  },
+  {
+    "hypothesis_id": "H2",
+    "hypothesis_name": "Budget / Timing",
+    "statement": "Some users want a wishlisted product but postpone purchasing because they do not want to spend money at that moment or their priorities change.",
+    "status": "insufficient_evidence",
+    "evidence_label": "Insufficient",
+    "supporting_observations": [],
+    "counter_observations": [],
+    "support_count": 0,
+    "counter_count": 0,
+    "unclear_count": 0,
+    "relevant_observation_count": 0,
+    "support_percentage": 0.0,
+    "counter_percentage": 0.0,
+    "purchase_related_support": 0,
+    "purchase_related_counter": 0,
+    "purchase_association": 0.0,
+    "support_outcomes": {},
+    "source_distribution": {},
+    "affected_segments": [
+      "Insufficient evidence."
+    ],
+    "common_workarounds": [],
+    "uncertainty_kinds": [],
+    "confidence": "low",
+    "candidate_opportunity": false,
+    "reasoning": "Budget / Timing was tested on 43 relevant observations. 0 supported it and 0 contradicted it — not enough classified evidence to judge. Price can appear often without meeting the budget/timing test used here.",
+    "research_gap": "Public UGC does not contain enough behavioral evidence to accept or reject Budget / Timing. Interviews are required if this remains a suspected conversion path.",
+    "priority": 5
+  },
+  {
+    "hypothesis_id": "H3",
+    "hypothesis_name": "Future Occasion",
+    "statement": "Some users wishlist products for a future occasion such as a festival, event, vacation, wedding, or other planned use.",
+    "status": "insufficient_evidence",
+    "evidence_label": "Insufficient",
+    "supporting_observations": [],
+    "counter_observations": [],
+    "support_count": 0,
+    "counter_count": 0,
+    "unclear_count": 3,
+    "relevant_observation_count": 3,
+    "support_percentage": 0.0,
+    "counter_percentage": 0.0,
+    "purchase_related_support": 0,
+    "purchase_related_counter": 0,
+    "purchase_association": 0.0,
+    "support_outcomes": {},
+    "source_distribution": {},
+    "affected_segments": [
+      "Insufficient evidence."
+    ],
+    "common_workarounds": [],
+    "uncertainty_kinds": [],
+    "confidence": "low",
+    "candidate_opportunity": false,
+    "reasoning": "Future Occasion was tested on 43 relevant observations. 0 supported it and 0 contradicted it — not enough classified evidence to judge.",
+    "research_gap": "Public UGC does not contain enough behavioral evidence to accept or reject Future Occasion. Interviews are required if this remains a suspected conversion path.",
+    "priority": 6
+  }
+]

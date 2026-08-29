@@ -1,0 +1,74 @@
+[
+  {
+    "hypothesis_id": "H6",
+    "hypothesis_name": "Product Uncertainty",
+    "evidence": "Moderate",
+    "support": 15,
+    "counter_evidence": 0,
+    "purchase_association": 26.67,
+    "confidence": "high",
+    "priority": 1,
+    "status": "supported",
+    "candidate_opportunity": true
+  },
+  {
+    "hypothesis_id": "H1",
+    "hypothesis_name": "Wishlist as Bookmarking",
+    "evidence": "Counter-weighted",
+    "support": 3,
+    "counter_evidence": 4,
+    "purchase_association": 100.0,
+    "confidence": "high",
+    "priority": 2,
+    "status": "contradicted",
+    "candidate_opportunity": false
+  },
+  {
+    "hypothesis_id": "H4",
+    "hypothesis_name": "Cross-Platform Comparison",
+    "evidence": "Insufficient",
+    "support": 1,
+    "counter_evidence": 0,
+    "purchase_association": 100.0,
+    "confidence": "low",
+    "priority": 3,
+    "status": "insufficient_evidence",
+    "candidate_opportunity": false
+  },
+  {
+    "hypothesis_id": "H5",
+    "hypothesis_name": "Availability / Size / Color",
+    "evidence": "Insufficient",
+    "support": 1,
+    "counter_evidence": 0,
+    "purchase_association": 0.0,
+    "confidence": "low",
+    "priority": 4,
+    "status": "insufficient_evidence",
+    "candidate_opportunity": false
+  },
+  {
+    "hypothesis_id": "H2",
+    "hypothesis_name": "Budget / Timing",
+    "evidence": "Insufficient",
+    "support": 0,
+    "counter_evidence": 0,
+    "purchase_association": 0.0,
+    "confidence": "low",
+    "priority": 5,
+    "status": "insufficient_evidence",
+    "candidate_opportunity": false
+  },
+  {
+    "hypothesis_id": "H3",
+    "hypothesis_name": "Future Occasion",
+    "evidence": "Insufficient",
+    "support": 0,
+    "counter_evidence": 0,
+    "purchase_association": 0.0,
+    "confidence": "low",
+    "priority": 6,
+    "status": "insufficient_evidence",
+    "candidate_opportunity": false
+  }
+]

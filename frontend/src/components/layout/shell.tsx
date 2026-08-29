@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, FolderSearch, LayoutDashboard, Puzzle } from "lucide-react";
+import { Beaker, BookOpen, FolderSearch, LayoutDashboard, Puzzle } from "lucide-react";
 import { cn } from "@/lib/cn";
 
 const NAV = [
   { href: "/", label: "Overview", icon: LayoutDashboard },
+  { href: "/hypotheses", label: "Hypothesis Testing", icon: Beaker },
   { href: "/evidence", label: "Evidence Explorer", icon: FolderSearch },
   { href: "/opportunities", label: "Opportunity Landscape", icon: Puzzle },
   { href: "/research", label: "Research Handoff", icon: BookOpen },
@@ -21,7 +22,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
           <p className="text-[11px] uppercase tracking-[0.18em] text-rose-300">NextLeap · Growth</p>
           <h1 className="mt-1 font-semibold leading-tight">Myntra Discovery Engine</h1>
           <p className="mt-2 text-xs text-zinc-400">
-            Business metric → public evidence → candidate opportunities → interview questions.
+            Business metric → hypotheses → public evidence → candidate opportunities → primary research.
           </p>
         </div>
         <nav className="flex-1 space-y-0.5 overflow-y-auto px-3 py-4">

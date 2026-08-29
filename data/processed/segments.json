@@ -119,9 +119,9 @@
       "postponed": 15
     },
     "dominant_opportunity_themes": [
-      "Users remain uncertain about how a garment will fit, even when some size informa",
       "Users cannot tell from the listing whether quality will match the price they wou",
-      "Return and exchange friction shows up in the decision, not only after a package "
+      "Users remain uncertain about how a garment will fit, even when some size informa",
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als"
     ],
     "evidence_ids": [
       "go-d9f5cb602e3b177f",
@@ -209,9 +209,9 @@
       "purchased": 25
     },
     "dominant_opportunity_themes": [
-      "Users remain uncertain about how a garment will fit, even when some size informa",
+      "Users cannot tell from the listing whether quality will match the price they wou",
       "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
-      "Return and exchange friction shows up in the decision, not only after a package "
+      "Some users hesitate to purchase because they lack sufficient confidence or infor"
     ],
     "evidence_ids": [
       "go-3c0793e5084c1c3e",
@@ -389,9 +389,9 @@
       "still considering": 23
     },
     "dominant_opportunity_themes": [
-      "Users remain uncertain about how a garment will fit, even when some size informa",
       "Users cannot tell from the listing whether quality will match the price they wou",
-      "Return and exchange friction shows up in the decision, not only after a package "
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
+      "Users remain uncertain about how a garment will fit, even when some size informa"
     ],
     "evidence_ids": [
       "go-b1cdc65f56305f18",
@@ -479,8 +479,8 @@
       "postponed": 2
     },
     "dominant_opportunity_themes": [
-      "Users remain uncertain about how a garment will fit, even when some size informa",
       "Users cannot tell from the listing whether quality will match the price they wou",
+      "Some users hesitate to purchase because they lack sufficient confidence or infor",
       "Delivery reliability is mentioned in the same comments as buying hesitation. Als"
     ],
     "evidence_ids": [
@@ -568,9 +568,9 @@
       "postponed": 2
     },
     "dominant_opportunity_themes": [
-      "Return and exchange friction shows up in the decision, not only after a package ",
-      "Users remain uncertain about how a garment will fit, even when some size informa",
-      "Users cannot tell from the listing whether quality will match the price they wou"
+      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als",
+      "Users remain uncertain about how a garment will fit, even when some size informa"
     ],
     "evidence_ids": [
       "go-27404417f32efb11",
@@ -649,7 +649,8 @@
       "unknown": 15
     },
     "dominant_opportunity_themes": [
-      "Users cannot tell from the listing whether quality will match the price they wou"
+      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Some users hesitate to purchase because they lack sufficient confidence or infor"
     ],
     "evidence_ids": [
       "go-7046a4c954d3c8c1",
@@ -703,7 +704,10 @@
       "postponed": 1,
       "unknown": 2
     },
-    "dominant_opportunity_themes": [],
+    "dominant_opportunity_themes": [
+      "Users cannot tell from the listing whether quality will match the price they wou",
+      "Delivery reliability is mentioned in the same comments as buying hesitation. Als"
+    ],
     "evidence_ids": [
       "go-a9cf32113d55254c",
       "ap-ab3fd2d7e5b5bb67",

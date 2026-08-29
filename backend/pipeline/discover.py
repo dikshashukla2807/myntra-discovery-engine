@@ -204,7 +204,7 @@ def build_themes(
                 "uncertainties": top_unc,
                 "workarounds": top_work,
                 "external_research": _top_n(platforms, 5),
-                "supporting_evidence_ids": supporting[:40],
+                "supporting_evidence_ids": supporting,
                 "counter_evidence_ids": counter_ids,
                 "confidence": _confidence_label(conf),
                 "confidence_score": round(conf, 3),
@@ -441,9 +441,15 @@ def score_opportunities(themes: list[dict[str, Any]], n_relevant: int) -> list[d
                 "scoring_notes": (
                     "Each dimension is scored 1–5. Composite is a weighted average "
                     "(purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, "
-                    "segment 10%). Purchase association is co-occurrence with postponed / abandoned / "
-                    "purchased-alternative language — not causation."
+                    "segment 10%). Frequency is how often the pattern appears; purchase association is how "
+                    "often it is observed alongside postponed / abandoned / purchased-alternative language. "
+                    "Those are not the same thing, and neither is causation."
                 ),
+                "source_hypothesis": theme.get("source_hypothesis"),
+                "source_hypothesis_name": theme.get("source_hypothesis_name"),
+                "origin": theme.get("origin") or "emerging",
+                "candidate_opportunity": bool(theme.get("candidate_opportunity", True)),
+                "uncertainty_kinds": theme.get("uncertainty_kinds") or [],
             }
         )
     opportunities.sort(key=lambda o: o["composite_score"], reverse=True)

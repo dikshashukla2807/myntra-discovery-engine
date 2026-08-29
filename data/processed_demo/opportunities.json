@@ -62,7 +62,12 @@
       "re-ef3962c14bfe611a"
     ],
     "why_ranked_higher": "Ranked #1 vs #2 because the weighted score is 0.80 higher (max 5). Biggest gap: segment relevance (4/5 vs 1/5).",
-    "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Purchase association is co-occurrence with postponed / abandoned / purchased-alternative language — not causation."
+    "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Frequency is how often the pattern appears; purchase association is how often it is observed alongside postponed / abandoned / purchased-alternative language. Those are not the same thing, and neither is causation.",
+    "source_hypothesis": "H6",
+    "source_hypothesis_name": "Product Uncertainty",
+    "origin": "initial_hypothesis",
+    "candidate_opportunity": true,
+    "uncertainty_kinds": []
   },
   {
     "opportunity_id": "opp-01",
@@ -121,7 +126,12 @@
       "re-ef3962c14bfe611a"
     ],
     "why_ranked_higher": "Ranked #2 vs #3 because the weighted score is 0.20 higher (max 5). Biggest gap: workaround intensity (5/5 vs 3/5).",
-    "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Purchase association is co-occurrence with postponed / abandoned / purchased-alternative language — not causation."
+    "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Frequency is how often the pattern appears; purchase association is how often it is observed alongside postponed / abandoned / purchased-alternative language. Those are not the same thing, and neither is causation.",
+    "source_hypothesis": "H6",
+    "source_hypothesis_name": "Product Uncertainty",
+    "origin": "initial_hypothesis",
+    "candidate_opportunity": true,
+    "uncertainty_kinds": []
   },
   {
     "opportunity_id": "opp-00",
@@ -176,7 +186,12 @@
       "yo-82114b15041be383"
     ],
     "why_ranked_higher": "Ranked #3 vs #4 because the weighted score is 0.40 higher (max 5). Biggest gap: purchase association (5/5 vs 1/5).",
-    "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Purchase association is co-occurrence with postponed / abandoned / purchased-alternative language — not causation."
+    "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Frequency is how often the pattern appears; purchase association is how often it is observed alongside postponed / abandoned / purchased-alternative language. Those are not the same thing, and neither is causation.",
+    "source_hypothesis": null,
+    "source_hypothesis_name": null,
+    "origin": "emerging",
+    "candidate_opportunity": true,
+    "uncertainty_kinds": []
   },
   {
     "opportunity_id": "opp-04",
@@ -234,7 +249,12 @@
       "re-ef3962c14bfe611a"
     ],
     "why_ranked_higher": "Ranked #4 vs #5 because the weighted score is 0.30 higher (max 5). Biggest gap: frequency (4/5 vs 3/5).",
-    "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Purchase association is co-occurrence with postponed / abandoned / purchased-alternative language — not causation."
+    "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Frequency is how often the pattern appears; purchase association is how often it is observed alongside postponed / abandoned / purchased-alternative language. Those are not the same thing, and neither is causation.",
+    "source_hypothesis": null,
+    "source_hypothesis_name": null,
+    "origin": "emerging",
+    "candidate_opportunity": true,
+    "uncertainty_kinds": []
   },
   {
     "opportunity_id": "opp-02",
@@ -290,6 +310,11 @@
       "re-ef3962c14bfe611a"
     ],
     "why_ranked_higher": "Lowest of the discovered opportunities on the six 1–5 scores.",
-    "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Purchase association is co-occurrence with postponed / abandoned / purchased-alternative language — not causation."
+    "scoring_notes": "Each dimension is scored 1–5. Composite is a weighted average (purchase association 25%, evidence 20%, frequency / severity / workaround 15% each, segment 10%). Frequency is how often the pattern appears; purchase association is how often it is observed alongside postponed / abandoned / purchased-alternative language. Those are not the same thing, and neither is causation.",
+    "source_hypothesis": null,
+    "source_hypothesis_name": null,
+    "origin": "emerging",
+    "candidate_opportunity": true,
+    "uncertainty_kinds": []
   }
 ]

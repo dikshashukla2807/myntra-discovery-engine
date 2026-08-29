@@ -46,6 +46,19 @@ def load_opportunities() -> list[dict[str, Any]]:
     return read_json(_p("opportunities.json"), []) or []
 
 
+def load_hypotheses() -> list[dict[str, Any]]:
+    return read_json(_p("hypotheses.json"), []) or []
+
+
+def load_hypothesis_comparison() -> list[dict[str, Any]]:
+    return read_json(_p("hypothesis_comparison.json"), []) or []
+
+
+def load_hypothesis_classifications() -> dict[str, dict[str, Any]]:
+    rows = read_jsonl(processed_dir() / "hypothesis_classifications.jsonl")
+    return {r["observation_id"]: r for r in rows if r.get("observation_id")}
+
+
 def load_gaps() -> list[dict[str, Any]]:
     return read_json(_p("gaps.json"), []) or []
 
