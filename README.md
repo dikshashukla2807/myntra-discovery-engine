@@ -109,7 +109,7 @@ This is a Next.js app in `frontend/`. Hosted deploys **do not** run FastAPI. The
 - Publish: `.next`
 - Plugin: `@netlify/plugin-nextjs`
 
-After this lands on `main`, Netlify should redeploy. Overview should show the public-source funnel, not “No processed dataset yet.”
+If a deploy shows Netlify’s generic **Page not found**, the Next.js runtime adapter did not run and Netlify published a raw `.next` folder. Keep `@netlify/plugin-nextjs` in this file and in `frontend/package.json`. Do not add a second `frontend/netlify.toml` that omits the plugin.
 
 ## Opportunity ranking
 
