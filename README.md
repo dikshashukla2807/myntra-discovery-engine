@@ -96,6 +96,21 @@ cd frontend && npm install && npm run dev -- --port 43125 --hostname 127.0.0.1
 
 Open `http://127.0.0.1:43125`. Switch **Demo / sample data** on Overview if `processed_demo` exists.
 
+The UI reads processed JSON/JSONL through Next.js `/api` routes. A local Python API is optional (`API_PROXY_TARGET=http://127.0.0.1:43124`).
+
+## Deploy (Netlify)
+
+This is a Next.js app in `frontend/`. Hosted deploys **do not** run FastAPI. The dashboard APIs copy `data/processed/` into the Next.js app at build time (`npm run prebuild`).
+
+`netlify.toml` sets:
+
+- Base directory: `frontend`
+- Build command: `npm ci && npm run build`
+- Publish: `.next`
+- Plugin: `@netlify/plugin-nextjs`
+
+After this lands on `main`, Netlify should redeploy. Overview should show the public-source funnel, not “No processed dataset yet.”
+
 ## Opportunity ranking
 
 Each dimension is **1–5**. Composite is a weighted average (max 5):
