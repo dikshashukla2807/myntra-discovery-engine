@@ -21,20 +21,22 @@ type Hypothesis = {
   reasoning: string;
 };
 
+type ComparisonRow = {
+  hypothesis_id: string;
+  hypothesis_name: string;
+  evidence: string;
+  support: number;
+  counter_evidence: number;
+  purchase_association: number;
+  confidence: string;
+  priority: number;
+  status: string;
+};
+
 type Payload = {
   banner?: Banner;
   hypotheses: Hypothesis[];
-  comparison: Array<{
-    hypothesis_id: string;
-    hypothesis_name: string;
-    evidence: string;
-    support: number;
-    counter_evidence: number;
-    purchase_association: number;
-    confidence: string;
-    priority: number;
-    status: string;
-  }>;
+  comparison: ComparisonRow[];
 };
 
 const STATUS: Record<string, { label: string; tone: "emerald" | "amber" | "rose" | "zinc" }> = {
@@ -65,7 +67,19 @@ export default function HypothesesPage() {
   if (!data) return <p className="text-sm text-zinc-500">Loading hypothesis tests…</p>;
 
   const ordered = [...(data.hypotheses || [])].sort((a, b) => a.hypothesis_id.localeCompare(b.hypothesis_id));
-  const table = data.comparison?.length ? data.comparison : ordered;
+  const table: ComparisonRow[] = data.comparison?.length
+    ? data.comparison
+    : ordered.map((hypothesis) => ({
+        hypothesis_id: hypothesis.hypothesis_id,
+        hypothesis_name: hypothesis.hypothesis_name,
+        evidence: hypothesis.evidence_label,
+        support: hypothesis.support_count,
+        counter_evidence: hypothesis.counter_count,
+        purchase_association: hypothesis.purchase_association,
+        confidence: hypothesis.confidence,
+        priority: hypothesis.priority,
+        status: hypothesis.status,
+      }));
 
   return (
     <div>
