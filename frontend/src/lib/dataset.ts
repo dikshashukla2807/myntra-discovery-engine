@@ -58,17 +58,9 @@ export async function currentMode(): Promise<DatasetMode> {
 export function datasetBanner(mode: DatasetMode): { mode: string; label: string; detail: string } {
   if (mode === "demo") {
     return {
-      mode: "demo",
-      label: "DEMO / SAMPLE DATA",
-      detail:
-        "These observations are labeled sample data. They are not real user research and must not be presented as public-source findings.",
     };
   }
   return {
-    mode: "public",
-    label: "Public-source dataset",
-    detail:
-      "Public user-generated content collected from source platforms. Not independently verified as genuine.",
   };
 }
 
