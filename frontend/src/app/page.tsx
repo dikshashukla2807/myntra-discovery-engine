@@ -97,9 +97,6 @@ export default function OverviewPage() {
         <Button variant={data.banner?.mode === "public" ? "primary" : "outline"} disabled={switching} onClick={() => switchMode("public")}>
           Public-source dataset
         </Button>
-        <Button variant={data.banner?.mode === "demo" ? "primary" : "outline"} disabled={switching || !data.demo_available} onClick={() => switchMode("demo")}>
-          Demo / sample data
-        </Button>
       </div>
       <PageHeader
         eyebrow="Business metric"
