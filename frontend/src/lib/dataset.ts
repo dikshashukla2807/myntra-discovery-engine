@@ -57,10 +57,16 @@ export async function currentMode(): Promise<DatasetMode> {
 
 export function datasetBanner(mode: DatasetMode): { mode: string; label: string; detail: string } {
   if (mode === "demo") {
-    return {
+     return {
+      mode: "",
+      label: "",
+      detail: "",
     };
   }
   return {
+    mode: "",
+    label: "",
+    detail: "",
   };
 }
 
