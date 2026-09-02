@@ -93,7 +93,6 @@ export default function OverviewPage() {
 
   return (
     <div>
-      <DatasetBanner banner={data.banner} />
       <div className="mb-4 flex flex-wrap gap-2">
         <Button variant={data.banner?.mode === "public" ? "primary" : "outline"} disabled={switching} onClick={() => switchMode("public")}>
           Public-source dataset
