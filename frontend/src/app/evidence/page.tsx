@@ -74,7 +74,6 @@ function EvidenceInner() {
 
   return (
     <div>
-      <DatasetBanner banner={banner} />
       <PageHeader
         title="Evidence Explorer"
         description="Original public text, extraction, theme, and source URL. Quotes are never fabricated."
